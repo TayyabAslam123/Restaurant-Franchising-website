@@ -63,3 +63,18 @@ Route::get('/news', function () {
   Route::get('/downloads', function () {
     return view('user.home');
   });
+
+
+  ## ADMIN PANEL
+
+  ##URL-GROUPING	
+	Route::group(['prefix' => 'adminpanel'], function ()
+	{
+
+    Route::get('/dashboard', function () {
+      return view('adminpanel.welcome');
+    });
+  
+
+
+  });
