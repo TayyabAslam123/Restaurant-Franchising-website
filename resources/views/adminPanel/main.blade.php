@@ -42,78 +42,16 @@
       <hr class="sidebar-divider">
       <!-- Heading -->
      
+      @foreach (adminMenu() as $key=>$value)
+          
+
       <li class="nav-item">
-        <a class="nav-link collapsed" href="{{url('adminpanel/packages')}}">
-        <span>PACKAGES</span>
+        <a class="nav-link collapsed" href="{{url($value)}}">
+        <span>{{$key}}</span>
         </a>
       </li>
   
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="{{url('adminpanel/organizations')}}" >
-        <span>ORGANIZATIONS</span>
-        </a>
-      </li>
-    
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="{{url('adminpanel/report')}}">
-        <span>REPORTS</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="{{url('adminpanel/report_types')}}">
-        <span>REPORTS TYPES</span>
-        </a>
-      </li>
-      <!-- Divider  <hr class="sidebar-divider"> -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="{{url('adminpanel/library')}}">
-        <span>LIBRARY</span>
-        </a>
-      </li>
-     
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="{{url('adminpanel/classes')}}" >
-        <span>CLASSES</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="{{url('adminpanel/assignment')}}">
-        <span>ASSIGNMENTS</span>
-        </a>
-      </li>
-   
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="{{url('adminpanel/class_levels')}}">
-        <span>CLASS LEVELS</span>
-        </a>
-      </li>
-     
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="{{url('adminpanel/class_subjects')}}" >
-        <span>CLASS SUBJECTS</span>
-        </a>
-      </li>
-     
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="{{url('adminpanel/user')}}">
-        <span>USERS</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="{{url('adminpanel/statuses')}}">
-        <span>STATUSES</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="{{url('adminpanel/user_roles')}}" >
-        <span>ROLES</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="{{url('adminpanel/payment_gateway')}}">
-        <span>PAYMENT GATEWAYS</span>
-        </a>
-      </li>
+      @endforeach
       <!-- Nav Item - Tables -->
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
@@ -129,7 +67,7 @@
     <div id="content">
     <!-- Topbar -->
     <div id="app" >
-      <nav class="navbar navbar-expand-md navbar-light navbar-laravel" style="background-color:rgb(4, 12, 84)">
+      <nav class="navbar navbar-expand-md navbar-light navbar-laravel" style="background-color:#4e73df;">
         <div class="container">
           <a class="navbar-brand" href="{{ url('/') }}">
          <p style="color: white;"> ADMIN PANEL</p>
