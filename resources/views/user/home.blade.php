@@ -81,7 +81,7 @@
               <div class="col-lg-6">
                  <div class="about__pic">
                     <div class="about__pic__inner">
-                       <img src="img/about-pic.jpg" alt="">
+                       <img src="{{asset('img/about-pic.jpg')}}" alt="">
                     </div>
                  </div>
               </div>
@@ -103,7 +103,7 @@
            <div class="row">
               <div class="project__slider owl-carousel">
                  <div class="col-lg-3">
-                    <div class="project__slider__item set-bg" data-setbg="img/project/project-42.jpg">
+                    <div class="project__slider__item set-bg" data-setbg="{{asset('img/project/project-42.jpg')}}">
                        <div class="project__slider__item__hover">
                           <a href="#">
                              <span>Click to Visit</span>
@@ -113,7 +113,7 @@
                     </div>
                  </div>
                  <div class="col-lg-3">
-                    <div class="project__slider__item set-bg" data-setbg="img/project/newpro.jpg">
+                    <div class="project__slider__item set-bg" data-setbg="{{asset('img/project/newpro.jpg')}}">
                        <div class="project__slider__item__hover">
                           <a href="#">
                              <span>Click to Visit</span>
@@ -123,7 +123,7 @@
                     </div>
                  </div>
                  <div class="col-lg-3">
-                    <div class="project__slider__item set-bg" data-setbg="img/project/IMG-20180211-WA0031.jpg">
+                    <div class="project__slider__item set-bg" data-setbg="{{asset('img/project/IMG-20180211-WA0031.jpg')}}">
                        <div class="project__slider__item__hover">
                           <a href="#">
                              <span>Click to Visit</span>
@@ -133,7 +133,7 @@
                     </div>
                  </div>
                  <div class="col-lg-3">
-                    <div class="project__slider__item set-bg" data-setbg="img/project/newpro.jpg">
+                    <div class="project__slider__item set-bg" data-setbg="{{asset('img/project/newpro.jpg')}}">
                        <div class="project__slider__item__hover">
                           <a href="#">
                              <span>Click to Visit</span>
@@ -143,7 +143,7 @@
                     </div>
                  </div>
                  <div class="col-lg-3">
-                    <div class="project__slider__item set-bg" data-setbg="img/project/IMG-20180211-WA0031.jpg">
+                    <div class="project__slider__item set-bg" data-setbg="{{asset('img/project/IMG-20180211-WA0031.jpg')}}">
                        <div class="project__slider__item__hover">
                           <a href="#">
                              <span>interiors</span>

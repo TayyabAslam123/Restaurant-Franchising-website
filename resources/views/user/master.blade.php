@@ -30,7 +30,7 @@
       <div class="offcanvas-menu-overlay"></div>
       <div class="offcanvas-menu-wrapper">
          <div class="offcanvas__logo">
-            <a href="#"><img src="img/logo.png" alt=""></a>
+            <a href="#"><img src="{{asset('img/logo.png')}}" alt=""></a>
          </div>
          <div id="mobile-menu-wrap"></div>
          <!-- <div class="offcanvas__widget">
@@ -45,18 +45,18 @@
             <div class="row">
                <div class="col-lg-3">
                   <div class="header__logo">
-                     <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                     <a href="./index.html"><img src="{{asset('img/logo.png')}}" alt=""></a>
                   </div>
                </div>
                <div class="col-lg-9">
                   <nav class="header__menu mobile-menu">
                      <ul>
-                        <li class="active"><a href="./index.html">Home</a></li>
-                        <li><a href="./about.html">About us</a></li>
-                        <li><a href="./Our Franchise.html">Get Frenchise</a></li>
-                        <li><a href="./gallery.html">Our Gallery</a></li>
-                        <li><a href="./our vendors.html">Our Clients</a></li>
-                        <li><a href="./contact.html">Contact us</a></li>
+                        <li class="active"><a href="{{url('/')}}">Home</a></li>
+                        <li><a href="{{url('/about')}}">About us</a></li>
+                        <li><a href="{{url('/get-frenchise')}}">Get Frenchise</a></li>
+                        <li><a href="{{url('/gallery')}}">Our Gallery</a></li>
+                        <li><a href="{{url('/our-vendors')}}">Our Vendors</a></li>
+                        <li><a href="{{url('/contact-us')}}">Contact us</a></li>
                         <li>
                            <a href="#">More</a>
                            <ul class="dropdown">
@@ -136,7 +136,7 @@
 
       @yield('main')
       <!-- Footer Section Begin -->
-      <footer class="footer set-bg" data-setbg="img/footer-bg.jpg">
+      <footer class="footer set-bg" data-setbg="{{asset('img/footer-bg.jpg')}}">
          <div class="container">
             <div class="footer__top">
                <div class="row">
@@ -159,7 +159,7 @@
                <div class="col-lg-3 col-md-6 col-sm-6">
                   <div class="footer__about">
                      <div class="footer__logo">
-                        <a href="#"><img src="img/logo.png" alt=""></a>
+                        <a href="#"><img src="{{asset('img/logo.png')}}" alt=""></a>
                      </div>
                      <p>7176 Blue Spring Lane <br />Santa Monica, CA 90403</p>
                      <ul>
