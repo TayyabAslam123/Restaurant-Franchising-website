@@ -3,11 +3,13 @@
 function adminMenu(){
 
 	$data=[ "FRANCHISES"=>"admin/franchise",
-	        "ORDERS"=>"admin/orders",
-			"FAQS"=>"admin/faqs",
 	        "CAREERS"=>"admin/careers",
 			"DOWNLOADS"=>"admin/downloads",
-	        "NEWS"=>"admin/news"];
+	        "NEWS"=>"admin/news",
+			"___________"=>"",
+			"CONTACTUS "=>"admin/contactus",
+			"ORDERS"=>"admin/orders",
+			"FAQS"=>"admin/faqs",];
 
 			return $data;
 }

@@ -17,23 +17,7 @@
 <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
 @endif
 
-<h5>Search By</h5>
-@if(isset($form_data))
-<!--SEARCHING FORMS-->      
- @foreach ($form_data as $key => $value) 
-    <form action="{{$action}}" method="POST">
-      <div class="form-group">
-          <div class="input-group mb-3">
-        <input class='form-control' placeholder="{{$value['name']}}" type="{{$value['type']}}" {!! $value['attrib'] !!}>
-           <div class="input-group-append">
-           <button class="btn btn-secondary" type="submit">Go</button>  
-           </div>
-          </div>
-     </div>
-   </form> 
- @endforeach
-<!--END-->   
-@endif
+
    
   <br>
 <!--SEARCH ON FORM-->
@@ -59,34 +43,7 @@
     <tr>
        @foreach ($headings as $key=>$paired_value)
        <?php $va = $value->$key; ?>
-       @if($key == "status")
-       <?php $va = $value->status->status; ?>
-       @endif
-       @if($key == "organization")
-       <?php $va = $value->organization->name; ?>
-       @endif
-       @if($key == "package")
-       <?php $va = $value->package->name; ?>
-       @endif
-       @if($key == "user")
-       <?php $va = $value->user->email; ?>
-       @endif
-     
-       @if($key == "type")
-       <?php $va = $value->type->name; ?>
-       @endif
-       @if($key == "subject")
-       <?php $va = $value->subject->name; ?>
-       @endif
-       @if($key == "level")
-       <?php $va = $value->level->name; ?>
-       @endif
-       @if($key == "class")
-       <?php $va = $value->class->name; ?>
-       @endif
-       @if($key == "status_name")
-       <?php $va = $value->status ?>
-       @endif
+    
     <!--for extracting values in relation ship--> 
     <td >{{$va}}</td>
        @endforeach
@@ -127,6 +84,7 @@
  <div class="jumbotron" id="addme">
 <h2>ADD {{$title}}</h2>
 <form action="{{$url}}" method="POST">
+  @csrf
 <div class="form-group">
     
     @foreach ($data as $key => $value) 

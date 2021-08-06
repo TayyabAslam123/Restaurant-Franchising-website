@@ -68,12 +68,14 @@ Route::get('/news', function () {
   ## ADMIN PANEL
 
   ##URL-GROUPING	
-	Route::group(['prefix' => 'adminpanel'], function ()
+	Route::group(['prefix' => 'admin'], function ()
 	{
 
     Route::get('/dashboard', function () {
       return view('adminpanel.welcome');
     });
+
+    Route::resource('news','NewsController');
   
 
 

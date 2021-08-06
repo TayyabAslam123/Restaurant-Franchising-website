@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Newsfeed;
+use Session;
+use Exception;
 
 class NewsController extends Controller
 {
@@ -13,7 +16,25 @@ class NewsController extends Controller
      */
     public function index()
     {
-        //
+        $title='NEWS';
+        $headings= ["title"=>"Tile","description"=>"Description",
+        "created_at"=>"Created At","updated_at"=>"Updated At"];
+
+        $url="news";
+        
+        $values=Newsfeed::paginate(10);
+        $data = [
+            ['name'=>'Title', "type"=>"text", "attrib"=>'required="required" name="title" maxlength="100"'],
+            ['name'=>'Description', "type"=>"text", "attrib"=>'required="required" name="description" maxlength="1000"'],
+            ['name'=>'Image', "type"=>"file", "attrib"=>'required="required" name="image" maxlength="200"'],
+      
+        ];
+
+   
+       
+
+        return view('adminPanel.index',compact('title','headings','values','url','data'));
+   
     }
 
     /**
@@ -34,7 +55,7 @@ class NewsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request);
     }
 
     /**
