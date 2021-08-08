@@ -9,6 +9,7 @@ use Exception;
 
 class NewsController extends Controller
 {
+    private $redirect_url='admin/news';
     /**
      * Display a listing of the resource.
      *
@@ -26,7 +27,7 @@ class NewsController extends Controller
         $data = [
             ['name'=>'Title', "type"=>"text", "attrib"=>'required="required" name="title" maxlength="100"'],
             ['name'=>'Description', "type"=>"text", "attrib"=>'required="required" name="description" maxlength="1000"'],
-            ['name'=>'Image', "type"=>"file", "attrib"=>'required="required" name="image" maxlength="200"'],
+            ['name'=>'Image', "type"=>"file", "attrib"=>'required="required" name="img" '],
       
         ];
 
@@ -55,7 +56,36 @@ class NewsController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+        try{
+            if($request->hasFile('img')){
+                
+                $filenameWithExt=$request->file('img')->getClientOriginalName();
+                $filename=pathinfo($filenameWithExt,PATHINFO_FILENAME);
+                $extension=$request->file('img')->getClientOriginalExtension();
+                $fileNameToStore=$filename.'_'.time().'.'.$extension;
+                $path=$request->file('img')->storeAs('public/news',$fileNameToStore);
+                
+            }
+                
+                else{$fileNameToStore='noimg.jpg';}
+
+
+            $var = new Newsfeed();
+            $var->title = $request->title;
+            $var->description = $request->description;
+            $var->image=$fileNameToStore;
+     
+
+            $var->save();
+            Session::flash('message', 'ADDED SUCCESSFULLY');
+            Session::flash('alert-class', 'alert-success'); 
+            return redirect($this->redirect_url);
+       }
+       catch(Exception $e){
+                Session::flash('message', $e->getMessage());
+                Session::flash('alert-class', 'alert-danger'); 
+                return redirect($this->redirect_url);
+            }
     }
 
     /**
@@ -100,6 +130,18 @@ class NewsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        try{
+            Newsfeed::findOrFail($id)->delete();
+            Session::flash('message', 'DELETED SUCCESSFULLY');
+            Session::flash('alert-class', 'alert-success'); 
+            return redirect($this->redirect_url);
+        }
+            catch(Exception $e)
+              {
+                
+                Session::flash('message', $e->getMessage());
+                Session::flash('alert-class', 'alert-danger'); 
+                return redirect($this->redirect_url);
+              }
     }
 }

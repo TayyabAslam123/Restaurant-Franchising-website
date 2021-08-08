@@ -83,7 +83,7 @@
  <hr class="sidebar-divider"> 
  <div class="jumbotron" id="addme">
 <h2>ADD {{$title}}</h2>
-<form action="{{$url}}" method="POST">
+<form action="{{$url}}" method="POST" enctype='multipart/form-data'>
   @csrf
 <div class="form-group">
     

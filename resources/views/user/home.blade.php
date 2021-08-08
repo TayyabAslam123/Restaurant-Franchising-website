@@ -58,36 +58,34 @@
      <!-- Hero Section End -->
      <!-- About Section Begin -->
      <section class="about spad">
-        <div class="container">
-           <div class="row">
-              <div class="col-lg-6">
-                 <div class="about__text">
-                    <div class="section-title">
-                       <span>who are we</span>
-                       <h2>We propose and discuss design rules</h2>
-                    </div>
-                    <div class="about__para__text">
-                       <p>Metasurfaces are generally designed by placing scatterers in periodic or pseudo-periodic
-                          grids. We propose and discuss design rules for functional metasurfaces with randomly
-                          placed.
-                       </p>
-                       <p>Anisotropic elements that randomly sample. Quisque sit amet nisl ante. Fusce lacinia non
-                          tellus id gravida. Cras neque dolor, volutpat et hendrerit et.
-                       </p>
-                    </div>
-                    <a href="about.html" class="primary-btn normal-btn">Learn More</a>
-                 </div>
-              </div>
-              <div class="col-lg-6">
-                 <div class="about__pic">
-                    <div class="about__pic__inner">
-                       <img src="{{asset('img/about-pic.jpg')}}" alt="">
-                    </div>
-                 </div>
-              </div>
-           </div>
-        </div>
-     </section>
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6">
+                  <div class="about__text">
+                     <div class="section-title">
+                        <span>who are we</span>
+                        <h2>Established in Pakistan 2002,</h2>
+                     </div>
+                     <div class="about__para__text">
+                        <p>(FC) Fri-Chicks is a rapidly growing fast-food chain in the region. (FC) Fri-Chicks is specialized in serving the tastiest crumbed fried chicken using a secret recipe which includes a unique blend of the choicest herbs by spices. It is therefore of little wonder, (FC) Fri-Chicks is synonym to words such as "Real Recipe, Real Taste, Real Fried Chicken." (FC) Fri-Chicks begain its gourney with a yet determined dream to create a brand that brings happiness, satisfaction, and smiles to our valued customers.
+                        </p>
+                        <!-- <p>Anisotropic elements that randomly sample. Quisque sit amet nisl ante. Fusce lacinia non
+                           tellus id gravida. Cras neque dolor, volutpat et hendrerit et.
+                        </p> -->
+                     </div>
+                     <a href="about.html" class="primary-btn normal-btn">Learn More</a>
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div class="about__pic">
+                     <div class="about__pic__inner">
+                        <img src="img/about-pic.jpg" alt="">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
      <!-- About Section End -->
      <!-- Project Section Begin -->
      <section class="project spad">

@@ -39,33 +39,34 @@
             </div> -->
       </div>
       <!-- Offcanvas Menu End -->
-      <!-- Header Section Begin -->
-      <header class="header">
+     <!-- Header Section Begin -->
+     <header class="header">
          <div class="container-fluid">
             <div class="row">
-               <div class="col-lg-3">
+               <div class="col-lg-4">
                   <div class="header__logo">
-                     <a href="./index.html"><img src="{{asset('img/logo.png')}}" alt=""></a>
+                     <a href="./index.html"><img src="img/logo.png" alt=""></a>
                   </div>
                </div>
-               <div class="col-lg-9">
-                  <nav class="header__menu mobile-menu">
+               <div class="col-lg-8">
+               <nav class="header__menu mobile-menu">
                      <ul>
-                        <li class="active"><a href="{{url('/')}}">Home</a></li>
-                        <li><a href="{{url('/about')}}">About us</a></li>
-                        <li><a href="{{url('/get-frenchise')}}">Get Frenchise</a></li>
-                        <li><a href="{{url('/gallery')}}">Our Gallery</a></li>
-                        <li><a href="{{url('/our-vendors')}}">Our Vendors</a></li>
-                        <li><a href="{{url('/contact-us')}}">Contact us</a></li>
+                        <li class="active"><a href="./index.html">Home</a></li>
+                        <li ><a href="./about.html">About</a></li>
+                        <li><a href="./Our Franchise.html">Get Frenchise</a></li>
+                        <li><a href="./gallery.html">Gallery</a></li>
+                        <li ><a href="./menu.html">Menu</a></li>
+                        
+                        <li><a href="./contact.html">Contact Us</a></li>
                         <li>
                            <a href="#">More</a>
                            <ul class="dropdown">
                               <li><a href="./profile.html">Profile</a></li>
                               <li><a href="./faq.html">FAQ's</a></li>
                               <li><a href="./news.html">News</a></li>
-                              <li><a href="./warehouse.html">Warehouse</a></li>
+                              <li><a href="./our vendors.html">Our Clients</a></li>
                               <li><a href="./careers.html">Careers</a></li>
-                              <li><a href="./downloads.html">Downloads</a></li>
+                              <li ><a href="./downloads.html">Downloads</a></li>
                            </ul>
                         </li>
                         <li class="order-o"><a class="button-o" data-toggle="modal" data-target="#exampleModal" href="./contact.html">Order Now</a></li>
@@ -82,7 +83,7 @@
          <div class="modal-dialog" role="document">
             <div class="modal-content">
                <div class="modal-header">
-                  <h5 class="modal-title text-center" id="exampleModalLabel">Fill The Form & Get 25% Discount</h5>
+                  <h5 class="modal-title text-center" id="exampleModalLabel">Fill The Form & Get Free Membership Card</h5>
                </div>
                <div class="modal-body faq">
                   <div class="container">

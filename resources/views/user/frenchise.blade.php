@@ -1,11 +1,8 @@
       @extends('user.master')
 @section('main')
-       <div class="canvas__open"><i class="fa fa-bars"></i></div>
-         </div>
-      </header>
-      <!-- Header Section End -->
-      <!-- Breadcrumb Section Begin -->
-      <div class="breadcrumb-option spad set-bg" data-setbg="{{asset('img/breadcrumb-bg.jpg')}}">
+   
+         <!-- Breadcrumb Section Begin -->
+         <div class="breadcrumb-option spad set-bg" data-setbg="img/breadcrumb-bg.jpg">
          <div class="container">
             <div class="row">
                <div class="col-lg-12 text-center">
@@ -43,15 +40,20 @@
                         <h5>Personal Information</h5>
                         <div class="form-group">
                            <input type="text" class="form-control wizard-required" id="fname">
-                           <label for="fname" class="wizard-form-text-label">First Name*</label>
+                           <label for="fname" class="wizard-form-text-label">Full Name*</label>
                            <div class="wizard-form-error"></div>
                         </div>
                         <div class="form-group">
-                           <input type="text" class="form-control wizard-required" id="lname">
-                           <label for="lname" class="wizard-form-text-label">Last Name*</label>
+                           <input type="file" class="form-control wizard-required" id="img">
+                           <label for="fname" class="wizard-form-text-label"></label>
                            <div class="wizard-form-error"></div>
                         </div>
                         <div class="form-group">
+                           <input type="email" class="form-control wizard-required" id="email">
+                           <label for="email" class="wizard-form-text-label">Email Name*</label>
+                           <div class="wizard-form-error"></div>
+                        </div>
+                        <!-- <div class="form-group">
                            Gender
                            <div class="wizard-form-radio">
                               <input name="radio-name" id="radio1" type="radio">
@@ -61,37 +63,68 @@
                               <input name="radio-name" id="radio2" type="radio">
                               <label for="radio2">Female</label>
                            </div>
-                        </div>
+                        </div> -->
                         <div class="form-group">
-                           <input type="text" class="form-control wizard-required" id="zcode">
-                           <label for="zcode" class="wizard-form-text-label">Zip Code*</label>
+                           <input type="text" class="form-control wizard-required" id="idnumber">
+                           <label for="idnumber" class="wizard-form-text-label">ID Number*</label>
                            <div class="wizard-form-error"></div>
                         </div>
+                        <div class="form-group">
+                           <input type="text" class="form-control wizard-required" id="cellnumber">
+                           <label for="cellnumber" class="wizard-form-text-label">Cell Number*</label>
+                           <div class="wizard-form-error"></div>
+                        </div>
+                        <div class="form-group">
+                           <input type="text" class="form-control wizard-required" id="wnumber">
+                           <label for="wnumber" class="wizard-form-text-label">Whatsapp Number*</label>
+                           <div class="wizard-form-error"></div>
+                        </div>
+                        <div class="form-group">
+                           <input type="text" class="form-control wizard-required" id="address">
+                           <label for="address" class="wizard-form-text-label">Address*</label>
+                           <div class="wizard-form-error"></div>
+                        </div>
+                        
                         <div class="form-group clearfix">
                            <a href="javascript:;" class="form-wizard-next-btn float-right">Next</a>
                         </div>
                      </fieldset>
                      <fieldset class="wizard-fieldset">
-                        <h5>Account Information</h5>
+                        <h5>Personal Information</h5>
                         <div class="form-group">
-                           <input type="email" class="form-control wizard-required" id="email">
-                           <label for="email" class="wizard-form-text-label">Email*</label>
+                           <input type="text" class="form-control wizard-required" id="dob">
+                           <label for="dob" class="wizard-form-text-label">Date of Birth*</label>
                            <div class="wizard-form-error"></div>
                         </div>
                         <div class="form-group">
-                           <input type="text" class="form-control wizard-required" id="username">
-                           <label for="username" class="wizard-form-text-label">User Name*</label>
+                           <input type="text" class="form-control wizard-required" id="gender">
+                           <label for="gender" class="wizard-form-text-label">Gender*</label>
                            <div class="wizard-form-error"></div>
                         </div>
                         <div class="form-group">
-                           <input type="password" class="form-control wizard-required" id="pwd">
-                           <label for="pwd" class="wizard-form-text-label">Password*</label>
+                           <input type="text" class="form-control wizard-required" id="fax">
+                           <label for="pwd" class="wizard-form-text-label">Fax*</label>
                            <div class="wizard-form-error"></div>
-                           <span class="wizard-password-eye"><i class="far fa-eye"></i></span>
+                          
                         </div>
                         <div class="form-group">
-                           <input type="password" class="form-control wizard-required" id="cpwd">
-                           <label for="cpwd" class="wizard-form-text-label">Confirm Password*</label>
+                           <input type="text" class="form-control wizard-required" id="pob">
+                           <label for="pob" class="wizard-form-text-label">Place of Birth*</label>
+                           <div class="wizard-form-error"></div>
+                        </div>
+                        <div class="form-group">
+                           <input type="text" class="form-control wizard-required" id="age">
+                           <label for="age" class="wizard-form-text-label">Age*</label>
+                           <div class="wizard-form-error"></div>
+                        </div>
+                        <div class="form-group">
+                           <input type="text" class="form-control wizard-required" id="mst">
+                           <label for="mst" class="wizard-form-text-label">Marital Status*</label>
+                           <div class="wizard-form-error"></div>
+                        </div>
+                        <div class="form-group">
+                           <input type="text" class="form-control wizard-required" id="citizen">
+                           <label for="citizen" class="wizard-form-text-label">Citizen Ship*</label>
                            <div class="wizard-form-error"></div>
                         </div>
                         <div class="form-group clearfix">
@@ -100,25 +133,30 @@
                         </div>
                      </fieldset>
                      <fieldset class="wizard-fieldset">
-                        <h5>Bank Information</h5>
+                        <h5>Prefrence Information</h5>
                         <div class="form-group">
-                           <input type="text" class="form-control wizard-required" id="bname">
-                           <label for="bname" class="wizard-form-text-label">Bank Name*</label>
+                           <input type="text" class="form-control wizard-required" id="appliedf">
+                           <label for="appliedf" class="wizard-form-text-label">Applied Francehise Location/Area*</label>
                            <div class="wizard-form-error"></div>
                         </div>
                         <div class="form-group">
-                           <input type="text" class="form-control wizard-required" id="brname">
-                           <label for="brname" class="wizard-form-text-label">Branch Name*</label>
+                           <input type="text" class="form-control wizard-required" id="olp">
+                           <label for="olp" class="wizard-form-text-label">Other Location Prefrence*</label>
                            <div class="wizard-form-error"></div>
                         </div>
                         <div class="form-group">
-                           <input type="text" class="form-control wizard-required" id="acname">
-                           <label for="acname" class="wizard-form-text-label">Account Name*</label>
+                           <input type="text" class="form-control wizard-required" id="tax">
+                           <label for="tax" class="wizard-form-text-label">Tax ID/ NTN*</label>
                            <div class="wizard-form-error"></div>
                         </div>
                         <div class="form-group">
-                           <input type="text" class="form-control wizard-required" id="acon">
-                           <label for="acon" class="wizard-form-text-label">Account Number*</label>
+                           <input type="text" class="form-control wizard-required" id="business">
+                           <label for="business" class="wizard-form-text-label">Occupation/Business*</label>
+                           <div class="wizard-form-error"></div>
+                        </div>
+                        <div class="form-group">
+                           <input type="text" class="form-control wizard-required" id="pd">
+                           <label for="pd" class="wizard-form-text-label">Physical Disablity/ Limitations*</label>
                            <div class="wizard-form-error"></div>
                         </div>
                         <div class="form-group clearfix">
@@ -127,19 +165,43 @@
                         </div>
                      </fieldset>
                      <fieldset class="wizard-fieldset">
-                        <h5>Payment Information</h5>
+                        <h5>Franchise Information</h5>
                         <div class="form-group">
-                           Payment Type
+                           Are You Doing Any Business?
                            <div class="wizard-form-radio">
-                              <input name="radio-name" id="mastercard" type="radio">
-                              <label for="mastercard">Master Card</label>
+                              <input name="radio-name" id="byes" type="radio">
+                              <label for="byes">YES</label>
                            </div>
                            <div class="wizard-form-radio">
-                              <input name="radio-name" id="visacard" type="radio">
-                              <label for="visacard">Visa Card</label>
+                              <input name="radio-name" id="bno" type="radio">
+                              <label for="bno">NO</label>
                            </div>
                         </div>
+
                         <div class="form-group">
+                           Are You Doing Any Food Business?
+                           <div class="wizard-form-radio">
+                              <input name="radio-name" id="foodyes" type="radio">
+                              <label for="foodyes">YES</label>
+                           </div>
+                           <div class="wizard-form-radio">
+                              <input name="radio-name" id="foodno" type="radio">
+                              <label for="foodno">NO</label>
+                           </div>
+                        </div>
+
+                        <div class="form-group">
+                           Is this the first time you are applying for a franchise? 
+                           <div class="wizard-form-radio">
+                              <input name="radio-name" id="fyes" type="radio">
+                              <label for="fyes">YES</label>
+                           </div>
+                           <div class="wizard-form-radio">
+                              <input name="radio-name" id="fno" type="radio">
+                              <label for="fno">NO</label>
+                           </div>
+                        </div>
+                        <!-- <div class="form-group">
                            <input type="text" class="form-control wizard-required" id="honame">
                            <label for="honame" class="wizard-form-text-label">Holder Name*</label>
                            <div class="wizard-form-error"></div>
@@ -248,7 +310,7 @@
                                  </select>
                               </div>
                            </div>
-                        </div>
+                        </div> -->
                         <div class="form-group clearfix">
                            <a href="javascript:;" class="form-wizard-previous-btn float-left">Previous</a>
                            <a href="javascript:;" class="form-wizard-submit float-right">Submit</a>
@@ -267,7 +329,7 @@
          </div>
          <div class="row">
             <div class="col-lg-4 col-md-6">
-               <div class="team__item set-bg" data-setbg="{{asset('img/hero/FriChicksCover.jpg')}}">
+               <div class="team__item set-bg" data-setbg="img/hero/FriChicksCover.jpg">
                   <div class="team__text">
                      <div class="team__title">
                         <h5>Dolores Webster</h5>
@@ -282,7 +344,7 @@
                </div>
             </div>
             <div class="col-lg-4 col-md-6">
-               <div class="team__item set-bg" data-setbg="{{asset('img/hero/FriChicksCover.jpg')}}">
+               <div class="team__item set-bg" data-setbg="img/hero/FriChicksCover.jpg">
                   <div class="team__text">
                      <div class="team__title">
                         <h5>Dana Vaughn</h5>
@@ -297,7 +359,7 @@
                </div>
             </div>
             <div class="col-lg-4 col-md-6">
-               <div class="team__item set-bg" data-setbg="{{asset('img/hero/FriChicksCover.jpg')}}">
+               <div class="team__item set-bg" data-setbg="img/hero/FriChicksCover.jpg">
                   <div class="team__text">
                      <div class="team__title">
                         <h5>Jonathan Mcdaniel</h5>
@@ -314,7 +376,7 @@
          </div>
          <div class="row">
             <div class="col-lg-4 col-md-6">
-               <div class="team__item set-bg" data-setbg="{{asset('img/hero/FriChicksCover.jpg')}}">
+               <div class="team__item set-bg" data-setbg="img/hero/FriChicksCover.jpg">
                   <div class="team__text">
                      <div class="team__title">
                         <h5>Dolores Webster</h5>
@@ -329,7 +391,7 @@
                </div>
             </div>
             <div class="col-lg-4 col-md-6">
-               <div class="team__item set-bg" data-setbg="{{asset('img/hero/FriChicksCover.jpg')}}">
+               <div class="team__item set-bg" data-setbg="img/hero/FriChicksCover.jpg">
                   <div class="team__text">
                      <div class="team__title">
                         <h5>Dana Vaughn</h5>
@@ -344,7 +406,7 @@
                </div>
             </div>
             <div class="col-lg-4 col-md-6">
-               <div class="team__item set-bg" data-setbg="{{asset('img/hero/FriChicksCover.jpg')}}">
+               <div class="team__item set-bg" data-setbg="img/hero/FriChicksCover.jpg">
                   <div class="team__text">
                      <div class="team__title">
                         <h5>Jonathan Mcdaniel</h5>
@@ -361,7 +423,7 @@
          </div>
          <div class="row">
             <div class="col-lg-4 col-md-6">
-               <div class="team__item set-bg" data-setbg="{{asset('img/hero/FriChicksCover.jpg')}}">
+               <div class="team__item set-bg" data-setbg="img/hero/FriChicksCover.jpg">
                   <div class="team__text">
                      <div class="team__title">
                         <h5>Dolores Webster</h5>
@@ -376,7 +438,7 @@
                </div>
             </div>
             <div class="col-lg-4 col-md-6">
-               <div class="team__item set-bg" data-setbg="{{asset('img/hero/FriChicksCover.jpg')}}">
+               <div class="team__item set-bg" data-setbg="img/hero/FriChicksCover.jpg">
                   <div class="team__text">
                      <div class="team__title">
                         <h5>Dana Vaughn</h5>
@@ -391,7 +453,7 @@
                </div>
             </div>
             <div class="col-lg-4 col-md-6">
-               <div class="team__item set-bg" data-setbg="{{asset('img/hero/FriChicksCover.jpg')}}">
+               <div class="team__item set-bg" data-setbg="img/hero/FriChicksCover.jpg">
                   <div class="team__text">
                      <div class="team__title">
                         <h5>Jonathan Mcdaniel</h5>
@@ -409,7 +471,7 @@
       </section>
       <!-- Franchise Cards end -->
       <!-- Call To Action Section Begin -->
-      <section class="callto spad set-bg" data-setbg="{{asset('img/call-bg.jpg')}}">
+      <section class="callto spad set-bg" data-setbg="img/call-bg.jpg">
          <div class="container">
             <div class="row d-flex justify-content-center">
                <div class="col-lg-10 text-center">

@@ -34,7 +34,11 @@ Route::get('/gallery', function () {
 //vendors  
 Route::get('/our-vendors', function () {
     return view('user.vendors');
-  });  
+  });
+//menu    
+Route::get('/menu', function () {
+  return view('user.menu');
+});     
 //contact us    
 Route::get('/contact-us', function () {
     return view('user.contact');
