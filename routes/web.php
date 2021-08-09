@@ -80,6 +80,7 @@ Route::get('/news', function () {
     });
 
     Route::resource('news','NewsController');
+    Route::resource('downloads','DownloadController');
   
 
 

@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\Newsfeed;
 use Session;
@@ -19,7 +18,7 @@ class NewsController extends Controller
     {
         $title='NEWS';
         $headings= ["title"=>"Tile","description"=>"Description",
-        "created_at"=>"Created At","updated_at"=>"Updated At"];
+        "created_at"=>"Created At","updated_at"=>"Updated At","image"=>"image"];
 
         $url="news";
         
@@ -32,7 +31,6 @@ class NewsController extends Controller
         ];
 
    
-       
 
         return view('adminPanel.index',compact('title','headings','values','url','data'));
    
