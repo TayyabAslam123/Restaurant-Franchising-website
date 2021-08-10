@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Newsfeed;
+use App\Career;
 use Session;
 use Exception;
 
-class NewsController extends Controller
+class CareersController extends Controller
 {
-    private $redirect_url = 'admin/news';
+    private $redirect_url = 'admin/careers';
     /**
      * Display a listing of the resource.
      *
@@ -17,19 +17,16 @@ class NewsController extends Controller
      */
     public function index()
     {
-        $title = 'NEWS';
+        $title = 'CAREERS';
         $headings = ["title" => "Tile","description" => "Description",
-        "created_at" => "Created At","updated_at" => "Updated At","image" => "image"];
+        "created_at" => "Created At","updated_at" => "Updated At"];
 
-        $url = "news";
+        $url = "careers";
 
-        $values = Newsfeed::paginate(10);
+        $values = Career::paginate(10);
         $data = [
             ['name' => 'Title', "type" => "text", "attrib" => 'required="required" name="title" maxlength="100"'],
-            ['name' => 'Description', "type" => "text", "attrib" => 'required="required" name="description" maxlength="1000"'],
-            ['name' => 'Image', "type" => "file", "attrib" => 'required="required" name="img" '],
-
-        ];
+            ['name' => 'Description', "type" => "text", "attrib" => 'required="required" name="description" maxlength="1000"'] ];
 
 
 
@@ -55,30 +52,19 @@ class NewsController extends Controller
     public function store(Request $request)
     {
         try {
-            if ($request->hasFile('img')) {
-                $filenameWithExt = $request->file('img')->getClientOriginalName();
-                $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
-                $extension = $request->file('img')->getClientOriginalExtension();
-                $fileNameToStore = $filename . '_' . time() . '.' . $extension;
-                $path = $request->file('img')->storeAs('public/news', $fileNameToStore);
-            } else {
-                $fileNameToStore = 'noimg.jpg';
-            }
-
-
-            $var = new Newsfeed();
+            $var = new Career();
             $var->title = $request->title;
             $var->description = $request->description;
-            $var->image = $fileNameToStore;
+
 
 
             $var->save();
             Session::flash('message', 'ADDED SUCCESSFULLY');
-            Session::flash('alert-class', 'alert-success');
+            Session::flash('alert - class', 'alert - success');
             return redirect($this->redirect_url);
         } catch (Exception $e) {
                Session::flash('message', $e->getMessage());
-               Session::flash('alert-class', 'alert-danger');
+               Session::flash('alert - class', 'alert - danger');
                return redirect($this->redirect_url);
         }
     }
@@ -126,13 +112,13 @@ class NewsController extends Controller
     public function destroy($id)
     {
         try {
-            Newsfeed::findOrFail($id)->delete();
+            Career::findOrFail($id)->delete();
             Session::flash('message', 'DELETED SUCCESSFULLY');
-            Session::flash('alert-class', 'alert-success');
+            Session::flash('alert - class', 'alert - success');
             return redirect($this->redirect_url);
         } catch (Exception $e) {
             Session::flash('message', $e->getMessage());
-            Session::flash('alert-class', 'alert-danger');
+            Session::flash('alert - class', 'alert - danger');
             return redirect($this->redirect_url);
         }
     }

@@ -48,7 +48,7 @@
           @elseif($key=='updated_at')
           {{date_frmt($value->key)}}
           @elseif($key=='image')
-          <img src="{{asset('storage/news/'.$value->image)}}" width="100px" height="100px">
+          <img src="{{asset('storage/'.strtolower($title).'/'.$value->image)}}" width="100px" height="100px">
           @elseif($key=='file')
           <a href="{{asset('storage/downloads/'.$value->file)}}" download>Download file..</a>
           @else
@@ -63,7 +63,7 @@
           <!--It wil not delete any entry id $disable is set-->
           @if(!isset($del))
           <!--DELETE THE ENTRY-->
-          <form action="{{ $url.'/'.$value->id }}" method="POST" onsubmit="confirm('Are you sure, You want to delete?')">
+          <form action="{{ $url.'/'.$value->id }}" method="POST" onsubmit="return confirm('Are you sure, You want to delete?')">
             {{csrf_field()}}
             <input type="hidden" name="_method" value="DELETE">
             <button class="btn btn-danger btn-circle "><i class="fas fa-trash"></i></button>

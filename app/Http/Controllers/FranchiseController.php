@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Newsfeed;
+use App\Franchise;
 use Session;
 use Exception;
 
-class NewsController extends Controller
+class FranchiseController extends Controller
 {
-    private $redirect_url = 'admin/news';
+    private $redirect_url = 'admin/franchise';
     /**
      * Display a listing of the resource.
      *
@@ -17,16 +17,15 @@ class NewsController extends Controller
      */
     public function index()
     {
-        $title = 'NEWS';
-        $headings = ["title" => "Tile","description" => "Description",
+        $title = 'FRANCHISES';
+        $headings = ["title" => "Tile",
         "created_at" => "Created At","updated_at" => "Updated At","image" => "image"];
 
-        $url = "news";
+        $url = "franchise";
 
-        $values = Newsfeed::paginate(10);
+        $values = Franchise::paginate(10);
         $data = [
             ['name' => 'Title', "type" => "text", "attrib" => 'required="required" name="title" maxlength="100"'],
-            ['name' => 'Description', "type" => "text", "attrib" => 'required="required" name="description" maxlength="1000"'],
             ['name' => 'Image', "type" => "file", "attrib" => 'required="required" name="img" '],
 
         ];
@@ -60,15 +59,14 @@ class NewsController extends Controller
                 $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
                 $extension = $request->file('img')->getClientOriginalExtension();
                 $fileNameToStore = $filename . '_' . time() . '.' . $extension;
-                $path = $request->file('img')->storeAs('public/news', $fileNameToStore);
+                $path = $request->file('img')->storeAs('public/franchises', $fileNameToStore);
             } else {
                 $fileNameToStore = 'noimg.jpg';
             }
 
 
-            $var = new Newsfeed();
+            $var = new Franchise();
             $var->title = $request->title;
-            $var->description = $request->description;
             $var->image = $fileNameToStore;
 
 
@@ -126,7 +124,7 @@ class NewsController extends Controller
     public function destroy($id)
     {
         try {
-            Newsfeed::findOrFail($id)->delete();
+            Franchise::findOrFail($id)->delete();
             Session::flash('message', 'DELETED SUCCESSFULLY');
             Session::flash('alert-class', 'alert-success');
             return redirect($this->redirect_url);

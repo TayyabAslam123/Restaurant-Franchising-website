@@ -101,7 +101,7 @@
            <div class="row">
               <div class="project__slider owl-carousel">
                  <div class="col-lg-3">
-                    <div class="project__slider__item set-bg" data-setbg="{{asset('img/project/project-42.jpg')}}">
+                    <div class="project__slider__item set-bg" data-setbg="{{asset('img/hero/rainer.jpg')}}">
                        <div class="project__slider__item__hover">
                           <a href="#">
                              <span>Click to Visit</span>
