@@ -13,7 +13,7 @@
                   <div class="breadcrumb__text">
                      <h2>About Us</h2>
                      <div class="breadcrumb__links">
-                        <a href="./index.html">Home</a>
+                        <a href="{{url('/')}}">Home</a>
                         <span>About Us</span>
                      </div>
                   </div>
@@ -158,7 +158,7 @@
                   <div class="callto__text">
                      <span>Why choose us?</span>
                      <h2>Our ability to bring outstanding results to our customers.</h2>
-                     <a href="#" class="primary-btn">Contact Us</a>
+                     <a href="{{url('/contact-us')}}" class="primary-btn">Contact Us</a>
                   </div>
                </div>
             </div>

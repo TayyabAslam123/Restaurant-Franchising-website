@@ -51,13 +51,12 @@
                <div class="col-lg-8">
                <nav class="header__menu mobile-menu">
                      <ul>
-                        <li class="active"><a href="./index.html">Home</a></li>
-                        <li ><a href="./about.html">About</a></li>
-                        <li><a href="./Our Franchise.html">Get Frenchise</a></li>
-                        <li><a href="./gallery.html">Gallery</a></li>
-                        <li ><a href="./menu.html">Menu</a></li>
-                        
-                        <li><a href="./contact.html">Contact Us</a></li>
+                        <li class="{{Request::path()=='/'?'active':''}}"><a href="{{url('/')}}">Home</a></li>
+                        <li class="{{Request::path()=='about'?'active':''}}"><a href="{{url('/about')}}">About</a></li>
+                        <li class="{{Request::path()=='get-frenchise'?'active':''}}"><a href="{{url('/get-frenchise')}}">Get Frenchise</a></li>
+                        <li class="{{Request::path()=='gallery'?'active':''}}"><a href="{{url('/gallery')}}">Gallery</a></li>
+                        <li class="{{Request::path()=='menu'?'active':''}}"><a href="{{url('/menu')}}">Menu</a></li>
+                        <li class="{{Request::path()=='contact-us'?'active':''}}"><a href="{{url('/contact-us')}}">Contact Us</a></li>
                         <li>
                            <a href="#">More</a>
                            <ul class="dropdown">
@@ -177,13 +176,13 @@
                </div>
                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
                   <div class="footer__widget">
-                     <h6>Company</h6>
+                     <h6>Useful links</h6>
                      <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Get Franchise</a></li>
-                        <li><a href="#">Our Gallery</a></li>
-                        <li><a href="#">Clients</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="{{url('/about')}}">About Us</a></li>
+                        <li><a href="{{url('/get-frenchise')}}">Get Franchise</a></li>
+                        <li><a href="{{url('/gallery')}}">Our Gallery</a></li>
+                        <li><a href="{{url('/menu')}}">Menu</a></li>
+                        <li><a href="{{url('/contact-us')}}">Contact Us</a></li>
                      </ul>
                   </div>
                </div>

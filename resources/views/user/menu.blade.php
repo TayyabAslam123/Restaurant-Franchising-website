@@ -1,6 +1,6 @@
 @extends('user.master')
 @section('main')
-   
+
       <!-- Breadcrumb Section Begin -->
       <div class="breadcrumb-option spad set-bg" data-setbg="img/breadcrumb-bg.jpg">
          <div class="container">
@@ -9,7 +9,7 @@
                   <div class="breadcrumb__text">
                      <h2>Our Menu</h2>
                      <div class="breadcrumb__links">
-                        <a href="./index.html">Home</a>
+                        <a href="{{url('/menu')}}">Home</a>
                         <span>Our Menu</span>
                      </div>
                   </div>
@@ -247,7 +247,7 @@
       </section>
       <!-- About Page Section End -->
       <!-- Team Section Begin -->
-     
+
       <!-- Team Section End -->
       <!-- Call To Action Section Begin -->
       <section class="callto spad set-bg" data-setbg="img/call-bg.jpg">
@@ -257,7 +257,7 @@
                   <div class="callto__text">
                      <span>Why choose us?</span>
                      <h2>Our ability to bring outstanding results to our customers.</h2>
-                     <a href="#" class="primary-btn">Contact Us</a>
+                     <a href="{{url('/contact-us')}}" class="primary-btn">Contact Us</a>
                   </div>
                </div>
             </div>

@@ -98,7 +98,7 @@
                               <input type="text" placeholder="Email">
                            </div>
                            <div class="col-lg-12">
-                              <textarea placeholder="Message"></textarea>
+                              <textarea placeholder="Message" maxlength="10"></textarea>
                               <button type="submit" class="site-btn">Send Message</button>
                            </div>
                         </div>

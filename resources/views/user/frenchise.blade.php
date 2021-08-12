@@ -1,6 +1,6 @@
       @extends('user.master')
 @section('main')
-   
+
          <!-- Breadcrumb Section Begin -->
          <div class="breadcrumb-option spad set-bg" data-setbg="img/breadcrumb-bg.jpg">
          <div class="container">
@@ -9,7 +9,7 @@
                   <div class="breadcrumb__text">
                      <h2>Get Franchise</h2>
                      <div class="breadcrumb__links">
-                        <a href="./index.html">Home</a>
+                        <a href="{{url('/')}}">Home</a>
                         <span>Get Franchise</span>
                      </div>
                   </div>
@@ -84,7 +84,7 @@
                            <label for="address" class="wizard-form-text-label">Address*</label>
                            <div class="wizard-form-error"></div>
                         </div>
-                        
+
                         <div class="form-group clearfix">
                            <a href="javascript:;" class="form-wizard-next-btn float-right">Next</a>
                         </div>
@@ -105,7 +105,7 @@
                            <input type="text" class="form-control wizard-required" id="fax">
                            <label for="pwd" class="wizard-form-text-label">Fax*</label>
                            <div class="wizard-form-error"></div>
-                          
+
                         </div>
                         <div class="form-group">
                            <input type="text" class="form-control wizard-required" id="pob">
@@ -191,7 +191,7 @@
                         </div>
 
                         <div class="form-group">
-                           Is this the first time you are applying for a franchise? 
+                           Is this the first time you are applying for a franchise?
                            <div class="wizard-form-radio">
                               <input name="radio-name" id="fyes" type="radio">
                               <label for="fyes">YES</label>
@@ -478,7 +478,7 @@
                   <div class="callto__text">
                      <span>Why choose us?</span>
                      <h2>Our ability to bring outstanding results to our customers.</h2>
-                     <a href="#" class="primary-btn">Contact Us</a>
+                     <a href="{{url('/contact-us')}}" class="primary-btn">Contact Us</a>
                   </div>
                </div>
             </div>

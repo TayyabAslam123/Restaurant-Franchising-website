@@ -5,8 +5,8 @@
         <div class="hero__slider owl-carousel">
            <div class="hero__items set-bg" data-setbg="{{asset('img/hero/rainer.jpg')}}">
               <div class="hero__text">
-                 <h2>Quality is not only our standard.</h2>
-                 <a href="#" class="primary-btn">See Project</a>
+                 <h2>Quality that you can taste.</h2>
+                 <a href="{{url('/contact-us')}}" class="primary-btn">CONTACT US</a>
                  <div class="hero__social">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -17,8 +17,8 @@
            </div>
            <div class="hero__items set-bg" data-setbg="{{asset('img/hero/leung.jpg')}}">
               <div class="hero__text">
-                 <h2>Quality is not only our standard.</h2>
-                 <a href="#" class="primary-btn">See Project</a>
+                 <h2>Quality that you can taste.</h2>
+                 <a href="{{url('/contact-us')}}" class="primary-btn">CONTACT US</a>
                  <div class="hero__social">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -29,8 +29,8 @@
            </div>
            <div class="hero__items set-bg" data-setbg="{{asset('img/hero/emerson.jpg')}}">
               <div class="hero__text">
-                 <h2>Quality is not only our standard.</h2>
-                 <a href="#" class="primary-btn">See Project</a>
+                 <h2>Quality that you can taste.</h2>
+                 <a href="{{url('/contact-us')}}" class="primary-btn">CONTACT US</a>
                  <div class="hero__social">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -41,8 +41,8 @@
            </div>
            <div class="hero__items set-bg" data-setbg="{{asset('img/hero/lasse.jpg')}}">
               <div class="hero__text">
-                 <h2>Quality is not only our standard.</h2>
-                 <a href="#" class="primary-btn">See Project</a>
+                 <h2>Quality that you can taste.</h2>
+                 <a href="{{url('/contact-us')}}" class="primary-btn">CONTACT US</a>
                  <div class="hero__social">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -73,13 +73,13 @@
                            tellus id gravida. Cras neque dolor, volutpat et hendrerit et.
                         </p> -->
                      </div>
-                     <a href="about.html" class="primary-btn normal-btn">Learn More</a>
+                     <a href="{{url('/about')}}" class="primary-btn normal-btn">ABOUT US</a>
                   </div>
                </div>
                <div class="col-lg-6">
                   <div class="about__pic">
                      <div class="about__pic__inner">
-                        <img src="img/about-pic.jpg" alt="">
+                        <img src="{{asset('img/about-pic.jpg')}}" alt="">
                      </div>
                   </div>
                </div>
@@ -297,7 +297,7 @@
                     <span>Why choose us?</span>
                     <h2>Our Ability To Deliver Outstanding Results For Our Clients Starts With Our Team Of Smart.
                     </h2>
-                    <a href="contact.html" class="primary-btn">Contact Us</a>
+                    <a href="{{url('/contact-us')}}" class="primary-btn">Contact Us</a>
                  </div>
               </div>
            </div>

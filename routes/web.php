@@ -31,10 +31,6 @@ Route::get('/get-frenchise', function () {
 Route::get('/gallery', function () {
     return view('user.gallery');
 });
-//vendors
-Route::get('/our-vendors', function () {
-    return view('user.vendors');
-});
 //menu
 Route::get('/menu', function () {
     return view('user.menu');
@@ -49,7 +45,7 @@ Route::get('/contact-us', function () {
 
 //profile
 Route::get('/profile', function () {
-    return view('user.home');
+    return view('user.profile');
 });
 //faqs
 Route::get('/faq', function () {
@@ -82,5 +78,8 @@ Route::get('/news', function () {
         Route::resource('downloads', 'DownloadController');
         Route::resource('careers', 'CareersController');
         Route::resource('franchise', 'FranchiseController');
+        //
+        Route::resource('contact', 'FranchiseController');
+
 
     });

@@ -10,7 +10,7 @@
             <div class="row">
                <div class="col-lg-12 text-center">
                   <div class="breadcrumb__text">
-                     <h2>About Us</h2>
+                     <h2>Our Gallery</h2>
                      <div class="breadcrumb__links">
                         <a href="./index.html">Home</a>
                         <span>Gallery</span>
@@ -26,8 +26,8 @@
          <div class="row">
             <div class="col-lg-12 text-center">
                <div class="section-title">
-                  <span>Our</span>
-                  <h2>Portfolio</h2>
+                  <span>Some of our pics</span>
+                  <!-- <h2></h2> -->
                </div>
             </div>
          </div>
