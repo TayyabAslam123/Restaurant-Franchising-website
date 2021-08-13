@@ -60,12 +60,11 @@
                         <li>
                            <a href="#">More</a>
                            <ul class="dropdown">
-                              <li><a href="./profile.html">Profile</a></li>
-                              <li><a href="./faq.html">FAQ's</a></li>
-                              <li><a href="./news.html">News</a></li>
-                              <li><a href="./our vendors.html">Our Clients</a></li>
-                              <li><a href="./careers.html">Careers</a></li>
-                              <li ><a href="./downloads.html">Downloads</a></li>
+                              <li><a href="{{url('/profile')}}">Profile</a></li>
+                              <li><a href="{{url('/faqs')}}">FAQ's</a></li>
+                              <li><a href="{{url('/news')}}">News</a></li>
+                              <li><a href="{{url('/careers')}}">Careers</a></li>
+                              <li ><a href="{{url('/downloads')}}">Downloads</a></li>
                            </ul>
                         </li>
                         <li class="order-o"><a class="button-o" data-toggle="modal" data-target="#exampleModal" href="./contact.html">Order Now</a></li>

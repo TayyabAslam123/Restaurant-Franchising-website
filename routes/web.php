@@ -49,19 +49,19 @@ Route::get('/profile', function () {
 });
 //faqs
 Route::get('/faq', function () {
-    return view('user.home');
+    return view('user.faq');
 });
 //news
 Route::get('/news', function () {
-    return view('user.home');
+    return view('user.news');
 });
 //careers
   Route::get('/careers', function () {
-    return view('user.home');
+    return view('user.careers');
   });
 //downloads
   Route::get('/downloads', function () {
-    return view('user.home');
+    return view('user.downloads');
   });
 
 
@@ -79,7 +79,7 @@ Route::get('/news', function () {
         Route::resource('careers', 'CareersController');
         Route::resource('franchise', 'FranchiseController');
         //
-        Route::resource('contact', 'FranchiseController');
+        Route::resource('contact', 'ContactsController');
 
 
     });
