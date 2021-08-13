@@ -48,8 +48,8 @@ Route::get('/profile', function () {
     return view('user.profile');
 });
 //faqs
-Route::get('/faq', function () {
-    return view('user.faq');
+Route::get('/faqs', function () {
+    return view('user.faqs');
 });
 //news
 Route::get('/news', function () {
@@ -79,7 +79,7 @@ Route::get('/news', function () {
         Route::resource('careers', 'CareersController');
         Route::resource('franchise', 'FranchiseController');
         //
-        Route::resource('contact', 'ContactsController');
+        Route::resource('contact', 'ContactController');
 
 
     });

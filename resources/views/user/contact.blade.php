@@ -89,16 +89,17 @@
             <div class="row">
                <div class="col-lg-8">
                   <div class="contact__form">
-                     <form action="#">
+                     <form action="#" id="myform">
+                     <input type="hidden" name="_token" id="token" value="{{ csrf_token() }}">
                         <div class="row">
                            <div class="col-lg-6 col-md-6 col-sm-6">
-                              <input type="text" placeholder="Name">
+                              <input type="text" placeholder="Name" maxlength="100" name="name">
                            </div>
                            <div class="col-lg-6 col-md-6 col-sm-6">
-                              <input type="text" placeholder="Email">
+                              <input type="text" placeholder="Email" maxlength="100" name="email">
                            </div>
                            <div class="col-lg-12">
-                              <textarea placeholder="Message" maxlength="10"></textarea>
+                              <textarea placeholder="Message" maxlength="1000" name="message"></textarea>
                               <button type="submit" class="site-btn">Send Message</button>
                            </div>
                         </div>
@@ -110,3 +111,20 @@
       </section>
       <!-- Contact Section End -->
       @endsection
+      @section('scripts')
+<script>
+	$('#myform').submit(function(e) {
+	e.preventDefault();
+	  var suc_func = function(msg) {
+
+		  Swal.fire(
+		  'THANKS !',
+		  'For contacting us',
+		  'success'
+		 )
+	  };
+		fetch2("{{url('admin/contact')}}",$('form').serialize(),"POST", "JSON",suc_func, false, false, false);
+
+	});
+  </script>
+@endsection

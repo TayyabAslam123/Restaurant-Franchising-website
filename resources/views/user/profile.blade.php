@@ -41,5 +41,6 @@
             </div>
          </div>
       </div>
+      </section>
       <!-- profile end -->
 			@endsection

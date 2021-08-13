@@ -20,6 +20,9 @@
       <link rel="stylesheet" href="{{asset('css/slick.css')}}" type="text/css">
       <link rel="stylesheet" href="{{asset('css/style.css')}}" type="text/css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+      <!--sweet alerts-->
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
    </head>
    <body>
       <!-- Page Preloder -->
@@ -233,6 +236,7 @@
       </footer>
       <!-- Footer Section End -->
       <!-- Js Plugins -->
+      <script src="{{asset('js/application.js')}}"></script>
       <script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
       <script src="{{asset('js/bootstrap.min.js')}}"></script>
       <script src="{{asset('js/jquery.slicknav.js')}}"></script>
@@ -242,5 +246,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+      @yield('scripts')
+
    </body>
 </html>

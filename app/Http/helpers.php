@@ -8,9 +8,10 @@ function adminMenu()
             "DOWNLOADS" => "admin/downloads",
             "NEWS" => "admin/news",
             "___________" => "",
-            "CONTACTUS " => "admin/contactus",
-            "ORDERS" => "admin/orders",
-            "FAQS" => "admin/faqs",];
+            "Contact Entries " => "admin/contactus",
+            "Order Now Entries" => "admin/orders",
+            "Faqs Entries" => "admin/faqs",
+            "Get Frenchise Entrise" => "admin/faqs",];
 
             return $data;
 }
