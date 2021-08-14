@@ -8,8 +8,8 @@ function adminMenu()
             "DOWNLOADS" => "admin/downloads",
             "NEWS" => "admin/news",
             "___________" => "",
-            "Contact Entries " => "admin/contactus",
-            "Order Now Entries" => "admin/orders",
+            "Contact Entries " => "admin/contact",
+            "Order Now Entries" => "admin/order",
             "Faqs Entries" => "admin/faqs",
             "Get Frenchise Entrise" => "admin/faqs",];
 

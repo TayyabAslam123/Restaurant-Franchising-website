@@ -80,6 +80,7 @@ Route::get('/news', function () {
         Route::resource('franchise', 'FranchiseController');
         //
         Route::resource('contact', 'ContactController');
+        Route::resource('order', 'OrderController');
 
 
     });

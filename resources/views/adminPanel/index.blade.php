@@ -5,11 +5,13 @@
   <div class="col-sm-9">
     <h1>{{$title}}</h1>
   </div>
+  @if(!isset($add))
   <div class="col-sm-3">
     <a href="#addme">
       <button class="btn btn-success">ADD {{$title}}</button>
     </a>
   </div>
+  @endif
 </div>
 
 <!--SUCCESS/FAILURE MESSAGES-->
@@ -91,6 +93,7 @@
 
 </div>
 
+@if(isset($data))
 <!--ADDING ENTRY FORM-->
 <hr class="sidebar-divider">
 <div class="jumbotron" id="addme">
@@ -122,6 +125,7 @@
 </div>
 
 <!--END-->
+@endif
 
 <!---SCRIPTS--->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

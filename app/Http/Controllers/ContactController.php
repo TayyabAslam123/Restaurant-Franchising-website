@@ -4,9 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Contact;
 use Illuminate\Http\Request;
+use Session;
+use Exception;
 
 class ContactController extends Controller
 {
+    private $redirect_url = 'admin/contact';
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +17,17 @@ class ContactController extends Controller
      */
     public function index()
     {
-        //
+        $title = 'Contact Us Entries';
+        $headings = ["name" => "Name","email" => "Email","msg" => "Message",
+        "created_at" => "Created At","updated_at" => "Updated At"];
+
+        $url = "contact";
+
+        $values = Contact::paginate(10);
+        $add = $edit  = true;
+
+
+        return view('adminPanel.index', compact('title', 'headings', 'values', 'url', 'add', 'edit'));
     }
 
 
@@ -32,6 +45,15 @@ class ContactController extends Controller
 
     public function destroy($id)
     {
-        //
+        try {
+            Contact::findOrFail($id)->delete();
+            Session::flash('message', 'DELETED SUCCESSFULLY');
+            Session::flash('alert-class', 'alert-success');
+            return redirect($this->redirect_url);
+        } catch (Exception $e) {
+            Session::flash('message', $e->getMessage());
+            Session::flash('alert-class', 'alert-danger');
+            return redirect($this->redirect_url);
+        }
     }
 }

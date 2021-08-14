@@ -88,13 +88,14 @@
                </div>
                <div class="modal-body faq">
                   <div class="container">
-                     <form action="/action_page.php">
+                     <form action="#" id="orderform">
+                     <input type="hidden" name="_token" id="token" value="{{ csrf_token() }}">
                         <div class="row">
                            <div class="col-md-3">
                               <label for="name">Name</label>
                            </div>
                            <div class="col-md-9">
-                              <input type="text" id="name" name="firstname" placeholder="Your name.." required>
+                              <input type="text" id="name" name="name" placeholder="Your name.." maxlength="100" required>
                            </div>
                         </div>
                         <div class="row">
@@ -102,15 +103,15 @@
                               <label for="email">Email</label>
                            </div>
                            <div class="col-md-9">
-                              <input type="email" id="email" name="email" placeholder="name@gmail.com"required>
+                              <input type="email" id="email" name="email" maxlength="100" placeholder="name@gmail.com"required>
                            </div>
                         </div>
                         <div class="row">
                            <div class="col-md-3">
-                              <label for="phone">Phone No</label>
+                              <label for="phone" name="phone" max >Phone No</label>
                            </div>
                            <div class="col-md-9">
-                              <input type="tel" id="phone" name="phone" placeholder="0321 0123456"required>
+                              <input type="tel" id="phone" name="phone" placeholder="0321 0123456" maxlength="100"  required>
                            </div>
                         </div>
                         <div class="row">
@@ -119,18 +120,20 @@
                            </div>
                            <div class="col-md-9">
                               <select id="city" name="city" required>
-                                 <option value="australia">Australia</option>
-                                 <option value="canada">Canada</option>
-                                 <option value="usa">USA</option>
+                                 <option value="lahore">Lahore</option>
+                                 <option value="faisalabad">Faisalabad</option>
+                                 <option value="islamabad">Islamabad</option>
                               </select>
                            </div>
                         </div>
+                        <br>
+                        <button type="submit" class="btn btn-warning btn-block">Submit to get discount</button>
                      </form>
                   </div>
                </div>
                <div class="modal-footer">
                   <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-warning">Submit to get discount</button>
+
                </div>
             </div>
          </div>
@@ -246,7 +249,24 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+      <script>
+	$('#orderform').submit(function(e) {
+	e.preventDefault();
+	  var suc_func = function(msg) {
+      $("#exampleModal").modal('hide')
+
+		  Swal.fire(
+		  'GREAT !',
+		  'Submitted Successfully',
+		  'success'
+		 )
+	  };
+		fetch2("{{url('admin/order')}}",$('form').serialize(),"POST", "JSON",suc_func, false, false, false);
+
+	});
+  </script>
       @yield('scripts')
+
 
    </body>
 </html>
