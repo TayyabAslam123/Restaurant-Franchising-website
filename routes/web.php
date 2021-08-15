@@ -81,6 +81,8 @@ Route::get('/news', function () {
         //
         Route::resource('contact', 'ContactController');
         Route::resource('order', 'OrderController');
+        Route::resource('faq', 'FaqsController');
+        Route::resource('get-frenchise', 'GetFrenchiseController');
 
 
     });

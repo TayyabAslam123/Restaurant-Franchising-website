@@ -3,12 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Order;
+use App\Getfrenchise;
 use Session;
 use Exception;
 
-
-class OrderController extends Controller
+class GetFrenchiseController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,17 +16,17 @@ class OrderController extends Controller
      */
     public function index()
     {
-        $title = 'Order Now Entries';
-        $headings = ["name" => "Name","email" => "Email","phone" => "Phone", "city" => "City",
-        "created_at" => "Created At","updated_at" => "Updated At"];
+        $title = 'Get Frenchise Entries';
+        $headings = ["created_at" => "Created At","updated_at" => "Updated At"];
 
-        $url = "contact";
+        $url = "faq";
 
-        $values = Order::paginate(10);
-        $add = $edit  = true;
+        $values = GetFrenchise::all();
+
+        $add = $edit = $jsonparam = true;
 
 
-        return view('adminPanel.index', compact('title', 'headings', 'values', 'url', 'add', 'edit'));
+        return view('adminPanel.index', compact('title', 'headings', 'values', 'url', 'add', 'edit', 'jsonparam'));
 
     }
 
@@ -49,12 +48,17 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
-        $var = new Order();
-        $var->name = $request->name;
-        $var->email = $request->email;
-        $var->phone = $request->phone;
-        $var->city = $request->city;
+
+        foreach ($request->request as $key => $value) {
+                $json[$key] = $value;
+        }
+
+        $json = json_encode($json);
+
+        $var = new Getfrenchise();
+        $var->details_json = $json;
         $var->save();
+        dd(11);
         return response()->json(['code' => 200,'msg' => 'data saved successfully'], 200);
     }
 
@@ -100,15 +104,6 @@ class OrderController extends Controller
      */
     public function destroy($id)
     {
-        try {
-            Order::findOrFail($id)->delete();
-            Session::flash('message', 'DELETED SUCCESSFULLY');
-            Session::flash('alert-class', 'alert-success');
-            return redirect($this->redirect_url);
-        } catch (Exception $e) {
-            Session::flash('message', $e->getMessage());
-            Session::flash('alert-class', 'alert-danger');
-            return redirect($this->redirect_url);
-        }
+        //
     }
 }

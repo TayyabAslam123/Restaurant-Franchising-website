@@ -28,36 +28,20 @@
                </div>
             </div>
          <div class="row">
+
+   @foreach(getcareers() as $var)
   <div class="col-md-4">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <img src="img/team/team-1.jpg">
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h2 class="card-title" style="text-align: center;">{{$var->title}}</h2>
+        <!-- <img src="img/team/team-1.jpg"> -->
+        <p class="card-text">{{$var->description}}</p>
+        <a href="mailto:info@fri-chicks.com" class="btn btn-primary">Apply Now</a>
       </div>
     </div>
   </div>
-  <div class="col-md-4">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <img src="img/team/team-1.jpg">
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-   <div class="col-md-4">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <img src="img/team/team-1.jpg">
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
+  @endforeach
+
 </div>
         </div>
     </section>

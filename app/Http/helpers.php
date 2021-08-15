@@ -56,3 +56,37 @@ function top_menu($data)
         return false;
     }
 }
+
+
+//get all frenchises
+
+function getFrenchises()
+{
+    $data = App\Franchise::all();
+    return $data;
+}
+
+//get all downloads
+
+function getDownloads()
+{
+    $data = App\Download::all();
+    return $data;
+}
+
+
+//get all downloads
+
+function getcareers()
+{
+    $data = App\Career::orderBy('id', 'DESC')->get();
+    return $data;
+}
+
+//get all news
+
+function getnews()
+{
+    $data = App\Newsfeed::orderBy('id', 'DESC')->paginate(3);
+    return $data;
+}

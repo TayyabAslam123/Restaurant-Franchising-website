@@ -35,6 +35,16 @@
         <th scope="col">{{$heading}}</th>
         @endforeach
         <!--ACTIONS-->
+
+        @if(isset($jsonparam))
+        @foreach ($values as $hh)
+        <?php $details = json_decode($hh->details_json, true);  ?>
+        @foreach ($details as $key=>$val)
+        <th scope="col">{{$key}}</th>
+        @endforeach
+        @endforeach
+        @endif
+
         <th scope="col">Actions</th>
       </tr>
     </thead>
@@ -59,7 +69,14 @@
      </td>
         @endforeach
 
-
+        @if(isset($jsonparam))
+        @foreach ($values as $hh)
+        <?php $details = json_decode($hh->details_json, true);  ?>
+        @foreach ($details as $key=>$val)
+        <td>{{$val}}</th>
+        @endforeach
+        @endforeach
+        @endif
         <!--actions-->
         <td>
           <!--It wil not delete any entry id $disable is set-->
@@ -88,7 +105,7 @@
     </tbody>
   </table>
   <!--PAGINATIONS-->
-  {{$values->links()}}
+
   <!--PAGINATIONS END-->
 
 </div>

@@ -100,56 +100,23 @@
            </div>
            <div class="row">
               <div class="project__slider owl-carousel">
+
+             @foreach(getFrenchises() as $var)
                  <div class="col-lg-3">
-                    <div class="project__slider__item set-bg" data-setbg="{{asset('img/hero/rainer.jpg')}}">
+                    <div class="project__slider__item set-bg" data-setbg="{{Storage::url('public/franchises/'.$var->image)}}">
                        <div class="project__slider__item__hover">
                           <a href="#">
-                             <span>Click to Visit</span>
+                             <span>{{$var->title}}</span>
                              <h5>Canal Road Branch</h5>
                           </a>
                        </div>
                     </div>
                  </div>
-                 <div class="col-lg-3">
-                    <div class="project__slider__item set-bg" data-setbg="{{asset('img/project/newpro.jpg')}}">
-                       <div class="project__slider__item__hover">
-                          <a href="#">
-                             <span>Click to Visit</span>
-                             <h5>Emporium Food Court</h5>
-                          </a>
-                       </div>
-                    </div>
-                 </div>
-                 <div class="col-lg-3">
-                    <div class="project__slider__item set-bg" data-setbg="{{asset('img/project/IMG-20180211-WA0031.jpg')}}">
-                       <div class="project__slider__item__hover">
-                          <a href="#">
-                             <span>Click to Visit</span>
-                             <h5>Lower Mall</h5>
-                          </a>
-                       </div>
-                    </div>
-                 </div>
-                 <div class="col-lg-3">
-                    <div class="project__slider__item set-bg" data-setbg="{{asset('img/project/newpro.jpg')}}">
-                       <div class="project__slider__item__hover">
-                          <a href="#">
-                             <span>Click to Visit</span>
-                             <h5>Karachi Seview</h5>
-                          </a>
-                       </div>
-                    </div>
-                 </div>
-                 <div class="col-lg-3">
-                    <div class="project__slider__item set-bg" data-setbg="{{asset('img/project/IMG-20180211-WA0031.jpg')}}">
-                       <div class="project__slider__item__hover">
-                          <a href="#">
-                             <span>interiors</span>
-                             <h5>Lower River Street Astoria</h5>
-                          </a>
-                       </div>
-                    </div>
-                 </div>
+              @endforeach
+
+
+
+
               </div>
            </div>
         </div>

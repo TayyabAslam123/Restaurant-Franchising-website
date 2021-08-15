@@ -1,7 +1,7 @@
 @extends('user.master')
 @section('main')
 
-	 <!-- Breadcrumb Section Begin -->
+     <!-- Breadcrumb Section Begin -->
       <div class="breadcrumb-option spad set-bg" data-setbg="img/breadcrumb-bg.jpg">
          <div class="container">
             <div class="row">
@@ -22,64 +22,29 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
+
+                @foreach(getnews() as $var)
                     <div class="blog__item__list">
                         <div class="blog__item">
                             <ul>
-                                <li>December 20, 2019 </li>
-                                <li>By John Doe</li>
-                                <li>Planning</li>
+                                <li>{{date_frmt($var->created_at)}}</li>
+
                             </ul>
-                            <h2>Target and Amazon Shopping List for Home Stagers</h2>
-                            <img src="img/blog/blog-1.jpg" alt="">
+                            <h2>{{$var->title}}</h2>
+                            <img src="{{Storage::url('public/news/'.$var->image)}}" alt="" width="300px" height="300px">
                             <div class="blog__item__text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Risus commodo viverra maecenas accumsan
-                                lacus vel facilisis. </p>
+                                <p>{{$var->description}} </p>
 
                             </div>
                         </div>
 
-                        <div class="blog__item">
-                            <ul>
-                                <li>December 20, 2019 </li>
-                                <li>By John Doe</li>
-                                <li>Planning</li>
-                            </ul>
-                            <h2>6 Ideas for Team Building & Employee Appreciation for Home Stagers</h2>
-                            <img src="img/blog/blog-2.jpg" alt="">
-                            <div class="blog__item__text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Risus commodo viverra maecenas accumsan
-                                lacus vel facilisis. </p>
 
-                            </div>
-                        </div>
-                        <div class="blog__item">
-                            <ul>
-                                <li>December 20, 2019 </li>
-                                <li>By John Doe</li>
-                                <li>Planning</li>
-                            </ul>
-                            <h2>How to Find the Best Price Structure for Your Home Staging Services</h2>
-                            <img src="img/blog/blog-2.jpg" alt="">
-                            <div class="blog__item__text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Risus commodo viverra maecenas accumsan
-                                lacus vel facilisis. </p>
 
-                            </div>
-                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="blog__pagination">
-                                <a href="#">1</a>
-                                <a href="#">2</a>
-                                <a href="#">3</a>
-                                <a href="#"><i class="fa fa-angle-double-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                @endforeach
+                <?php $temp = getnews(); ?>
+                {{$temp->links()}}
+
                 </div>
 
             </div>
@@ -100,4 +65,4 @@
          </div>
       </section>
       <!-- Call To Action Section End -->
-			@endsection
+            @endsection

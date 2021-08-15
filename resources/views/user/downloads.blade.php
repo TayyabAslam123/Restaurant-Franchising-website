@@ -27,120 +27,21 @@
                </div>
             </div>
          <div class="row pt-3">
+
+  @foreach(getDownloads() as $var)
   <div class="col-md-4">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="img/FINALCPFriChicks.pdf" class="btn btn-primary" download>Download</a>
+        <h5 class="card-title">{{$var->title}}</h5>
+        <p class="card-text">{{$var->description}}</p>
+
+        <a href="{{Storage::url('public/downloads/'.$var->file)}}" class="btn btn-primary"  download>Download</a>
       </div>
     </div>
   </div>
-  <div class="col-md-4">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary" download>Download</a>
-      </div>
-    </div>
-  </div>
-   <div class="col-md-4">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="img/FINALCPFriChicks.pdf" class="btn btn-primary" download>Download</a>
-      </div>
-    </div>
-  </div>
-</div>
- <div class="row pt-3">
-  <div class="col-md-4">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="img/FINALCPFriChicks.pdf" class="btn btn-primary" download>Download</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary" download>Download</a>
-      </div>
-    </div>
-  </div>
-   <div class="col-md-4">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="img/FINALCPFriChicks.pdf" class="btn btn-primary" download>Download</a>
-      </div>
-    </div>
-  </div>
-</div>
- <div class="row pt-3">
-  <div class="col-md-4">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="img/FINALCPFriChicks.pdf" class="btn btn-primary" download>Download</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary" download>Download</a>
-      </div>
-    </div>
-  </div>
-   <div class="col-md-4">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="img/FINALCPFriChicks.pdf" class="btn btn-primary" download>Download</a>
-      </div>
-    </div>
-  </div>
-</div>
- <div class="row pt-3">
-  <div class="col-md-4">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="img/FINALCPFriChicks.pdf" class="btn btn-primary" download>Download</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary" download>Download</a>
-      </div>
-    </div>
-  </div>
-   <div class="col-md-4">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="img/FINALCPFriChicks.pdf" class="btn btn-primary" download>Download</a>
-      </div>
-    </div>
-  </div>
+  @endforeach
+
+
 </div>
         </div>
     </section>
