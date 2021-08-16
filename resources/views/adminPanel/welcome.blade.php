@@ -97,7 +97,7 @@
               <h6><b>Total Contact Us Entries</b> </h6>
             </div>
             <div class="h5 mb-0 font-weight-bold text-gray-800">
-              <h2><b>50</b></h2>
+              <h2><b>{{App\Contact::count()}}</b></h2>
             </div>
           </div>
         </div>
@@ -113,7 +113,7 @@
               <h6><b>Total Orders Entries</b> </h6>
             </div>
             <div class="h5 mb-0 font-weight-bold text-gray-800">
-              <h2><b>50</b></h2>
+              <h2><b>{{App\Order::count()}}</b></h2>
             </div>
           </div>
         </div>
@@ -128,7 +128,7 @@
               <h6><b>Total Faqs Entries</b> </h6>
             </div>
             <div class="h5 mb-0 font-weight-bold text-gray-800">
-              <h2><b>50</b></h2>
+              <h2><b>{{App\Faq::count()}}</b></h2>
             </div>
           </div>
         </div>
@@ -143,7 +143,7 @@
               <h6><b>Total Get Franchise Entries</b> </h6>
             </div>
             <div class="h5 mb-0 font-weight-bold text-gray-800">
-              <h2><b>50</b></h2>
+              <h2><b>{{App\GetFrenchise::count()}}</b></h2>
             </div>
           </div>
         </div>

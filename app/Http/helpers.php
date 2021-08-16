@@ -10,8 +10,8 @@ function adminMenu()
             "___________" => "",
             "Contact Entries " => "admin/contact",
             "Order Now Entries" => "admin/order",
-            "Faqs Entries" => "admin/faqs",
-            "Get Frenchise Entrise" => "admin/faqs",];
+            "Faqs Entries" => "admin/faq",
+            "Get Frenchise Entrise" => "admin/get-frenchise",];
 
             return $data;
 }

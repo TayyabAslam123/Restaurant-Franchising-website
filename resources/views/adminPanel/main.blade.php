@@ -13,13 +13,7 @@
     <link href="{{URL::to('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i')}}" rel="stylesheet">
     <!-- Custom styles for this template-->
     <link href="{{URL::to('admin/css/sb-admin-2.min.css')}}" rel="stylesheet">
-    <!--HIGH CHARTS-->
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/data.js"></script>
-    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/export-data.js"></script>
-    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
   </head>
   <body id="page-top">
     <!-- Page Wrapper -->
@@ -34,23 +28,23 @@
       </a>
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="{{ url('/adminpanel') }}">
+        <a class="nav-link" href="{{ url('/admin/dashboard') }}">
         <i class="fas fa-fw fa-tachometer-alt"></i>
         <span>Dashboard</span></a>
       </li>
       <!-- Divider -->
       <hr class="sidebar-divider">
       <!-- Heading -->
-     
+
       @foreach (adminMenu() as $key=>$value)
-          
+
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="{{url($value)}}">
         <span>{{$key}}</span>
         </a>
       </li>
-  
+
       @endforeach
       <!-- Nav Item - Tables -->
       <!-- Divider -->
@@ -80,12 +74,12 @@
             <ul class="navbar-nav mr-auto">
             </ul>
             <!-- Right Side Of Navbar -->
-       
+
           <a href="{{url('/logout')}}">
             <button class="btn btn-danger btn-lg">
               LOGOUT
             </button>
-          </a> 
+          </a>
           </div>
         </div>
       </nav>
@@ -132,11 +126,7 @@
     <script src="{{URL::to('admin/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
     <!-- Custom scripts for all pages-->
     <script src="{{URL::to('admin/js/sb-admin-2.min.js')}}"></script>
-    <!-- Page level plugins -->
-    <script src="{{URL::to('admin/vendor/chart.js/Chart.min.js')}}"></script>
-    <!-- Page level custom scripts -->
-    <script src="{{URL::to('admin/js/demo/chart-area-demo.js')}}"></script>
-    <script src="{{URL::to('admin/js/demo/chart-pie-demo.js')}}"></script>
+
   </body>
 </html>
 

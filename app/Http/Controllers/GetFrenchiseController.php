@@ -9,6 +9,7 @@ use Exception;
 
 class GetFrenchiseController extends Controller
 {
+    private $redirect_url = 'admin/get-frenchise';
     /**
      * Display a listing of the resource.
      *
@@ -19,7 +20,7 @@ class GetFrenchiseController extends Controller
         $title = 'Get Frenchise Entries';
         $headings = ["created_at" => "Created At","updated_at" => "Updated At"];
 
-        $url = "faq";
+        $url = "get-frenchise";
 
         $values = GetFrenchise::all();
 
@@ -27,7 +28,6 @@ class GetFrenchiseController extends Controller
 
 
         return view('adminPanel.index', compact('title', 'headings', 'values', 'url', 'add', 'edit', 'jsonparam'));
-
     }
 
     /**
@@ -50,7 +50,12 @@ class GetFrenchiseController extends Controller
     {
 
         foreach ($request->request as $key => $value) {
+            if ($key == "_token") {
+                continue;
+            } else {
                 $json[$key] = $value;
+            }
+
         }
 
         $json = json_encode($json);
@@ -58,7 +63,7 @@ class GetFrenchiseController extends Controller
         $var = new Getfrenchise();
         $var->details_json = $json;
         $var->save();
-        dd(11);
+
         return response()->json(['code' => 200,'msg' => 'data saved successfully'], 200);
     }
 
@@ -104,6 +109,15 @@ class GetFrenchiseController extends Controller
      */
     public function destroy($id)
     {
-        //
+        try {
+            GetFrenchise::findOrFail($id)->delete();
+            Session::flash('message', 'DELETED SUCCESSFULLY');
+            Session::flash('alert-class', 'alert-success');
+            return redirect($this->redirect_url);
+        } catch (Exception $e) {
+            Session::flash('message', $e->getMessage());
+            Session::flash('alert-class', 'alert-danger');
+            return redirect($this->redirect_url);
+        }
     }
 }

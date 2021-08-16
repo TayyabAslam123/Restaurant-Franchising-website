@@ -26,7 +26,7 @@
                      <span>Get your</span>
                      <h2>Franchise</h2>
                   </div>
-                  <form action="{{url('admin/get-frenchise')}}" method="POST" role="form">
+                  <form action="#" method="POST" role="form" id="myform">
                   <input type="hidden" name="_token" id="token" value="{{ csrf_token() }}">
                   <div class="form-wizard-header">
                         <h3>Fill all form field to go next step</h3>
@@ -206,3 +206,20 @@
       </section>
       <!-- Call To Action Section End -->
       @endsection
+      @section('scripts')
+      <script>
+	$('#myform').submit(function(e) {
+	e.preventDefault();
+	  var suc_func = function(msg) {
+
+		  Swal.fire(
+		  'THANKS !',
+		  'For Submission',
+		  'success'
+		 )
+	  };
+		fetch2("{{url('admin/get-frenchise')}}",$(this).serialize(),"POST", "JSON",suc_func, false, false, false);
+
+	});
+  </script>
+  @endsection

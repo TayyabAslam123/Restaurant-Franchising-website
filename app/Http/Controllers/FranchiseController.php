@@ -100,7 +100,18 @@ class FranchiseController extends Controller
      */
     public function edit($id)
     {
-        //
+        $orient = Franchise::whereId($id)->first();
+
+        $data = [
+            ['name' => 'Title', "naming" => "title","type" => "text", "attrib" => 'required="required" name="title" maxlength="100"'],
+            ['name' => 'Image (Choose new only if you want to change)',"naming" => "image", "type" => "file", "attrib" => 'name="img" '],
+
+        ];
+        $title = 'FRANCHISES';
+        $url = url('admin/franchise');
+        $method = "POST";
+
+        return view('adminPanel.edit', compact('title', 'data', 'url', 'method', 'orient'));
     }
 
     /**
@@ -112,7 +123,37 @@ class FranchiseController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        try {
+          ## If we have img we will place it storage folder and save its name in data base
+            if ($request->hasFile('img')) {
+                $filenameWithExt = $request->file('img')->getClientOriginalName();
+                $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+                $extension = $request->file('img')->getClientOriginalExtension();
+                $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+                $path = $request->file('img')->storeAs('public/franchises', $fileNameToStore);
+                ##delete previous one
+                $data = Franchise::where('id', $id)->first();
+                if (\File::exists(public_path('storage/franchises/' . $data->image))) {
+                    \File::delete(public_path('storage/franchises/' . $data->image));
+                }
+            }
+
+            $var = Franchise::findOrFail($id);
+            $var->title = $request->title;
+
+            if ($request->hasFile('img')) {
+                $var->image = $fileNameToStore;
+            }
+            $var->save();
+            Session::flash('message', 'UPDATED SUCCESSFULLY');
+            Session::flash('alert-class', 'alert-success');
+            return redirect($this->redirect_url);
+        } catch (Exception $e) {
+            Session::flash('message', $e->getMessage());
+            Session::flash('alert-class', 'alert-danger');
+
+            return redirect($this->redirect_url);
+        }
     }
 
     /**
