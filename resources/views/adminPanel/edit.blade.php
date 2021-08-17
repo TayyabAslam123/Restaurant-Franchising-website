@@ -36,9 +36,11 @@
 @if(isset($orient->image))
 <h3>Previous Image</h3>
 <img src="{{asset('storage/'.strtolower($title).'/'.$orient->image)}}" width="200px" height="200px">
-@else
+@elseif($orient->file)
 <h3>Previous File</h3>
 <a href="{{asset('storage/downloads/'.$orient->file)}}" download>Download file..</a>
+@else
+
 @endif
 
 @endsection
