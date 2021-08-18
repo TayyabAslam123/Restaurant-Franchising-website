@@ -21,14 +21,11 @@
 
 
 
-<br>
-<!--SEARCH ON FORM-->
-<input id="myInput" type="text" class="form-control" placeholder="SEARCH RECORDS FROM TABLE" style="height:50px; font-weight:bold;">
-<!--END-->
+
 
 <!--LISTING ALL ENTRIES-->
 <div class="table-responsive">
-  <table class="table table-striped">
+<table id="dt" class="table table-striped table-bordered second" style="width:100%">
     <thead>
       <tr>
         @foreach ($headings as $heading)
@@ -56,9 +53,9 @@
         @foreach ($headings as $key=>$paired_value)
      <td>
           @if($key=='created_at')
-          {{date_frmt($value->key)}}
+          {{date_frmt($value->created_at)}}
           @elseif($key=='updated_at')
-          {{date_frmt($value->key)}}
+          {{date_frmt($value->updated_at)}}
           @elseif($key=='image')
           <img src="{{asset('storage/'.strtolower($title).'/'.$value->image)}}" width="100px" height="100px">
           @elseif($key=='file')

@@ -171,7 +171,11 @@ class NewsController extends Controller
     public function destroy($id)
     {
         try {
-            Newsfeed::findOrFail($id)->delete();
+            $data = Newsfeed::findOrFail($id);
+            if (\File::exists(public_path('storage/news/' . $data->image))) {
+                \File::delete(public_path('storage/news/' . $data->image));
+            }
+            $data->delete();
             Session::flash('message', 'DELETED SUCCESSFULLY');
             Session::flash('alert-class', 'alert-success');
             return redirect($this->redirect_url);

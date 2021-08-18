@@ -18,7 +18,7 @@ class FranchiseController extends Controller
     public function index()
     {
         $title = 'FRANCHISES';
-        $headings = ["title" => "Tile",
+        $headings = ["title" => "Tile","address" => "Address",
         "created_at" => "Created At","updated_at" => "Updated At","image" => "image"];
 
         $url = "franchise";
@@ -26,6 +26,7 @@ class FranchiseController extends Controller
         $values = Franchise::paginate(10);
         $data = [
             ['name' => 'Title', "type" => "text", "attrib" => 'required="required" name="title" maxlength="100"'],
+            ['name' => 'Address', "type" => "text", "attrib" => 'required="required" name="address" maxlength="200"'],
             ['name' => 'Image', "type" => "file", "attrib" => 'required="required" name="img" '],
 
         ];
@@ -67,6 +68,7 @@ class FranchiseController extends Controller
 
             $var = new Franchise();
             $var->title = $request->title;
+            $var->address = $request->address;
             $var->image = $fileNameToStore;
 
 
@@ -104,6 +106,7 @@ class FranchiseController extends Controller
 
         $data = [
             ['name' => 'Title', "naming" => "title","type" => "text", "attrib" => 'required="required" name="title" maxlength="100"'],
+            ['name' => 'Address',"naming" => "address" ,"type" => "text", "attrib" => 'required="required" name="address" maxlength="100"'],
             ['name' => 'Image (Choose new only if you want to change)',"naming" => "image", "type" => "file", "attrib" => 'name="img" '],
 
         ];
@@ -140,6 +143,7 @@ class FranchiseController extends Controller
 
             $var = Franchise::findOrFail($id);
             $var->title = $request->title;
+            $var->address = $request->address;
 
             if ($request->hasFile('img')) {
                 $var->image = $fileNameToStore;
@@ -165,7 +169,11 @@ class FranchiseController extends Controller
     public function destroy($id)
     {
         try {
-            Franchise::findOrFail($id)->delete();
+            $data = Franchise::findOrFail($id);
+            if (\File::exists(public_path('storage/franchises/' . $data->image))) {
+                \File::delete(public_path('storage/franchises/' . $data->image));
+            }
+            $data->delete();
             Session::flash('message', 'DELETED SUCCESSFULLY');
             Session::flash('alert-class', 'alert-success');
             return redirect($this->redirect_url);

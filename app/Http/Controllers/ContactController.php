@@ -9,6 +9,10 @@ use Exception;
 
 class ContactController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['store']);
+    }
     private $redirect_url = 'admin/contact';
     /**
      * Display a listing of the resource.

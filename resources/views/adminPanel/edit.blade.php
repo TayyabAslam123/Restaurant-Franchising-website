@@ -29,7 +29,7 @@
 {{csrf_field()}}
 
 <input type="hidden" name="_method" value="PUT">
-<button class="btn btn-primary"> Update</button>
+<button class="btn btn-primary btn-block"> Update</button>
 
 </form>
 </div>

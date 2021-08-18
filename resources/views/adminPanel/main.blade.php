@@ -13,7 +13,9 @@
     <link href="{{URL::to('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i')}}" rel="stylesheet">
     <!-- Custom styles for this template-->
     <link href="{{URL::to('admin/css/sb-admin-2.min.css')}}" rel="stylesheet">
-
+<!--dt-->
+<link href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css" rel="stylesheet">
+<!--dt-->
   </head>
   <body id="page-top">
     <!-- Page Wrapper -->
@@ -21,7 +23,7 @@
     <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
       <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{url('/adminpanel')}}">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{url('/')}}">
         <div class="sidebar-brand-icon rotate-n-15">
         </div>
         <img src="{{asset('img/logo.png')}}" style="background-color: white;" width="100%" height="300%">
@@ -126,7 +128,17 @@
     <script src="{{URL::to('admin/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
     <!-- Custom scripts for all pages-->
     <script src="{{URL::to('admin/js/sb-admin-2.min.js')}}"></script>
+    <!--data-table-->
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js" type="text/javascript"></script>
+
+   <script>
+     $(document).ready( function () {
+    $('#dt').DataTable();
+} );
+   </script>
+<!--datatable-->
+
+
 
   </body>
 </html>
-

@@ -20,7 +20,7 @@
       <link rel="stylesheet" href="{{asset('css/slick.css')}}" type="text/css">
       <link rel="stylesheet" href="{{asset('css/style.css')}}" type="text/css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-      <!--sweet alerts-->
+   <!--sweet alerts-->
       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
    </head>
@@ -33,7 +33,7 @@
       <div class="offcanvas-menu-overlay"></div>
       <div class="offcanvas-menu-wrapper">
          <div class="offcanvas__logo">
-            <a href="#"><img src="{{asset('img/logo.png')}}" alt=""></a>
+            <a href="{{url('/')}}"><img src="{{asset('img/logo.png')}}" alt=""></a>
          </div>
          <div id="mobile-menu-wrap"></div>
          <!-- <div class="offcanvas__widget">
@@ -150,14 +150,7 @@
                         <h2>Ready To Work With Us?</h2>
                      </div>
                   </div>
-                  <div class="col-lg-4 col-md-6">
-                     <div class="footer__top__newslatter">
-                        <form action="#">
-                           <input type="text" placeholder="Enter your email...">
-                           <button type="submit"><i class="fa fa-send"></i></button>
-                        </form>
-                     </div>
-                  </div>
+
                </div>
             </div>
             <div class="row text-white" >
@@ -195,11 +188,13 @@
                   <div class="footer__widget">
                      <h6>Services</h6>
                      <ul>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Downloads</a></li>
-                        <li><a href="#">Profile</a></li>
-                        <li><a href="#">Profile</a></li>
+
+                        <li><a href="{{url('/profile')}}">Profile</a></li>
+                        <li><a href="{{url('/news')}}">News</a></li>
+                        <li><a href="{{url('/careers')}}">Careers</a></li>
+                        <li><a href="{{url('/downloads')}}">Downloads</a></li>
+                        <li><a href="{{url('/faqs')}}">Faqs</a></li>
+                        <li><a href="{{url('/admin/dashboard')}}">Login</a></li>
                      </ul>
                   </div>
                </div>
@@ -216,23 +211,18 @@
             </div>
             <div class="copyright">
                <div class="row text-white">
-                  <div class="col-lg-8 col-md-7">
+                  <div class="col-lg-12 col-md-7">
                      <div class="copyright__text">
-                        <p>
+                        <h5>
                            Copyright © <script>
                               document.write(new Date().getFullYear());
                            </script> All rights reserved | This website is design <i class="fa fa-heart-o"
                               aria-hidden="true"></i> by <a href="https://gigacreatives.com"
                               target="_blank">Giga Creatives</a>
-                        </p>
+</h5>
                      </div>
                   </div>
-                  <div class="col-lg-4 col-md-5">
-                     <div class="copyright__widget">
-                        <a href="#">Terms of use</a>
-                        <a href="#">Privacy Policy</a>
-                     </div>
-                  </div>
+
                </div>
             </div>
          </div>
@@ -249,19 +239,23 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-      <script>
+
+    <script>
 	$('#orderform').submit(function(e) {
 	e.preventDefault();
 	  var suc_func = function(msg) {
-      $("#exampleModal").modal('hide')
+      $("#exampleModal").modal('hide');
 
 		  Swal.fire(
 		  'GREAT !',
 		  'Submitted Successfully',
 		  'success'
-		 )
+		 );
+       setTimeout(function(){ window.location.href = "https://order.fri-chicks.com/"}, 2000);
+      ;
 	  };
-		fetch2("{{url('admin/order')}}",$('form').serialize(),"POST", "JSON",suc_func, false, false, false);
+
+		fetch2("{{url('admin/order')}}",$(this).serialize(),"POST", "JSON",suc_func, false, false, false);
 
 	});
   </script>

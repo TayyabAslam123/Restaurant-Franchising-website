@@ -18,6 +18,7 @@ function adminMenu()
 //date formet
 function date_frmt($date)
 {
+
     return date('d M Y', strtotime($date));
 }
 
@@ -88,5 +89,11 @@ function getcareers()
 function getnews()
 {
     $data = App\Newsfeed::orderBy('id', 'DESC')->paginate(3);
+    return $data;
+}
+
+function shownews()
+{
+    $data = App\Newsfeed::orderBy('id', 'DESC')->take(3)->get();
     return $data;
 }

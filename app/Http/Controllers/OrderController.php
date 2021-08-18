@@ -7,9 +7,13 @@ use App\Order;
 use Session;
 use Exception;
 
-
 class OrderController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['store']);
+    }
+    private $redirect_url = 'admin/order';
     /**
      * Display a listing of the resource.
      *
@@ -21,14 +25,13 @@ class OrderController extends Controller
         $headings = ["name" => "Name","email" => "Email","phone" => "Phone", "city" => "City",
         "created_at" => "Created At","updated_at" => "Updated At"];
 
-        $url = "contact";
+        $url = "order";
 
         $values = Order::paginate(10);
         $add = $edit  = true;
 
 
         return view('adminPanel.index', compact('title', 'headings', 'values', 'url', 'add', 'edit'));
-
     }
 
     /**
@@ -49,6 +52,7 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
+
         $var = new Order();
         $var->name = $request->name;
         $var->email = $request->email;

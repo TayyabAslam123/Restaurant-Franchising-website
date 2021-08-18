@@ -9,6 +9,10 @@ use Exception;
 
 class GetFrenchiseController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['store']);
+    }
     private $redirect_url = 'admin/get-frenchise';
     /**
      * Display a listing of the resource.

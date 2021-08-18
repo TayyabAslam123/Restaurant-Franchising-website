@@ -176,10 +176,10 @@
                   <div class="team__text">
                      <div class="team__title">
                         <h5>{{$var->title}}</h5>
-                        <span>CEO & Founder</span>
+
                      </div>
                      <div class="team__social">
-                        <p><i class="fa fa-facebook"></i></p>
+                        <p><i class="fa fa-map"></i>{{$var->address}}</p>
 
                      </div>
                   </div>

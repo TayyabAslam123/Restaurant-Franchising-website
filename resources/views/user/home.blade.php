@@ -15,18 +15,7 @@
                  </div>
               </div>
            </div>
-           <div class="hero__items set-bg" data-setbg="{{asset('img/hero/leung.jpg')}}">
-              <div class="hero__text">
-                 <h2>Quality that you can taste.</h2>
-                 <a href="{{url('/contact-us')}}" class="primary-btn">CONTACT US</a>
-                 <div class="hero__social">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                 </div>
-              </div>
-           </div>
+
            <div class="hero__items set-bg" data-setbg="{{asset('img/hero/emerson.jpg')}}">
               <div class="hero__text">
                  <h2>Quality that you can taste.</h2>
@@ -39,18 +28,7 @@
                  </div>
               </div>
            </div>
-           <div class="hero__items set-bg" data-setbg="{{asset('img/hero/lasse.jpg')}}">
-              <div class="hero__text">
-                 <h2>Quality that you can taste.</h2>
-                 <a href="{{url('/contact-us')}}" class="primary-btn">CONTACT US</a>
-                 <div class="hero__social">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                 </div>
-              </div>
-           </div>
+
         </div>
         <div class="slide-num" id="snh-1"></div>
         <div class="slider__progress"><span></span></div>
@@ -107,7 +85,7 @@
                        <div class="project__slider__item__hover">
                           <a href="#">
                              <span>{{$var->title}}</span>
-                             <h5>Canal Road Branch</h5>
+                             <h6>{{$var->address}}</h6>
                           </a>
                        </div>
                     </div>
@@ -145,21 +123,7 @@
               <div class="item web">
                  <div style="background-image: url(http://www.esse90.it/wp-content/uploads/2017/07/img-placeholder.png);"></div>
               </div>
-              <div class="item web">
-                 <div style="background-image: url(https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150);"></div>
-              </div>
-              <div class="item seo">
-                 <div style="background-image: url(http://unitel.com.br/wp-content/uploads/2014/03/img-3.gif);"></div>
-              </div>
-              <div class="item graphics">
-                 <div style="background-image: url(http://www.dracorion.com/wp-content/uploads/2012/03/placeholder4-480x300-crop.jpg);"></div>
-              </div>
-              <div class="item seo">
-                 <div style="background-image: url(http://dummyimage.com/600x250/666666/fff&text=Dynamic+Dummy+Image+Generator);"></div>
-              </div>
-              <div class="item web">
-                 <div style="background-image: url(http://fpoimg.com/600x250/For%20Place%20Only%20Image);"></div>
-              </div>
+
            </div>
         </div>
      </section>
@@ -209,48 +173,26 @@
                <div class="col-md-12">
                    <div class="section-title text-center">
                        <span>Latest News</span>
-                       <h2>From our blog</h2>
+
                    </div>
                </div>
                </div>
            </div>
            <div class="row">
+
+           @foreach(shownews() as $item)
                <div class="col-lg-4 col-md-6 col-sm-6">
                    <div class="latest__item">
-                       <div class="latest__item__pic">
-                           <img src="{{asset('img/blog/latest-1.jpg')}}" alt="">
-                       </div>
+
                        <div class="latest__item__text">
-                           <span>Architecture</span>
-                           <h4>Target and Amazon Shopping List for Home Stagers</h4>
-                           <a href="#">Read more</a>
+
+                           <h4>{{$item->title}}</h4>
+                           <a href="{{url('/news')}}">Views All News</a>
                        </div>
                    </div>
                </div>
-               <div class="col-lg-4 col-md-6 col-sm-6">
-                   <div class="latest__item">
-                       <div class="latest__item__pic">
-                           <img src="{{asset('img/blog/latest-2.jpg')}}" alt="">
-                       </div>
-                       <div class="latest__item__text">
-                           <span>Interior</span>
-                           <h4>6 Ideas for Team Building and Employee Appreciation for Home Stagers</h4>
-                           <a href="#">Read more</a>
-                       </div>
-                   </div>
-               </div>
-               <div class="col-lg-4 col-md-6 col-sm-6">
-                   <div class="latest__item">
-                       <div class="latest__item__pic">
-                           <img src="{{asset('img/blog/latest-3.jpg')}}" alt="">
-                       </div>
-                       <div class="latest__item__text">
-                           <span>Planning</span>
-                           <h4>How to Find the Best Price Structure for Your Home Staging Services</h4>
-                           <a href="#">Read more</a>
-                       </div>
-                   </div>
-               </div>
+            @endforeach
+
            </div>
        </div>
    </section>

@@ -9,6 +9,10 @@ use Exception;
 
 class FaqsController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['store']);
+    }
     private $redirect_url = 'admin/faq';
     /**
      * Display a listing of the resource.

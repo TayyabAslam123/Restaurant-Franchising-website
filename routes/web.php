@@ -71,18 +71,25 @@ Route::get('/news', function () {
     Route::group(['prefix' => 'admin'], function () {
 
         Route::get('/dashboard', function () {
-            return view('adminpanel.welcome');
-        });
+       return view('adminpanel.welcome');
+        })->middleware('auth');
 
-        Route::resource('news', 'NewsController');
-        Route::resource('downloads', 'DownloadController');
-        Route::resource('careers', 'CareersController');
-        Route::resource('franchise', 'FranchiseController');
+        Route::resource('news', 'NewsController')->middleware('auth');
+        Route::resource('downloads', 'DownloadController')->middleware('auth');
+        Route::resource('careers', 'CareersController')->middleware('auth');
+        Route::resource('franchise', 'FranchiseController')->middleware('auth');
         //
         Route::resource('contact', 'ContactController');
         Route::resource('order', 'OrderController');
         Route::resource('faq', 'FaqsController');
         Route::resource('get-frenchise', 'GetFrenchiseController');
-
-
     });
+
+    Auth::routes([
+    'register' => false, // Registration Routes...
+    'reset' => false, // Password Reset Routes...
+    'verify' => false, // Email Verification Routes...
+    ]);
+##route to log out the user
+    Route::get('logout', 'Auth\LoginController@logout');
+    Route::get('/home', 'HomeController@index')->name('home');

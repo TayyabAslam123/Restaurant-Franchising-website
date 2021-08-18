@@ -170,7 +170,11 @@ class DownloadController extends Controller
     public function destroy($id)
     {
         try {
-            Download::findOrFail($id)->delete();
+            $data = Download::findOrFail($id);
+            if (\File::exists(public_path('storage/downloads/' . $data->file))) {
+                \File::delete(public_path('storage/downloads/' . $data->file));
+            }
+            $data->delete();
             Session::flash('message', 'DELETED SUCCESSFULLY');
             Session::flash('alert-class', 'alert-success');
             return redirect($this->redirect_url);
