@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Getfrenchise extends Model
 {
-    protected $table = "getfrenchises";
+    protected $table='getfrenchises';
 }

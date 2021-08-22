@@ -143,7 +143,7 @@
               <h6><b>Total Get Franchise Entries</b> </h6>
             </div>
             <div class="h5 mb-0 font-weight-bold text-gray-800">
-              <h2><b>{{App\GetFrenchise::count()}}</b></h2>
+              <h2><b>{{$extra}}</b></h2>
             </div>
           </div>
         </div>

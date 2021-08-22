@@ -47,9 +47,6 @@
                      <div class="about__para__text">
                         <p>(FC) Fri-Chicks is a rapidly growing fast-food chain in the region. (FC) Fri-Chicks is specialized in serving the tastiest crumbed fried chicken using a secret recipe which includes a unique blend of the choicest herbs by spices. It is therefore of little wonder, (FC) Fri-Chicks is synonym to words such as "Real Recipe, Real Taste, Real Fried Chicken." (FC) Fri-Chicks begain its gourney with a yet determined dream to create a brand that brings happiness, satisfaction, and smiles to our valued customers.
                         </p>
-                        <!-- <p>Anisotropic elements that randomly sample. Quisque sit amet nisl ante. Fusce lacinia non
-                           tellus id gravida. Cras neque dolor, volutpat et hendrerit et.
-                        </p> -->
                      </div>
                      <a href="{{url('/about')}}" class="primary-btn normal-btn">ABOUT US</a>
                   </div>
@@ -173,7 +170,7 @@
                <div class="col-md-12">
                    <div class="section-title text-center">
                        <span>Latest News</span>
-
+                            <h2>From our blog</h2>
                    </div>
                </div>
                </div>

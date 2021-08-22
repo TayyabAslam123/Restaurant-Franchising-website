@@ -70,10 +70,7 @@ Route::get('/news', function () {
   ##URL-GROUPING
     Route::group(['prefix' => 'admin'], function () {
 
-        Route::get('/dashboard', function () {
-       return view('adminpanel.welcome');
-        })->middleware('auth');
-
+        Route::get('/dashboard','GetFrenchiseController@dashboard')->middleware('auth');
         Route::resource('news', 'NewsController')->middleware('auth');
         Route::resource('downloads', 'DownloadController')->middleware('auth');
         Route::resource('careers', 'CareersController')->middleware('auth');

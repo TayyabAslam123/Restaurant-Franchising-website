@@ -97,3 +97,12 @@ function shownews()
     $data = App\Newsfeed::orderBy('id', 'DESC')->take(3)->get();
     return $data;
 }
+
+
+function extra()
+{
+    $data = App\GetFrenchise::all();
+    $data = count($data);
+    return $data;
+}
+

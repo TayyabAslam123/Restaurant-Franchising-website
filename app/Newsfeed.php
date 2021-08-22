@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Newsfeed extends Model
 {
-    protected $table='News';
+    protected $table='news';
 }

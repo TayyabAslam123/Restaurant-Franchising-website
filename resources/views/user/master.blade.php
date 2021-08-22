@@ -48,7 +48,7 @@
             <div class="row">
                <div class="col-lg-4">
                   <div class="header__logo">
-                     <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                     <a href="https://fri-chicks.com/"><img src="img/logo.png" alt=""></a>
                   </div>
                </div>
                <div class="col-lg-8">
@@ -141,7 +141,7 @@
 
       @yield('main')
       <!-- Footer Section Begin -->
-      <footer class="footer set-bg" data-setbg="{{asset('img/footer-bg.jpg')}}">
+      <footer class="footer set-bg" style="background-color:black;">
          <div class="container">
             <div class="footer__top">
                <div class="row">
@@ -159,17 +159,10 @@
                      <div class="footer__logo">
                         <a href="#"><img src="{{asset('img/logo.png')}}" alt=""></a>
                      </div>
-                     <p>7176 Blue Spring Lane <br />Santa Monica, CA 90403</p>
-                     <ul>
-                        <li>Info@gmail.com</li>
-                        <li>+92 123 456 789</li>
-                     </ul>
-                     <div class="footer__social">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                     </div>
+                     <p>ESTABLISHED IN PAKISTAN 2002,
+(FC) Fri-Chicks is a rapidly growing fast-food chain in the region.</p>
+                    
+                    
                   </div>
                </div>
                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
@@ -200,12 +193,21 @@
                </div>
                <div class="col-lg-4 col-md-6 col-sm-6">
                   <div class="footer__address">
-                     <h6>Get In Touch</h6>
-                     <p>7176 Blue Spring Lane <br />Santa Monica, CA 90403</p>
+                     <h6>Corporate Office</h6>
+                     <p>303, Alfalah Building, 
+The Mall,<br /> Lahore - 54000
+Pakistan</p>
                      <ul>
-                        <li>Info@gmail.com</li>
-                        <li>+92 123 456 789</li>
+                        <li>Info@fri-chicks.com</li>
+                        <li>Tel:042-36284744</li>
+                        <li>UAN:0311-1555177</li>
                      </ul>
+                      <div class="footer__social">
+                        <a href="#"><i class="fa fa-facebook"></i></a> &nbsp;&nbsp;&nbsp;
+                        <a href="#"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;
+                        <a href="#"><i class="fa fa-instagram"></i></a>&nbsp;&nbsp;&nbsp;
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                     </div>
                   </div>
                </div>
             </div>
@@ -213,13 +215,13 @@
                <div class="row text-white">
                   <div class="col-lg-12 col-md-7">
                      <div class="copyright__text">
-                        <h5>
+                        <p>
                            Copyright © <script>
                               document.write(new Date().getFullYear());
                            </script> All rights reserved | This website is design <i class="fa fa-heart-o"
                               aria-hidden="true"></i> by <a href="https://gigacreatives.com"
                               target="_blank">Giga Creatives</a>
-</h5>
+</p>
                      </div>
                   </div>
 

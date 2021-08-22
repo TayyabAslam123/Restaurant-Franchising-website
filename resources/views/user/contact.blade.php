@@ -27,8 +27,7 @@
                         <span>Information</span>
                         <h2>Contact Details</h2>
                      </div>
-                     <p>As you might expect of a company that began as a high-end interiors contractor, we pay strict
-                        attention.
+                     <p>OUR ABILITY TO BRING OUTSTANDING RESULTS TO OUR CUSTOMERS.
                      </p>
                   </div>
                </div>
@@ -41,7 +40,7 @@
                      </div>
                      <div class="contact__widget__item__text">
                         <h5>Phone Number</h5>
-                        <span>+01 123 456 789</span>
+                        <span>042-36284744</span>
                      </div>
                   </div>
                </div>
@@ -52,7 +51,7 @@
                      </div>
                      <div class="contact__widget__item__text">
                         <h5>Email Address</h5>
-                        <span>info.colorlib@gmail.com</span>
+                        <span>info@fri-chicks.com</span>
                      </div>
                   </div>
                </div>
@@ -63,7 +62,7 @@
                      </div>
                      <div class="contact__widget__item__text">
                         <h5>Office Location</h5>
-                        <span>7176 Blue Spring Lane, NY, US</span>
+                        <span>Office no 306,3rd Floor Alflah bulding mall road Lahore</span>
                      </div>
                   </div>
                </div>
@@ -77,11 +76,10 @@
                <div class="col-lg-5">
                   <div class="contact__form__text">
                      <div class="section-title">
-                        <span>Form</span>
+                        <span>Connect with us</span>
                         <h2>Get in touch</h2>
                      </div>
-                     <p>As you might expect of a company that began as a high-end interiors contractor, we pay strict
-                        attention.
+                     <p>OUR ABILITY TO BRING OUTSTANDING RESULTS TO OUR CUSTOMERS.
                      </p>
                   </div>
                </div>

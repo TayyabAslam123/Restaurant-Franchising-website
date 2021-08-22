@@ -124,4 +124,11 @@ class GetFrenchiseController extends Controller
             return redirect($this->redirect_url);
         }
     }
+    
+      public function dashboard()
+    {
+        $extra = GetFrenchise::all();
+        $extra = count($extra);
+        return view('adminPanel.welcome', compact('extra'));
+    }
 }
