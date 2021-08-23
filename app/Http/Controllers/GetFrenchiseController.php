@@ -124,7 +124,7 @@ class GetFrenchiseController extends Controller
             return redirect($this->redirect_url);
         }
     }
-    
+
       public function dashboard()
     {
         $extra = GetFrenchise::all();
