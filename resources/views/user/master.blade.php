@@ -68,6 +68,9 @@
                               <li><a href="{{url('/news')}}">News</a></li>
                               <li><a href="{{url('/careers')}}">Careers</a></li>
                               <li ><a href="{{url('/downloads')}}">Downloads</a></li>
+                              <li ><a href="{{url('/our-vendors')}}">Our Vendors</a></li>
+                              <li><a href="{{url('/our-clients')}}">Our Clients</a></li>
+
                            </ul>
                         </li>
                         <li class="order-o"><a class="button-o" data-toggle="modal" data-target="#exampleModal" href="./contact.html">Order Now</a></li>
@@ -161,8 +164,8 @@
                      </div>
                      <p>ESTABLISHED IN PAKISTAN 2002,
 (FC) Fri-Chicks is a rapidly growing fast-food chain in the region.</p>
-                    
-                    
+
+
                   </div>
                </div>
                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
@@ -194,7 +197,7 @@
                <div class="col-lg-4 col-md-6 col-sm-6">
                   <div class="footer__address">
                      <h6>Corporate Office</h6>
-                     <p>303, Alfalah Building, 
+                     <p>303, Alfalah Building,
 The Mall,<br /> Lahore - 54000
 Pakistan</p>
                      <ul>
