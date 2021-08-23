@@ -70,7 +70,7 @@ Route::get('/news', function () {
   });
 
   //our clients
-  Route::get('/our-client', function () {
+  Route::get('/our-clients', function () {
     return view('user.client');
   });
 
