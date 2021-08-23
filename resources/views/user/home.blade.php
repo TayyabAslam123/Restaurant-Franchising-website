@@ -3,7 +3,7 @@
 <!-- Hero Section Begin -->
       <section class="hero">
         <div class="hero__slider owl-carousel">
-           <div class="hero__items set-bg" data-setbg="{{asset('img/hero/rainer.jpg')}}">
+           <div class="hero__items set-bg" data-setbg="{{asset('img/hero/emerson@0.3x.jpg')}}">
               <div class="hero__text">
                  <h2>Quality that you can taste.</h2>
                  <a href="{{url('/contact-us')}}" class="primary-btn">CONTACT US</a>
@@ -16,7 +16,7 @@
               </div>
            </div>
 
-           <div class="hero__items set-bg" data-setbg="{{asset('img/hero/emerson.jpg')}}">
+           <div class="hero__items set-bg" data-setbg="{{asset('img/hero/lasse@0.3x.jpg')}}">
               <div class="hero__text">
                  <h2>Quality that you can taste.</h2>
                  <a href="{{url('/contact-us')}}" class="primary-btn">CONTACT US</a>
@@ -28,6 +28,31 @@
                  </div>
               </div>
            </div>
+           <div class="hero__items set-bg" data-setbg="{{asset('img/hero/leung@0.3x.jpg')}}">
+              <div class="hero__text">
+                 <h2>Quality that you can taste.</h2>
+                 <a href="{{url('/contact-us')}}" class="primary-btn">CONTACT US</a>
+                 <div class="hero__social">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                 </div>
+              </div>
+           </div>
+           <div class="hero__items set-bg" data-setbg="{{asset('img/hero/rainer@0.3x.jpg')}}">
+              <div class="hero__text">
+                 <h2>Quality that you can taste.</h2>
+                 <a href="{{url('/contact-us')}}" class="primary-btn">CONTACT US</a>
+                 <div class="hero__social">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                 </div>
+              </div>
+           </div>
+           
 
         </div>
         <div class="slide-num" id="snh-1"></div>

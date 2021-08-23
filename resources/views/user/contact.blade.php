@@ -40,7 +40,8 @@
                      </div>
                      <div class="contact__widget__item__text">
                         <h5>Phone Number</h5>
-                        <span>042-36284744</span>
+                        <span>Tel:042-36284744</span>
+                        <span>UAN:0311-1555177</span>
                      </div>
                   </div>
                </div>
@@ -62,15 +63,16 @@
                      </div>
                      <div class="contact__widget__item__text">
                         <h5>Office Location</h5>
-                        <span>Office no 306,3rd Floor Alflah bulding mall road Lahore</span>
+                        <span>303, Alfalah Building, The Mall,Lahore - 54000 Pakistan</span>
                      </div>
                   </div>
                </div>
             </div>
             <div class="map">
-               <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12087.069761554938!2d-74.2175599360452!3d40.767139456514954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c254b5958982c3%3A0xb6ab3931055a2612!2sEast%20Orange%2C%20NJ%2C%20USA!5e0!3m2!1sen!2sbd!4v1581710470843!5m2!1sen!2sbd"
-                  height="460" style="border:0;" allowfullscreen=""></iframe>
+               <!--<iframe-->
+               <!--   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12087.069761554938!2d-74.2175599360452!3d40.767139456514954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c254b5958982c3%3A0xb6ab3931055a2612!2sEast%20Orange%2C%20NJ%2C%20USA!5e0!3m2!1sen!2sbd!4v1581710470843!5m2!1sen!2sbd"-->
+               <!--   height="460" style="border:0;" allowfullscreen=""></iframe>-->
+                  <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1110&amp;height=460&amp;hl=en&amp;q=Al-Falah Building, Shahrah-e-Quaid-e-Azam, Garhi Shahu, Lahore, Punjab 54000, Pakistan&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.fnfgo.com/">Friday Night Funkin Mods</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:460px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:460px;}.gmap_iframe {height:460px!important;}</style></div>
             </div>
             <div class="row">
                <div class="col-lg-5">

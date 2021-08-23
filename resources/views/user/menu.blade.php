@@ -19,7 +19,7 @@
       </div>
       <!-- Breadcrumb Section End -->
       <!-- About Page Section Begin -->
-      <section class="about-page menu">
+      <section class="about-page menu pt-0">
          <div class="">
         <section id="our_menu" class="pb-5">
       <div class="container">
@@ -31,16 +31,27 @@
                </div>
             </div>
          </div>
+         <div class:"row">
+             <div class:"col-md-12">
+                 <p style="
+    text-align: justify;
+">
+                     (FC) Fri-Chicks destination quenches qualitative and tasty food. Boneless chicken stripes, crunchy burgers, burgers, Fish crunchy supreme, kid meals, energetic coleslaw are some of the menu items available to cater the requirements of people in different category. Fried for their chicken food hunt is love for a real crispy fried chicken. Healthy grilled special chick-pop, rice and energetic coleslaw are another tip of the spice to add value.
+
+Expanding from Fast Food to Continental, Chinese to Bar-Bee-Que, and Steaks to Mexican and Thai Food, (FC) Fri-Chicks emphasize on International standard of providing diversified, hygienic and refreshing food for our guests to enjoy in a clean, luxurious & entertaining environment.
+                 </p>
+             </div>
+         </div>
          <div class="row">
             <ul class="nav nav-tabs menu_tab mb-4" id="myTab" role="tablist">
                <li class="nav-item">
-                  <a class="nav-link active" id="breakfast-tab" data-toggle="tab" href="#breakfast" role="tab">Breakfast</a>
+                  <a class="nav-link active" id="breakfast-tab" data-toggle="tab" href="#breakfast" role="tab">Frichicks</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" id="lunch-tab" data-toggle="tab" href="#lunch" role="tab">Lunch</a>
+                  <a class="nav-link" id="lunch-tab" data-toggle="tab" href="#lunch" role="tab">Express</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" id="dinner-tab" data-toggle="tab" href="#dinner" role="tab">Dinner</a>
+                  <a class="nav-link" id="dinner-tab" data-toggle="tab" href="#dinner" role="tab">Premium</a>
                </li>
             </ul>
          </div>
@@ -48,199 +59,37 @@
             <div class="tab-content col-lg-12" id="myTabContent">
                <div class="tab-pane fade show active" id="breakfast" role="tabpanel" aria-labelledby="breakfast-tab">
                   <div class="row">
-                     <div class="col-md-6">
-                        <div class="single_menu">
-                           <img src="https://i.imgur.com/kbpceNv.jpg" alt="burger">
-                           <div class="menu_content">
-                              <h4>Chicken Burger  <span>$24</span></h4>
-                              <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                           </div>
-                        </div>
-                        <div class="single_menu">
-                           <img src="https://i.imgur.com/lYKUORL.jpg" alt="black coffee">
-                           <div class="menu_content">
-                              <h4>Black coffee <span>$20</span></h4>
-                              <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                           </div>
-                        </div>
-                        <div class="single_menu">
-                           <img src="https://i.imgur.com/AXAHrf6.jpg" alt="fried rice">
-                           <div class="menu_content">
-                              <h4>Fried Rice  <span>$45</span></h4>
-                              <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                           </div>
-                        </div>
-                        <div class="single_menu">
-                           <img src="https://i.imgur.com/YkDi8Nb.jpg" alt="meat">
-                           <div class="menu_content">
-                              <h4>meat  <span>$24</span></h4>
-                              <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                           </div>
-                        </div>
+                     <div class="col-md-12">
+                       <a href="{{asset('img/Menu.pdf')}}" download>
+
+                  <h3 class="p-3 text-center">Click Here To View & Download Fri-chicks Menu </h3>
                      </div>
-                     <div class="col-md-6">
-                        <div class="single_menu">
-                           <img src="https://i.imgur.com/TAq7lDR.jpg" alt="burger">
-                           <div class="menu_content">
-                              <h4>Chicken Burger  <span>$24</span></h4>
-                              <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                           </div>
-                        </div>
-                        <div class="single_menu">
-                           <img src="https://i.imgur.com/lYKUORL.jpg" alt="black coffee">
-                           <div class="menu_content">
-                              <h4>Black coffee <span>$20</span></h4>
-                              <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                           </div>
-                        </div>
-                        <div class="single_menu">
-                           <img src="https://i.imgur.com/AXAHrf6.jpg" alt="fried rice">
-                           <div class="menu_content">
-                              <h4>Fried Rice  <span>$45</span></h4>
-                              <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                           </div>
-                        </div>
-                        <div class="single_menu">
-                           <img src="https://i.imgur.com/YkDi8Nb.jpg" alt="meat">
-                           <div class="menu_content">
-                              <h4>meat  <span>$24</span></h4>
-                              <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                           </div>
-                        </div>
-                     </div>
+                   
                   </div>
                </div>
                <div class="tab-pane fade" id="lunch" role="tabpanel" aria-labelledby="lunch-tab">
                   <div class="row">
-                     <div class="col-md-6">
-                        <div class="single_menu">
-                           <img src="https://i.imgur.com/Aowufa1.jpg" alt="pizza">
-                           <div class="menu_content">
-                              <h4>12" Pizza  <span>$35</span></h4>
-                              <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                           </div>
-                        </div>
-                        <div class="single_menu">
-                           <img src="https://i.imgur.com/DJlmZDJ.jpg" alt="salad">
-                           <div class="menu_content">
-                              <h4>Salad <span>$20</span></h4>
-                              <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                           </div>
-                        </div>
-                        <div class="single_menu">
-                           <img src="https://i.imgur.com/knnQm7e.jpg" alt="green tea">
-                           <div class="menu_content">
-                              <h4>green tea <span>$15</span></h4>
-                              <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                           </div>
-                        </div>
-                        <div class="single_menu">
-                           <img src="https://i.imgur.com/YkDi8Nb.jpg" alt="meat">
-                           <div class="menu_content">
-                              <h4>meat  <span>$24</span></h4>
-                              <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-6">
-                        <div class="single_menu">
-                           <img src="https://i.imgur.com/kbpceNv.jpg" alt="burger">
-                           <div class="menu_content">
-                              <h4>Chicken Burger  <span>$24</span></h4>
-                              <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                           </div>
-                        </div>
-                        <div class="single_menu">
-                           <img src="https://i.imgur.com/lYKUORL.jpg" alt="black coffee">
-                           <div class="menu_content">
-                              <h4>Black coffee <span>$20</span></h4>
-                              <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                           </div>
-                        </div>
-                        <div class="single_menu">
-                           <img src="https://i.imgur.com/AXAHrf6.jpg" alt="fried rice">
-                           <div class="menu_content">
-                              <h4>Fried Rice  <span>$45</span></h4>
-                              <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                           </div>
-                        </div>
-                        <div class="single_menu">
-                           <img src="https://i.imgur.com/YkDi8Nb.jpg" alt="meat">
-                           <div class="menu_content">
-                              <h4>meat  <span>$24</span></h4>
-                              <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                           </div>
-                        </div>
-                     </div>
+                     <div class="col-md-12">
+                       <a href="{{asset('img/FriChicksExpressMenu.pdf')}}" download>
+
+                  <h3 class="p-3 text-center">Click Here To View & Download Fri-chicks Express Menu </h3>
                   </div>
+               </div>
                </div>
                <div class="tab-pane fade" id="dinner" role="tabpanel" aria-labelledby="dinner-tab">
                   <div class="row">
-                     <div class="col-md-6">
-                        <div class="single_menu">
-                           <img src="https://i.imgur.com/kbpceNv.jpg" alt="burger">
-                           <div class="menu_content">
-                              <h4>Chicken Burger  <span>$24</span></h4>
-                              <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                           </div>
-                        </div>
-                        <div class="single_menu">
-                           <img src="https://i.imgur.com/lYKUORL.jpg" alt="black coffee">
-                           <div class="menu_content">
-                              <h4>Black coffee <span>$20</span></h4>
-                              <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                           </div>
-                        </div>
-                        <div class="single_menu">
-                           <img src="https://i.imgur.com/AXAHrf6.jpg" alt="fried rice">
-                           <div class="menu_content">
-                              <h4>Fried Rice  <span>$45</span></h4>
-                              <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                           </div>
-                        </div>
-                        <div class="single_menu">
-                           <img src="https://i.imgur.com/YkDi8Nb.jpg" alt="meat">
-                           <div class="menu_content">
-                              <h4>meat  <span>$24</span></h4>
-                              <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-6">
-                        <div class="single_menu">
-                           <img src="https://i.imgur.com/kbpceNv.jpg" alt="burger">
-                           <div class="menu_content">
-                              <h4>Chicken Burger  <span>$24</span></h4>
-                              <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                           </div>
-                        </div>
-                        <div class="single_menu">
-                           <img src="https://i.imgur.com/lYKUORL.jpg" alt="black coffee">
-                           <div class="menu_content">
-                              <h4>Black coffee <span>$20</span></h4>
-                              <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                           </div>
-                        </div>
-                        <div class="single_menu">
-                           <img src="https://i.imgur.com/AXAHrf6.jpg" alt="fried rice">
-                           <div class="menu_content">
-                              <h4>Fried Rice  <span>$45</span></h4>
-                              <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                           </div>
-                        </div>
-                        <div class="single_menu">
-                           <img src="https://i.imgur.com/YkDi8Nb.jpg" alt="meat">
-                           <div class="menu_content">
-                              <h4>meat  <span>$24</span></h4>
-                              <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                           </div>
-                        </div>
-                     </div>
+                     
+                     <div class="col-md-12">
+                       <a href="{{asset('img/FriChicksPremiumMenu.pdf')}}" download>
+
+                  <h3 class="p-3 text-center">Click Here To View & Download Fri-chicks Premium Menu </h3>
                   </div>
+                    
+                 
                </div>
             </div>
-            <a href="#" class=" menu_btn btn btn-danger">view more</a>
          </div>
+      </div>
       </div>
    </section>
          </div>
