@@ -64,6 +64,16 @@ Route::get('/news', function () {
     return view('user.downloads');
   });
 
+  //vendors
+  Route::get('/our-vendors', function () {
+    return view('user.vendors');
+  });
+
+  //our clients
+  Route::get('/our-client', function () {
+    return view('user.client');
+  });
+
 
   ## ADMIN PANEL
 

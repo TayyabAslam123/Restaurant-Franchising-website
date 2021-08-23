@@ -6,10 +6,10 @@
          <div class="row">
             <div class="col-lg-12 text-center">
                <div class="breadcrumb__text">
-                  <h2>About Us</h2>
+                  <h2>Our Vendors</h2>
                   <div class="breadcrumb__links">
-                     <a href="./index.html">Home</a>
-                     <span>About Us</span>
+                     <a href="{{url('/')}}">Home</a>
+                     <span>Our Vendors</span>
                   </div>
                </div>
             </div>
