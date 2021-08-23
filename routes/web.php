@@ -71,7 +71,7 @@ Route::get('/news', function () {
 
   //our clients
   Route::get('/our-clients', function () {
-    return view('user.client');
+    return view('user.clients');
   });
 
 
