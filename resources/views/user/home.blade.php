@@ -59,6 +59,7 @@
         <div class="slider__progress"><span></span></div>
      </section>
      <!-- Hero Section End -->
+     
      <!-- About Section Begin -->
      <section class="about spad">
          <div class="container">
@@ -87,6 +88,62 @@
          </div>
       </section>
      <!-- About Section End -->
+     <!--our brands-->
+       <section class="spad">
+        <div class="container">
+           <div class="row">
+              <div class="col-lg-12 text-center">
+                 <div class="section-title">
+                    <span>Our</span>
+                    <h2>Brands</h2>
+                 </div>
+              </div>
+           </div>
+           <div class="row">
+              <div class="col-lg-12">
+                 <div class="logo__carousel owl-carousel">
+                    <div class="logo__carousel__item">
+                        <a href="#"><img src="img/logo/BRAND LOOGO-01.png" alt=""></a>
+                     </div>
+                     <div class="logo__carousel__item">
+                        <a href="#"><img src="img/logo/BRAND LOOGO-02.png" alt=""></a>
+                     </div>
+                     <div class="logo__carousel__item">
+                        <a href="#"><img src="img/logo/BRAND LOOGO-03.png" alt=""></a>
+                     </div>
+                     <div class="logo__carousel__item">
+                        <a href="#"><img src="img/logo/BRAND LOOGO-04.png" alt=""></a>
+                     </div>
+                     <div class="logo__carousel__item">
+                        <a href="#"><img src="img/logo/BRAND LOOGO-05.png" alt=""></a>
+                     </div>
+                     <div class="logo__carousel__item">
+                        <a href="#"><img src="img/logo/BRAND LOOGO-06.png" alt=""></a>
+                     </div>
+                     <div class="logo__carousel__item">
+                        <a href="#"><img src="img/logo/BRAND LOOGO-07.png" alt=""></a>
+                     </div>
+                     <div class="logo__carousel__item">
+                        <a href="#"><img src="img/logo/BRAND LOOGO-08.png" alt=""></a>
+                     </div>
+                      <div class="logo__carousel__item">
+                        <a href="#"><img src="img/logo/BRAND LOOGO-09.png" alt=""></a>
+                     </div>
+                     <div class="logo__carousel__item">
+                        <a href="#"><img src="img/logo/BRAND LOOGO-10.png" alt=""></a>
+                     </div>
+                     <div class="logo__carousel__item">
+                        <a href="#"><img src="img/logo/BRAND LOOGO-11.png" alt=""></a>
+                     </div>
+                     <div class="logo__carousel__item">
+                        <a href="#"><img src="img/logo/BRAND LOOGO-12.png" alt=""></a>
+                     </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
+     <!--end-->
      <!-- Project Section Begin -->
      <section class="project spad">
         <div class="container-fluid">
@@ -165,23 +222,29 @@
               <div class="col-lg-12">
                  <div class="logo__carousel owl-carousel">
                     <div class="logo__carousel__item">
-                       <a href="#"><img src="{{asset('img/logo/logo-1.png')}}" alt=""></a>
-                    </div>
-                    <div class="logo__carousel__item">
-                       <a href="#"><img src="{{asset('img/logo/logo-2.png')}}" alt=""></a>
-                    </div>
-                    <div class="logo__carousel__item">
-                       <a href="#"><img src="{{asset('img/logo/logo-3.png')}}" alt=""></a>
-                    </div>
-                    <div class="logo__carousel__item">
-                       <a href="#"><img src="{{asset('img/logo/logo-4.png')}}" alt=""></a>
-                    </div>
-                    <div class="logo__carousel__item">
-                       <a href="#"><img src="{{asset('img/logo/logo-5.png')}}" alt=""></a>
-                    </div>
-                    <div class="logo__carousel__item">
-                       <a href="#"><img src="{{asset('img/logo/logo-3.png')}}" alt=""></a>
-                    </div>
+                        <a href="#"><img src="img/logo/VENDOR LOG-01.png" alt=""></a>
+                     </div>
+                     <div class="logo__carousel__item">
+                        <a href="#"><img src="img/logo/VENDOR LOG-02.png" alt=""></a>
+                     </div>
+                     <div class="logo__carousel__item">
+                        <a href="#"><img src="img/logo/VENDOR LOG-03.png" alt=""></a>
+                     </div>
+                     <div class="logo__carousel__item">
+                        <a href="#"><img src="img/logo/VENDOR LOG-04.png" alt=""></a>
+                     </div>
+                     <div class="logo__carousel__item">
+                        <a href="#"><img src="img/logo/VENDOR LOG-05.png" alt=""></a>
+                     </div>
+                     <div class="logo__carousel__item">
+                        <a href="#"><img src="img/logo/VENDOR LOG-06.png" alt=""></a>
+                     </div>
+                     <div class="logo__carousel__item">
+                        <a href="#"><img src="img/logo/VENDOR LOG-07.png" alt=""></a>
+                     </div>
+                     <div class="logo__carousel__item">
+                        <a href="#"><img src="img/logo/VENDOR LOG-08.png" alt=""></a>
+                     </div>
                  </div>
               </div>
            </div>

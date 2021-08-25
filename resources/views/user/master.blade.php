@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
    <head>
+       <link rel="icon" href="img/favi.png" type="image/gif" sizes="16x16">
       <meta charset="UTF-8">
       <meta name="description" content="FC-Frichicks">
       <meta name="keywords" content="FC,Frichicks,fastfood,Pizza,Burger">
@@ -63,13 +64,14 @@
                         <li>
                            <a href="#">More</a>
                            <ul class="dropdown">
+                                <li ><a href="{{url('/our-vendors')}}">Our Vendors</a></li>
+                              <li><a href="{{url('/our-clients')}}">Our Brands</a></li>
                               <li><a href="{{url('/profile')}}">Profile</a></li>
                               <li><a href="{{url('/faqs')}}">FAQ's</a></li>
                               <li><a href="{{url('/news')}}">News</a></li>
                               <li><a href="{{url('/careers')}}">Careers</a></li>
                               <li ><a href="{{url('/downloads')}}">Downloads</a></li>
-                              <li ><a href="{{url('/our-vendors')}}">Our Vendors</a></li>
-                              <li><a href="{{url('/our-clients')}}">Our Clients</a></li>
+                             
 
                            </ul>
                         </li>
@@ -206,9 +208,9 @@ Pakistan</p>
                         <li>UAN:0311-1555177</li>
                      </ul>
                       <div class="footer__social">
-                        <a href="#"><i class="fa fa-facebook"></i></a> &nbsp;&nbsp;&nbsp;
-                        <a href="#"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;
-                        <a href="#"><i class="fa fa-instagram"></i></a>&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.facebook.com/FriChicksOfficial/"><i class="fa fa-facebook"></i></a> &nbsp;&nbsp;&nbsp;
+                        <a href="https://www.twitter.com/FriChicksOfficial/"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.instagram.com/FriChicksOfficial/"><i class="fa fa-instagram"></i></a>&nbsp;&nbsp;&nbsp;
                         <a href="#"><i class="fa fa-linkedin"></i></a>
                      </div>
                   </div>

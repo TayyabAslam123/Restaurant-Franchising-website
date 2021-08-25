@@ -33,16 +33,14 @@
                         <h2>About Us</h2>
                      </div>
                      <div class="about__para__text">
-                        <p>As you might expect of a company that began as a high-end interiors contractor.</p>
+                        <p>ESTABLISHED IN PAKISTAN 2002, (FC) Fri-Chicks is a rapidly growing fast-food chain in the region.</p>
                      </div>
                   </div>
                </div>
                <div class="col-lg-8 col-md-8">
                   <div class="about__page__services">
                      <div class="about__page__services__text">
-                        <p>Metasurfaces are generally designed by placing scatterers in periodic or pseudo-periodic
-                           grids. We propose and discuss design rules for functional metasurfaces with randomly
-                           placed. Anisotropic elements that randomly sample. Quisque sit amet nisl ante.
+                        <p>(FC) Fri-Chicks is specialized in serving the tastiest crumbed fried chicken using a secret recipe which includes a unique blend of the choicest herbs by spices. It is therefore of little wonder, (FC) Fri-Chicks is synonym to words such as "Real Recipe, Real Taste, Real Fried Chicken." (FC) Fri-Chicks begain its gourney with a yet determined dream to create a brand that brings happiness, satisfaction, and smiles to our valued customers.
                         </p>
                      </div>
                      <div class="row">
@@ -50,8 +48,7 @@
                            <div class="services__item">
                               <img src="{{asset('img/services/services-5.png')}}" alt="">
                               <h4>Our Mission</h4>
-                              <p>As you might expect of a company that began as a high-end interiors contractor,
-                                 we pay strict attention. Anisotropic elements that randomly sample.
+                              <p>To provide an exceptional recreational experience that satisfies our guests' taste buds to achieve distinction and reputation by serving quality products, service, and atmosphere to the concerned social class. 
                               </p>
                            </div>
                         </div>
@@ -59,9 +56,7 @@
                            <div class="services__item">
                               <img src="{{asset('img/services/services-6.png')}}" alt="">
                               <h4>Our Vision</h4>
-                              <p>Our commitment to exceptional quality has never wavered. To day ranks as one of
-                                 the most highly-regarded construction. Anisotropic elements that randomly
-                                 sample.
+                              <p>We intend to provide highest quality of food and services with secret recipes from Mom's Kitchen to the desired class with superior class environment.
                               </p>
                            </div>
                         </div>
@@ -93,12 +88,10 @@
                   <div class="team__item set-bg" data-setbg="{{asset('img/team/team-1.jpg')}}">
                      <div class="team__text">
                         <div class="team__title">
-                           <h5>Dolores Webster</h5>
-                           <span>CEO & Founder</span>
+                           <h5>Hasnain Mehdi</h5>
+                           <span>Chief Executive Officer</span>
                         </div>
-                        <p>Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra
-                           porta leo, non tincidunt mauris condimentum eget. Vivamus non turpis elit. Aenean
-                           ultricies nisl sit amet.
+                        <p>I have been working in the food business since 2002. It's been a long journey as I, have had endless efforts and obstacles to reach this stage. My whole team helped me in reaching at this stage to establish and recognize Pakistan's biggest fast food local chain in Pakistan.
                         </p>
                         <div class="team__social">
                            <a href="#"><i class="fa fa-facebook"></i></a>
