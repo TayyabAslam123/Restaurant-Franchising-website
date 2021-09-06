@@ -59,9 +59,10 @@ Fri-Chicks emphasize the International standard of providing diversified, hygien
                <div class="tab-pane fade show active" id="breakfast" role="tabpanel" aria-labelledby="breakfast-tab">
                   <div class="row">
                      <div class="col-md-12">
+                         <embed src="{{asset('img/Menu.pdf')}}" width="100%" height="800px">
                        <a href="{{asset('img/Menu.pdf')}}" download>
 
-                  <h3 class="p-3 text-center">Click Here To View & Download Fri-chicks Menu </h3>
+                  <h3 class="p-3 text-center">Click Here To Download Fri-chicks Menu </h3>
                      </div>
                    
                   </div>
@@ -69,9 +70,10 @@ Fri-Chicks emphasize the International standard of providing diversified, hygien
                <div class="tab-pane fade" id="lunch" role="tabpanel" aria-labelledby="lunch-tab">
                   <div class="row">
                      <div class="col-md-12">
+                           <embed src="{{asset('img/FriChicksExpressMenu.pdf')}}" width="100%" height="800px">
                        <a href="{{asset('img/FriChicksExpressMenu.pdf')}}" download>
 
-                  <h3 class="p-3 text-center">Click Here To View & Download Fri-chicks Express Menu </h3>
+                  <h3 class="p-3 text-center">Click Here To Download Fri-chicks Express Menu </h3>
                   </div>
                </div>
                </div>
@@ -79,9 +81,10 @@ Fri-Chicks emphasize the International standard of providing diversified, hygien
                   <div class="row">
                      
                      <div class="col-md-12">
+                         <embed src="{{asset('img/FriChicksPremiumMenu.pdf')}}" width="100%" height="800px">
                        <a href="{{asset('img/FriChicksPremiumMenu.pdf')}}" download>
 
-                  <h3 class="p-3 text-center">Click Here To View & Download Fri-chicks Premium Menu </h3>
+                  <h3 class="p-3 text-center">Click Here To Download Fri-chicks Premium Menu </h3>
                   </div>
                     
                  

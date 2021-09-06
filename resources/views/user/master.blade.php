@@ -57,7 +57,7 @@
                      <ul>
                         <li class="{{Request::path()=='/'?'active':''}}"><a href="{{url('/')}}">Home</a></li>
                         <li class="{{Request::path()=='about'?'active':''}}"><a href="{{url('/about')}}">About</a></li>
-                        <li class="{{Request::path()=='get-frenchise'?'active':''}}"><a href="{{url('/get-frenchise')}}">Get Frenchise</a></li>
+                        <li class="{{Request::path()=='get-frenchise'?'active':''}}"><a href="{{url('/get-frenchise')}}">Get Franchise</a></li>
                         <li class="{{Request::path()=='gallery'?'active':''}}"><a href="{{url('/gallery')}}">Gallery</a></li>
                         <li class="{{Request::path()=='menu'?'active':''}}"><a href="{{url('/menu')}}">Menu</a></li>
                         <li class="{{Request::path()=='contact-us'?'active':''}}"><a href="{{url('/contact-us')}}">Contact Us</a></li>
@@ -71,6 +71,7 @@
                               <li><a href="{{url('/news')}}">News</a></li>
                               <li><a href="{{url('/careers')}}">Careers</a></li>
                               <li ><a href="{{url('/downloads')}}">Downloads</a></li>
+                              <li ><a href="{{url('/login')}}">Login</a></li>
                              
 
                            </ul>
@@ -146,7 +147,7 @@
 
       @yield('main')
       <!-- Footer Section Begin -->
-      <footer class="footer set-bg" style="background-color:black;">
+      <footer class="footer set-bg" data-setbg="{{asset('img/footer-bg.jpg')}}">
          <div class="container">
             <div class="footer__top">
                <div class="row">
@@ -165,7 +166,7 @@
                         <a href="#"><img src="{{asset('img/logo.png')}}" alt=""></a>
                      </div>
                      <p>ESTABLISHED IN PAKISTAN 2002,
-(FC) Fri-Chicks is a rapidly growing fast-food chain in the region.</p>
+PAKISTAN'S FASTEST GROWING FASTFOOD BRAND</p>
 
 
                   </div>

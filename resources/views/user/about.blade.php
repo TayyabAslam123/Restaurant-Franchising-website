@@ -33,14 +33,14 @@
                         <h2>About Us</h2>
                      </div>
                      <div class="about__para__text">
-                        <p>ESTABLISHED IN PAKISTAN 2002, (FC) Fri-Chicks is a rapidly growing fast-food chain in the region.</p>
+                        <p>Fri-Chicks is the first Pakistani rapid growing fast-food chain.</p>
                      </div>
                   </div>
                </div>
                <div class="col-lg-8 col-md-8">
                   <div class="about__page__services">
                      <div class="about__page__services__text">
-                        <p>(FC) Fri-Chicks is specialized in serving the tastiest crumbed fried chicken using a secret recipe which includes a unique blend of the choicest herbs by spices. It is therefore of little wonder, (FC) Fri-Chicks is synonym to words such as "Real Recipe, Real Taste, Real Fried Chicken." (FC) Fri-Chicks begain its gourney with a yet determined dream to create a brand that brings happiness, satisfaction, and smiles to our valued customers.
+                        <p>Fri-Chicks is specialized in serving the tasteful crumbed fried chicken using a peculiar recipe with organic blend of the herbs and spices. It is therefore of little wonder. Fri-Chicks transforms you to thrill, energy, health, action and joy. Fri-Chicks marinated with state-of-the-art equipment by your mom’s kitchen bringing happiness, satisfaction, and smiles to you.
                         </p>
                      </div>
                      <div class="row">
@@ -48,7 +48,7 @@
                            <div class="services__item">
                               <img src="{{asset('img/services/services-5.png')}}" alt="">
                               <h4>Our Mission</h4>
-                              <p>To provide an exceptional recreational experience that satisfies our guests' taste buds to achieve distinction and reputation by serving quality products, service, and atmosphere to the concerned social class. 
+                              <p>To provide fascinating taste with less burden on your pocket, Fri-Chicks is committed to be your mom’s kitchen. This Mom’s kitchen takes care of your tasty, salty, spicy, nutritional, hygienic, and health food. Everyone must have second Mom’s kitchen. 
                               </p>
                            </div>
                         </div>
@@ -56,8 +56,9 @@
                            <div class="services__item">
                               <img src="{{asset('img/services/services-6.png')}}" alt="">
                               <h4>Our Vision</h4>
-                              <p>We intend to provide highest quality of food and services with secret recipes from Mom's Kitchen to the desired class with superior class environment.
-                              </p>
+                              <p>Our nation is lacking various healthy and balanced foods ingredients. So, we are committed to providing enriched balanced food with healthy proteins, vitamins and minerals.
+I being the food Passionist, committed to get good market share fought hard to reach this stage. I am thankful to this nation, society, my family and stakeholder who persuaded and helped me to get remarkable local brand market share fast food industry. 
+</p>
                            </div>
                         </div>
                      </div>

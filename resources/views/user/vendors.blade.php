@@ -30,32 +30,32 @@
             </div>
             <div class="row">
                <div class="col-lg-12">
-                  <div class="logo__carousel owl-carousel">
-                     <div class="logo__carousel__item">
-                        <a href="#"><img src="img/logo/VENDOR LOG-01.png" alt=""></a>
-                     </div>
-                     <div class="logo__carousel__item">
+                   <div class="logo__carousel owl-carousel mr-0">
+                    <div class="logo__carousel__item">
                         <a href="#"><img src="img/logo/VENDOR LOG-02.png" alt=""></a>
                      </div>
-                     <div class="logo__carousel__item">
+                     <div class="logo__carousel__item mr-0">
                         <a href="#"><img src="img/logo/VENDOR LOG-03.png" alt=""></a>
                      </div>
-                     <div class="logo__carousel__item">
-                        <a href="#"><img src="img/logo/VENDOR LOG-04.png" alt=""></a>
+                     <div class="logo__carousel__item mr-0">
+                        <a href="#"><img src="img/logo/VENDOR LOG-01.png" alt=""></a>
                      </div>
-                     <div class="logo__carousel__item">
-                        <a href="#"><img src="img/logo/VENDOR LOG-05.png" alt=""></a>
-                     </div>
-                     <div class="logo__carousel__item">
+                     <div class="logo__carousel__item mr-0">
                         <a href="#"><img src="img/logo/VENDOR LOG-06.png" alt=""></a>
                      </div>
-                     <div class="logo__carousel__item">
+                     <div class="logo__carousel__item mr-0">
+                        <a href="#"><img src="img/logo/VENDOR LOG-05.png" alt=""></a>
+                     </div>
+                     <div class="logo__carousel__item mr-0">
                         <a href="#"><img src="img/logo/VENDOR LOG-07.png" alt=""></a>
                      </div>
-                     <div class="logo__carousel__item">
+                     <div class="logo__carousel__item mr-0">
                         <a href="#"><img src="img/logo/VENDOR LOG-08.png" alt=""></a>
                      </div>
-                  </div>
+                     <div class="logo__carousel__item mr-0">
+                        <a href="#"><img src="img/logo/VENDOR LOG-04.png" alt=""></a>
+                     </div>
+                 </div>
                </div>
             </div>
          </div>

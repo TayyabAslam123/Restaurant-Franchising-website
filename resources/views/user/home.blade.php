@@ -8,9 +8,9 @@
                  <h2>Quality that you can taste.</h2>
                  <a href="{{url('/contact-us')}}" class="primary-btn">CONTACT US</a>
                  <div class="hero__social">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/FriChicksOfficial/"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/FriChicksOfficial/"><i class="fa fa-instagram"></i></a>
                     <a href="#"><i class="fa fa-linkedin"></i></a>
                  </div>
               </div>
@@ -21,9 +21,9 @@
                  <h2>Quality that you can taste.</h2>
                  <a href="{{url('/contact-us')}}" class="primary-btn">CONTACT US</a>
                  <div class="hero__social">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
+                   <a href="https://www.facebook.com/FriChicksOfficial/"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/FriChicksOfficial/"><i class="fa fa-instagram"></i></a>
                     <a href="#"><i class="fa fa-linkedin"></i></a>
                  </div>
               </div>
@@ -33,9 +33,9 @@
                  <h2>Quality that you can taste.</h2>
                  <a href="{{url('/contact-us')}}" class="primary-btn">CONTACT US</a>
                  <div class="hero__social">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
+                   <a href="https://www.facebook.com/FriChicksOfficial/"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/FriChicksOfficial/"><i class="fa fa-instagram"></i></a>
                     <a href="#"><i class="fa fa-linkedin"></i></a>
                  </div>
               </div>
@@ -45,9 +45,9 @@
                  <h2>Quality that you can taste.</h2>
                  <a href="{{url('/contact-us')}}" class="primary-btn">CONTACT US</a>
                  <div class="hero__social">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/FriChicksOfficial/"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/FriChicksOfficial/"><i class="fa fa-instagram"></i></a>
                     <a href="#"><i class="fa fa-linkedin"></i></a>
                  </div>
               </div>
@@ -89,7 +89,7 @@
       </section>
      <!-- About Section End -->
      <!--our brands-->
-       <section class="spad">
+       <section class="spad brands">
         <div class="container">
            <div class="row">
               <div class="col-lg-12 text-center">
@@ -99,20 +99,27 @@
                  </div>
               </div>
            </div>
+           <style>
+                .vendors .owl-carousel.owl-drag .owl-item{
+                   margin-right: 7px !important;
+                   width:230px !important;
+               }
+               
+           </style>
            <div class="row">
               <div class="col-lg-12">
                  <div class="logo__carousel owl-carousel">
                     <div class="logo__carousel__item">
-                        <a href="#"><img src="img/logo/BRAND LOOGO-01.png" alt=""></a>
+                        <a href="#"  style:"width:270px; margin-right:0;"><img src="img/logo/BRAND LOOGO-01.png" alt=""></a>
                      </div>
                      <div class="logo__carousel__item">
                         <a href="#"><img src="img/logo/BRAND LOOGO-02.png" alt=""></a>
                      </div>
                      <div class="logo__carousel__item">
-                        <a href="#"><img src="img/logo/BRAND LOOGO-03.png" alt=""></a>
+                        <a href="#"><img src="img/logo/BRAND LOOGO-04.png" alt=""></a>
                      </div>
                      <div class="logo__carousel__item">
-                        <a href="#"><img src="img/logo/BRAND LOOGO-04.png" alt=""></a>
+                        <a href="#"><img src="img/logo/BRAND LOOGO-03.png" alt=""></a>
                      </div>
                      <div class="logo__carousel__item">
                         <a href="#"><img src="img/logo/BRAND LOOGO-05.png" alt=""></a>
@@ -160,7 +167,7 @@
 
              @foreach(getFrenchises() as $var)
                  <div class="col-lg-3">
-                    <div class="project__slider__item set-bg" data-setbg="{{Storage::url('public/franchises/'.$var->image)}}">
+                    <div class="project__slider__item set-bg"  data-setbg="{{Storage::url('public/franchises/'.$var->image)}}">
                        <div class="project__slider__item__hover">
                           <a href="#">
                              <span>{{$var->title}}</span>
@@ -199,16 +206,75 @@
               </ul>
            </div>
            <div class="portfolio-item">
-              <div class="item web">
-                 <div style="background-image: url(http://www.esse90.it/wp-content/uploads/2017/07/img-placeholder.png);"></div>
-              </div>
-
-           </div>
+              
+               <div class="item web">
+                  <div style="background-image: url(img/0002.jpg);"></div>
+               </div>
+               <div class="item web">
+                  <div style="background-image: url(img/0003.jpg);"></div>
+               </div>
+              
+                <div class="item seo">
+                  <div style="background-image: url(img/IMG-20180201-WA0031.jpg);"></div>
+               </div>
+                <div class="item web">
+                  <div style="background-image: url(img/0001.jpg);"></div>
+               </div>
+                <div class="item web">
+                  <div style="background-image: url(img/0005.jpg);"></div>
+               </div>
+                <div class="item seo">
+                  <div style="background-image: url(img/IMG-20180201-WA0032.jpg);"></div>
+               </div>
+               <div class="item seo">
+                  <div style="background-image: url(img/IMG-20180201-WA0036.jpg);"></div>
+               </div>
+                <div class="item web">
+                  <div style="background-image: url(img/0004.jpg);"></div>
+               </div>
+               <div class="item seo">
+                  <div style="background-image: url(img/IMG-20180405-WA0023.jpg);"></div>
+               </div>
+               <div class="item seo">
+                  <div style="background-image: url(img/IMG-20180201-WA0038.jpg);"></div>
+               </div>
+               <div class="item seo">
+                  <div style="background-image: url(img/IMG-20180201-WA0072.jpg);"></div>
+               </div>
+               <div class="item seo">
+                  <div style="background-image: url(img/IMG-20180210-WA0097.jpg);"></div>
+               </div>
+               <div class="item seo">
+                  <div style="background-image: url(img/IMG-20180405-WA0060.jpg);"></div>
+               </div>
+               <div class="item seo">
+                  <div style="background-image: url(img/IMG-20180411-WA0112.jpg);"></div>
+               </div>
+               <div class="item web">
+                  <div style="background-image: url(img/0007.jpg);"></div>
+               </div>
+               <div class="item seo">
+                  <div style="background-image: url(img/IMG-20180411-WA0115.jpg);"></div>
+               </div>
+               <div class="item seo">
+                  <div style="background-image: url(img/IMG-20180411-WA0117.jpg);"></div>
+               </div>
+                <div class="item web">
+                  <div style="background-image: url(img/0006.jpg);"></div>
+               </div>
+               <!-- <div class="item graphics">-->
+               <!--   <div style="background-image: url(http://www.dracorion.com/wp-content/uploads/2012/03/placeholder4-480x300-crop.jpg);"></div>-->
+               <!--</div>-->
+               
+               <div class="item web">
+                  <div style="background-image: url(img/0008.jpg);"></div>
+               </div>
+            </div>
         </div>
      </section>
      <!-- Gallery End -->
      <!-- Our Clients start -->
-     <section class="spad">
+     <section class="spad vendors">
         <div class="container">
            <div class="row">
               <div class="col-lg-12 text-center">
@@ -220,30 +286,30 @@
            </div>
            <div class="row">
               <div class="col-lg-12">
-                 <div class="logo__carousel owl-carousel">
+                 <div class="logo__carousel owl-carousel mr-0">
                     <div class="logo__carousel__item">
-                        <a href="#"><img src="img/logo/VENDOR LOG-01.png" alt=""></a>
-                     </div>
-                     <div class="logo__carousel__item">
                         <a href="#"><img src="img/logo/VENDOR LOG-02.png" alt=""></a>
                      </div>
-                     <div class="logo__carousel__item">
+                     <div class="logo__carousel__item mr-0">
                         <a href="#"><img src="img/logo/VENDOR LOG-03.png" alt=""></a>
                      </div>
-                     <div class="logo__carousel__item">
-                        <a href="#"><img src="img/logo/VENDOR LOG-04.png" alt=""></a>
+                     <div class="logo__carousel__item mr-0">
+                        <a href="#"><img src="img/logo/VENDOR LOG-01.png" alt=""></a>
                      </div>
-                     <div class="logo__carousel__item">
-                        <a href="#"><img src="img/logo/VENDOR LOG-05.png" alt=""></a>
-                     </div>
-                     <div class="logo__carousel__item">
+                     <div class="logo__carousel__item mr-0">
                         <a href="#"><img src="img/logo/VENDOR LOG-06.png" alt=""></a>
                      </div>
-                     <div class="logo__carousel__item">
+                     <div class="logo__carousel__item mr-0">
+                        <a href="#"><img src="img/logo/VENDOR LOG-05.png" alt=""></a>
+                     </div>
+                     <div class="logo__carousel__item mr-0">
                         <a href="#"><img src="img/logo/VENDOR LOG-07.png" alt=""></a>
                      </div>
-                     <div class="logo__carousel__item">
+                     <div class="logo__carousel__item mr-0">
                         <a href="#"><img src="img/logo/VENDOR LOG-08.png" alt=""></a>
+                     </div>
+                     <div class="logo__carousel__item mr-0">
+                        <a href="#"><img src="img/logo/VENDOR LOG-04.png" alt=""></a>
                      </div>
                  </div>
               </div>

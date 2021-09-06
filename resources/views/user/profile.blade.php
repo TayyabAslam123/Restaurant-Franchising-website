@@ -34,6 +34,7 @@
          </div>
          <div class="row text-center pt-5 pb-3">
             <div class="col-md-12 ">
+                 <embed src="{{asset('img/FrichicksProfile.pdf')}}" width="100%" height="800px">
                <a href="{{asset('img/FrichicksProfile.pdf')}}" download>
 
                   <h3 class="p-3">Click Here To Download Company Profile </h3>

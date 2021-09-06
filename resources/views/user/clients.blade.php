@@ -38,10 +38,10 @@
                         <a href="#"><img src="img/logo/BRAND LOOGO-02.png" alt=""></a>
                      </div>
                      <div class="logo__carousel__item">
-                        <a href="#"><img src="img/logo/BRAND LOOGO-03.png" alt=""></a>
+                        <a href="#"><img src="img/logo/BRAND LOOGO-04.png" alt=""></a>
                      </div>
                      <div class="logo__carousel__item">
-                        <a href="#"><img src="img/logo/BRAND LOOGO-04.png" alt=""></a>
+                        <a href="#"><img src="img/logo/BRAND LOOGO-03.png" alt=""></a>
                      </div>
                      <div class="logo__carousel__item">
                         <a href="#"><img src="img/logo/BRAND LOOGO-05.png" alt=""></a>

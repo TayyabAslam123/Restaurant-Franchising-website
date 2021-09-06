@@ -40,24 +40,69 @@
                   <li data-filter=".graphics">Warehouse</li>
                </ul>
             </div>
-            <div class="portfolio-item">
+ <div class="portfolio-item">
+              
                <div class="item web">
-                  <div style="background-image: url(http://www.esse90.it/wp-content/uploads/2017/07/img-placeholder.png);"></div>
+                  <div style="background-image: url(img/0002.jpg);"></div>
                </div>
                <div class="item web">
-                  <div style="background-image: url(https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150);"></div>
+                  <div style="background-image: url(img/0003.jpg);"></div>
+               </div>
+              
+                <div class="item seo">
+                  <div style="background-image: url(img/IMG-20180201-WA0031.jpg);"></div>
+               </div>
+                <div class="item web">
+                  <div style="background-image: url(img/0001.jpg);"></div>
+               </div>
+                <div class="item web">
+                  <div style="background-image: url(img/0005.jpg);"></div>
+               </div>
+                <div class="item seo">
+                  <div style="background-image: url(img/IMG-20180201-WA0032.jpg);"></div>
                </div>
                <div class="item seo">
-                  <div style="background-image: url(http://unitel.com.br/wp-content/uploads/2014/03/img-3.gif);"></div>
+                  <div style="background-image: url(img/IMG-20180201-WA0036.jpg);"></div>
                </div>
-               <div class="item graphics">
-                  <div style="background-image: url(http://www.dracorion.com/wp-content/uploads/2012/03/placeholder4-480x300-crop.jpg);"></div>
+                <div class="item web">
+                  <div style="background-image: url(img/0004.jpg);"></div>
                </div>
                <div class="item seo">
-                  <div style="background-image: url(http://dummyimage.com/600x250/666666/fff&text=Dynamic+Dummy+Image+Generator);"></div>
+                  <div style="background-image: url(img/IMG-20180405-WA0023.jpg);"></div>
+               </div>
+               <div class="item seo">
+                  <div style="background-image: url(img/IMG-20180201-WA0038.jpg);"></div>
+               </div>
+               <div class="item seo">
+                  <div style="background-image: url(img/IMG-20180201-WA0072.jpg);"></div>
+               </div>
+               <div class="item seo">
+                  <div style="background-image: url(img/IMG-20180210-WA0097.jpg);"></div>
+               </div>
+               <div class="item seo">
+                  <div style="background-image: url(img/IMG-20180405-WA0060.jpg);"></div>
+               </div>
+               <div class="item seo">
+                  <div style="background-image: url(img/IMG-20180411-WA0112.jpg);"></div>
                </div>
                <div class="item web">
-                  <div style="background-image: url(http://fpoimg.com/600x250/For%20Place%20Only%20Image);"></div>
+                  <div style="background-image: url(img/0007.jpg);"></div>
+               </div>
+               <div class="item seo">
+                  <div style="background-image: url(img/IMG-20180411-WA0115.jpg);"></div>
+               </div>
+               <div class="item seo">
+                  <div style="background-image: url(img/IMG-20180411-WA0117.jpg);"></div>
+               </div>
+                <div class="item web">
+                  <div style="background-image: url(img/0006.jpg);"></div>
+               </div>
+               <!-- <div class="item graphics">-->
+               <!--   <div style="background-image: url(http://www.dracorion.com/wp-content/uploads/2012/03/placeholder4-480x300-crop.jpg);"></div>-->
+               <!--</div>-->
+               
+               <div class="item web">
+                  <div style="background-image: url(img/0008.jpg);"></div>
                </div>
             </div>
          </div>
