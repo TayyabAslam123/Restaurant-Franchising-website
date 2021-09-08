@@ -3,7 +3,7 @@
 <!-- Hero Section Begin -->
       <section class="hero">
         <div class="hero__slider owl-carousel">
-           <div class="hero__items set-bg" data-setbg="{{asset('img/hero/emerson@0.3x.jpg')}}">
+           <div class="hero__items set-bg" data-setbg="{{asset('img/hero/rainer.jpg')}}">
               <div class="hero__text">
                  <h2>Quality that you can taste.</h2>
                  <a href="{{url('/contact-us')}}" class="primary-btn">CONTACT US</a>
@@ -16,31 +16,31 @@
               </div>
            </div>
 
+           <div class="hero__items set-bg" data-setbg="{{asset('img/hero/leung.jpg')}}">
+              <div class="hero__text">
+                 <h2>Quality that you can taste.</h2>
+                 <a href="{{url('/contact-us')}}" class="primary-btn">CONTACT US</a>
+                 <div class="hero__social">
+                   <a href="https://www.facebook.com/FriChicksOfficial/"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/FriChicksOfficial/"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                 </div>
+              </div>
+           </div>
+           <div class="hero__items set-bg" data-setbg="{{asset('img/hero/lasse.jpg')}}">
+              <div class="hero__text">
+                 <h2>Quality that you can taste.</h2>
+                 <a href="{{url('/contact-us')}}" class="primary-btn">CONTACT US</a>
+                 <div class="hero__social">
+                   <a href="https://www.facebook.com/FriChicksOfficial/"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/FriChicksOfficial/"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                 </div>
+              </div>
+           </div>
            <div class="hero__items set-bg" data-setbg="{{asset('img/hero/lasse@0.3x.jpg')}}">
-              <div class="hero__text">
-                 <h2>Quality that you can taste.</h2>
-                 <a href="{{url('/contact-us')}}" class="primary-btn">CONTACT US</a>
-                 <div class="hero__social">
-                   <a href="https://www.facebook.com/FriChicksOfficial/"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/FriChicksOfficial/"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                 </div>
-              </div>
-           </div>
-           <div class="hero__items set-bg" data-setbg="{{asset('img/hero/leung@0.3x.jpg')}}">
-              <div class="hero__text">
-                 <h2>Quality that you can taste.</h2>
-                 <a href="{{url('/contact-us')}}" class="primary-btn">CONTACT US</a>
-                 <div class="hero__social">
-                   <a href="https://www.facebook.com/FriChicksOfficial/"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/FriChicksOfficial/"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                 </div>
-              </div>
-           </div>
-           <div class="hero__items set-bg" data-setbg="{{asset('img/hero/rainer@0.3x.jpg')}}">
               <div class="hero__text">
                  <h2>Quality that you can taste.</h2>
                  <a href="{{url('/contact-us')}}" class="primary-btn">CONTACT US</a>
@@ -99,55 +99,73 @@
                  </div>
               </div>
            </div>
-           <style>
-                .vendors .owl-carousel.owl-drag .owl-item{
-                   margin-right: 7px !important;
-                   width:230px !important;
-               }
-               
-           </style>
-           <div class="row">
-              <div class="col-lg-12">
-                 <div class="logo__carousel owl-carousel">
-                    <div class="logo__carousel__item">
-                        <a href="#"  style:"width:270px; margin-right:0;"><img src="img/logo/BRAND LOOGO-01.png" alt=""></a>
-                     </div>
-                     <div class="logo__carousel__item">
-                        <a href="#"><img src="img/logo/BRAND LOOGO-02.png" alt=""></a>
-                     </div>
-                     <div class="logo__carousel__item">
-                        <a href="#"><img src="img/logo/BRAND LOOGO-04.png" alt=""></a>
-                     </div>
-                     <div class="logo__carousel__item">
-                        <a href="#"><img src="img/logo/BRAND LOOGO-03.png" alt=""></a>
-                     </div>
-                     <div class="logo__carousel__item">
-                        <a href="#"><img src="img/logo/BRAND LOOGO-05.png" alt=""></a>
-                     </div>
-                     <div class="logo__carousel__item">
-                        <a href="#"><img src="img/logo/BRAND LOOGO-06.png" alt=""></a>
-                     </div>
-                     <div class="logo__carousel__item">
-                        <a href="#"><img src="img/logo/BRAND LOOGO-07.png" alt=""></a>
-                     </div>
-                     <div class="logo__carousel__item">
-                        <a href="#"><img src="img/logo/BRAND LOOGO-08.png" alt=""></a>
-                     </div>
-                      <div class="logo__carousel__item">
-                        <a href="#"><img src="img/logo/BRAND LOOGO-09.png" alt=""></a>
-                     </div>
-                     <div class="logo__carousel__item">
-                        <a href="#"><img src="img/logo/BRAND LOOGO-10.png" alt=""></a>
-                     </div>
-                     <div class="logo__carousel__item">
-                        <a href="#"><img src="img/logo/BRAND LOOGO-11.png" alt=""></a>
-                     </div>
-                     <div class="logo__carousel__item">
-                        <a href="#"><img src="img/logo/BRAND LOOGO-12.png" alt=""></a>
-                     </div>
-                 </div>
-              </div>
-           </div>
+           
+          <style>
+ .container {
+	 overflow: hidden;
+}
+ .container .slider {
+	 animation: slidein 30s linear infinite;
+	 white-space: nowrap;
+}
+ .container .slider .logos {
+	 width: 100%;
+	 display: inline-block;
+	 margin: 0px 0;
+}
+ .container .slider .logos .fab {
+	 width: calc(100% / 5);
+	 animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+}
+ @keyframes slidein {
+	 from {
+		 transform: translate3d(0, 0, 0);
+	}
+	 to {
+		 transform: translate3d(-100%, 0, 0);
+	}
+}
+ @keyframes fade-in {
+	 0% {
+		 opacity: 0;
+	}
+	 100% {
+		 opacity: 1;
+	}
+}
+ 
+      </style>
+     <div  class:"row">
+         <div class:"col-md-12">
+              <div class="slider">
+        <div class="logos">
+          <i class="fab fa-js fa-4x"></i>
+           <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-01.png" alt=""></a> </i>
+            <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-02.png" alt=""></a> </i>
+             <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-04.png" alt=""></a> </i>
+              <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-03.png" alt=""></a> </i>
+              <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-05.png" alt=""></a> </i>
+            <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-06.png" alt=""></a> </i>
+             <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-07.png" alt=""></a> </i>
+              <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-08.png" alt=""></a> </i>
+              <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-09.png" alt=""></a> </i>
+            <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-10.png" alt=""></a> </i>
+             <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-11.png" alt=""></a> </i>
+              <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-12.png" alt=""></a> </i>
+        </div>
+      
+      </div>
+         </div>
+     </div>
+<!--          <div class="container h-100">-->
+<!--  <div class="row align-items-center h-100">-->
+<!--    <div class="container rounded">-->
+     
+<!--    </div>-->
+<!--  </div>-->
+
+<!--</div>-->
+      
         </div>
      </section>
      <!--end-->
@@ -286,32 +304,19 @@
            </div>
            <div class="row">
               <div class="col-lg-12">
-                 <div class="logo__carousel owl-carousel mr-0">
-                    <div class="logo__carousel__item">
-                        <a href="#"><img src="img/logo/VENDOR LOG-02.png" alt=""></a>
-                     </div>
-                     <div class="logo__carousel__item mr-0">
-                        <a href="#"><img src="img/logo/VENDOR LOG-03.png" alt=""></a>
-                     </div>
-                     <div class="logo__carousel__item mr-0">
-                        <a href="#"><img src="img/logo/VENDOR LOG-01.png" alt=""></a>
-                     </div>
-                     <div class="logo__carousel__item mr-0">
-                        <a href="#"><img src="img/logo/VENDOR LOG-06.png" alt=""></a>
-                     </div>
-                     <div class="logo__carousel__item mr-0">
-                        <a href="#"><img src="img/logo/VENDOR LOG-05.png" alt=""></a>
-                     </div>
-                     <div class="logo__carousel__item mr-0">
-                        <a href="#"><img src="img/logo/VENDOR LOG-07.png" alt=""></a>
-                     </div>
-                     <div class="logo__carousel__item mr-0">
-                        <a href="#"><img src="img/logo/VENDOR LOG-08.png" alt=""></a>
-                     </div>
-                     <div class="logo__carousel__item mr-0">
-                        <a href="#"><img src="img/logo/VENDOR LOG-04.png" alt=""></a>
-                     </div>
-                 </div>
+                   <div class="slider">
+        <div class="logos">
+          <i class="fab fa-js fa-4x"></i>
+           <i class="fa-4x"><a href="#"><img src="img/logo/VENDOR LOG-02.png" alt=""></a></i>
+            <i class="fa-4x"> <a href="#"><img src="img/logo/VENDOR LOG-03.png" alt=""></a></i>
+             <i class="fa-4x"> <a href="#"><img src="img/logo/VENDOR LOG-01.png" alt=""></a></i>
+              <i class="fa-4x"><a href="#"><img src="img/logo/VENDOR LOG-06.png" alt=""></a></i>
+              <i class="fa-4x"><a href="#"><img src="img/logo/VENDOR LOG-05.png" alt=""></a> </i>
+            <i class="fa-4x"><a href="#"><img src="img/logo/VENDOR LOG-07.png" alt=""></a></i>
+             <i class="fa-4x"><a href="#"><img src="img/logo/VENDOR LOG-08.png" alt=""></a> </i>
+              <i class="fa-4x"><a href="#"><img src="img/logo/VENDOR LOG-04.png" alt=""></a></i>
+        </div>
+              </div>
               </div>
            </div>
         </div>
@@ -355,8 +360,7 @@
               <div class="col-lg-10 text-center">
                  <div class="callto__text">
                     <span>Why choose us?</span>
-                    <h2>Our Ability To Deliver Outstanding Results For Our Clients Starts With Our Team Of Smart.
-                    </h2>
+                    <h2>COMMITED TO SATISFY OUR BELOVED SALTY CUSTOMERS</h2>
                     <a href="{{url('/contact-us')}}" class="primary-btn">Contact Us</a>
                  </div>
               </div>

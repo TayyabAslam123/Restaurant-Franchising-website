@@ -36,8 +36,7 @@
                  <p style="
     text-align: justify;
 ">
-                     Fri-Chicks destination quenches qualitative and tasty food. Boneless chicken stripes, crunchy burgers, burgers, Fish crunchy supreme, kid meals, energetic coleslaw are some of the menu items available to cater to the requirements of people in a different category. Fried for their chicken food hunt is love for a real crispy fried chicken. Healthy grilled special chick-pop, rice, and energetic coleslaw are another tip combination of cultures of all ages.
-Fri-Chicks emphasize the International standard of providing diversified, hygienic, and refreshing food for our guests to enjoy in a clean, luxurious & entertaining environment.
+                     Fri-Chicks spot quenches qualitative and tasty food. Boneless chicken stripes, crunchy burgers, burgers, fish crunchy supreme, kid meals, energetic coleslaw are some of the menu items available to cater to the requirements of customers in a different category. Healthy grilled special chick-pop, rice, and energetic coleslaw are another tip combination of cultures of all ages. Fri-Chicks emphasize the international standard of providing diversified, hygienic, and refreshing food for our guests to enjoy in a clean, luxurious & entertaining environment
 </p>
              </div>
          </div>
