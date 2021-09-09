@@ -17,6 +17,41 @@
       </div>
    </div>
    <!-- Breadcrumb Section End -->
+   <style>
+ .container {
+	 overflow: hidden;
+}
+ .container .slider {
+	 animation: slidein 30s linear infinite;
+	 white-space: nowrap;
+}
+ .container .slider .logos {
+	 width: 100%;
+	 display: inline-block;
+	 margin: 0px 0;
+}
+ .container .slider .logos .fab {
+	 width: calc(100% / 5);
+	 animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+}
+ @keyframes slidein {
+	 from {
+		 transform: translate3d(0, 0, 0);
+	}
+	 to {
+		 transform: translate3d(-100%, 0, 0);
+	}
+}
+ @keyframes fade-in {
+	 0% {
+		 opacity: 0;
+	}
+	 100% {
+		 opacity: 1;
+	}
+}
+ 
+      </style>
   <!-- Our Clients start -->
       <section class="spad pt-5">
          <div class="container">
@@ -30,33 +65,20 @@
             </div>
             <div class="row">
                <div class="col-lg-12">
-                   <div class="logo__carousel owl-carousel mr-0">
-                    <div class="logo__carousel__item">
-                        <a href="#"><img src="img/logo/VENDOR LOG-02.png" alt=""></a>
-                     </div>
-                     <div class="logo__carousel__item mr-0">
-                        <a href="#"><img src="img/logo/VENDOR LOG-03.png" alt=""></a>
-                     </div>
-                     <div class="logo__carousel__item mr-0">
-                        <a href="#"><img src="img/logo/VENDOR LOG-01.png" alt=""></a>
-                     </div>
-                     <div class="logo__carousel__item mr-0">
-                        <a href="#"><img src="img/logo/VENDOR LOG-06.png" alt=""></a>
-                     </div>
-                     <div class="logo__carousel__item mr-0">
-                        <a href="#"><img src="img/logo/VENDOR LOG-05.png" alt=""></a>
-                     </div>
-                     <div class="logo__carousel__item mr-0">
-                        <a href="#"><img src="img/logo/VENDOR LOG-07.png" alt=""></a>
-                     </div>
-                     <div class="logo__carousel__item mr-0">
-                        <a href="#"><img src="img/logo/VENDOR LOG-08.png" alt=""></a>
-                     </div>
-                     <div class="logo__carousel__item mr-0">
-                        <a href="#"><img src="img/logo/VENDOR LOG-04.png" alt=""></a>
-                     </div>
-                 </div>
-               </div>
+                   <div class="slider">
+        <div class="logos">
+          <i class="fab fa-js fa-4x"></i>
+           <i class="fa-4x"><a href="#"><img src="img/logo/VENDOR LOG-02.png" alt=""></a></i>
+            <i class="fa-4x"> <a href="#"><img src="img/logo/VENDOR LOG-03.png" alt=""></a></i>
+             <i class="fa-4x"> <a href="#"><img src="img/logo/VENDOR LOG-01.png" alt=""></a></i>
+              <i class="fa-4x"><a href="#"><img src="img/logo/VENDOR LOG-06.png" alt=""></a></i>
+              <i class="fa-4x"><a href="#"><img src="img/logo/VENDOR LOG-05.png" alt=""></a> </i>
+            <i class="fa-4x"><a href="#"><img src="img/logo/VENDOR LOG-07.png" alt=""></a></i>
+             <i class="fa-4x"><a href="#"><img src="img/logo/VENDOR LOG-08.png" alt=""></a> </i>
+              <i class="fa-4x"><a href="#"><img src="img/logo/VENDOR LOG-04.png" alt=""></a></i>
+        </div>
+              </div>
+              </div>
             </div>
          </div>
       </section>
@@ -188,18 +210,18 @@
       </section>
       <!-- Testimonial Section End -->
       <!-- Call To Action Section Begin -->
-      <section class="callto spad set-bg" data-setbg="img/call-bg.jpg">
-         <div class="container">
-            <div class="row d-flex justify-content-center">
-               <div class="col-lg-10 text-center">
-                  <div class="callto__text">
-                     <span>Why choose us?</span>
-                     <h2>Our ability to bring outstanding results to our customers.</h2>
-                     <a href="#" class="primary-btn">Contact Us</a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
+      <!--<section class="callto spad set-bg" data-setbg="img/call-bg.jpg">-->
+      <!--   <div class="container">-->
+      <!--      <div class="row d-flex justify-content-center">-->
+      <!--         <div class="col-lg-10 text-center">-->
+      <!--            <div class="callto__text">-->
+      <!--               <span>Why choose us?</span>-->
+      <!--               <h2>Our ability to bring outstanding results to our customers.</h2>-->
+      <!--               <a href="#" class="primary-btn">Contact Us</a>-->
+      <!--            </div>-->
+      <!--         </div>-->
+      <!--      </div>-->
+      <!--   </div>-->
+      <!--</section>-->
       <!-- Call To Action Section End -->
       @endsection

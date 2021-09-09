@@ -143,69 +143,7 @@ I being the food Passionist, committed to get good market share fought hard to r
             </div>
          </div>
       </section>
-      <style>
- .container {
-	 overflow: hidden;
-}
- .container .slider {
-	 animation: slidein 30s linear infinite;
-	 white-space: nowrap;
-}
- .container .slider .logos {
-	 width: 100%;
-	 display: inline-block;
-	 margin: 0px 0;
-}
- .container .slider .logos .fab {
-	 width: calc(100% / 5);
-	 animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
-}
- @keyframes slidein {
-	 from {
-		 transform: translate3d(0, 0, 0);
-	}
-	 to {
-		 transform: translate3d(-100%, 0, 0);
-	}
-}
- @keyframes fade-in {
-	 0% {
-		 opacity: 0;
-	}
-	 100% {
-		 opacity: 1;
-	}
-}
- 
-      </style>
-      <section>
-          <div class="container h-100">
-  <div class="row align-items-center h-100">
-    <div class="container rounded">
-      <h1 class="text-center">Featured in:</h1>
-      <div class="slider">
-        <div class="logos">
-          <i class="fab fa-js fa-4x"></i>
-           <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-01.png" alt=""></a> </i>
-            <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-02.png" alt=""></a> </i>
-             <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-04.png" alt=""></a> </i>
-              <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-03.png" alt=""></a> </i>
-              <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-05.png" alt=""></a> </i>
-            <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-06.png" alt=""></a> </i>
-             <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-07.png" alt=""></a> </i>
-              <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-08.png" alt=""></a> </i>
-              <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-09.png" alt=""></a> </i>
-            <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-10.png" alt=""></a> </i>
-             <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-11.png" alt=""></a> </i>
-              <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-12.png" alt=""></a> </i>
-        </div>
-      
-      </div>
-    </div>
-  </div>
-
-</div>
-      </section>
+     
       <!-- Team Section End -->
       <!-- Call To Action Section Begin -->
       <section class="callto spad set-bg" data-setbg="{{asset('img/call-bg.jpg')}}">
