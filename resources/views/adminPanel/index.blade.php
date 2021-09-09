@@ -98,7 +98,7 @@
           @endif
 
           @if($url=='careers')
-           <a href="{{url('/admin/applicants?job_id='.$value->id)}}" class="btn btn-info">view applications ({{count(App\Applicant::where('carrer_id',$value->id)->get())}})</a>
+           <a href="{{url('/admin/applicants?job_id='.$value->id)}}" class="btn btn-info">view applications <span class="badge badge-light">({{count(App\Applicant::where('carrer_id',$value->id)->get())}})</span></a>
           @endif
         </td>
 
