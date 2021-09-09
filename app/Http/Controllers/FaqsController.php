@@ -19,14 +19,14 @@ class FaqsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $title = 'Order Now Entries';
+        $title = strtoupper($request->type).""." ENTRIES";
         $headings = ["type" => "Type", "created_at" => "Created At","updated_at" => "Updated At"];
 
         $url = "faq";
 
-        $values = Faq::all();
+        $values = Faq::where('type',$request->type)->get();
 
         $add = $edit = $jsonparam = true;
 

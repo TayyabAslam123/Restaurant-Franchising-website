@@ -118,6 +118,11 @@ class ApplicantsController extends Controller
     {
         try {
             Applicant::findOrFail($id)->delete();
+            $data =Applicant::findOrFail($id);
+            if (\File::exists(public_path('storage/applicants/' . $data->resume))) {
+                \File::delete(public_path('storage/applicants/' . $data->resume));
+            }
+            $data->delete();
             Session::flash('message', 'DELETED SUCCESSFULLY');
             Session::flash('alert-class', 'alert-success');
             return redirect($this->redirect_url);

@@ -103,7 +103,7 @@
                                   <input type="file" name="resume" required>
                                  </div>
                               </div>
-                              <input type="text" name="career_id" id="career_id">
+                              <input type="hidden" name="career_id" id="career_id">
                               <br>
                               <button type="submit" class="btn btn-warning btn-block">APPLY</button>
                            </form>
