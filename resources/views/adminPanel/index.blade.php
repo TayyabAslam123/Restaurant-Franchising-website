@@ -60,6 +60,8 @@
           <img src="{{asset('storage/'.strtolower($title).'/'.$value->image)}}" width="100px" height="100px">
           @elseif($key=='file')
           <a href="{{asset('storage/downloads/'.$value->file)}}" download>Download file..</a>
+          @elseif($key=='resume')
+          <a href="{{asset('storage/applicants/'.$value->resume)}}" download>Download Resume..</a>
           @else
          {{$value->$key}}
           @endif
@@ -93,6 +95,10 @@
             <button class="btn btn-warning btn-circle "><i class="fas fa-pen"></i></button>
           </a>
           <!--END-->
+          @endif
+
+          @if($url=='careers')
+           <a href="{{url('/admin/applicants?job_id='.$value->id)}}" class="btn btn-info">view applications ({{count(App\Applicant::where('carrer_id',$value->id)->get())}})</a>
           @endif
         </td>
 

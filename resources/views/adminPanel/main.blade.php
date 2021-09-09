@@ -26,7 +26,7 @@
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{url('/')}}">
         <div class="sidebar-brand-icon rotate-n-15">
         </div>
-        <img src="{{asset('img/logo.png')}}" style= width="100%" height="auto">
+        <img src="{{asset('img/logo.png')}}"  width="100%" height="auto">
       </a>
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">

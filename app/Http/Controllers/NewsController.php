@@ -19,15 +19,16 @@ class NewsController extends Controller
     {
         $title = 'NEWS';
         $headings = ["title" => "Tile","description" => "Description",
-        "created_at" => "Created At","updated_at" => "Updated At","image" => "image"];
+        "created_at" => "Created At","updated_at" => "Updated At","image" => "image","is_slider"=>"Show on slider"];
 
         $url = "news";
 
-        $values = Newsfeed::paginate(10);
+        $values = Newsfeed::all();
         $data = [
             ['name' => 'Title', "type" => "text", "attrib" => 'required="required" name="title" maxlength="100"'],
             ['name' => 'Description', "type" => "text", "attrib" => 'required="required" name="description" maxlength="1000"'],
             ['name' => 'Image', "type" => "file", "attrib" => 'required="required" name="img" '],
+            ['name'=>'Show on slider', "type"=>"select", "data"=>['no'=>"NO",'yes'=>"YES"], "attrib"=>'name="is_slider" ']
 
         ];
 
@@ -70,6 +71,7 @@ class NewsController extends Controller
             $var->title = $request->title;
             $var->description = $request->description;
             $var->image = $fileNameToStore;
+            $var->is_slider = $request->is_slider;
 
 
             $var->save();
@@ -106,7 +108,8 @@ class NewsController extends Controller
         $data = [
             ['name' => 'Title','naming' => 'title' ,"type" => "text", "attrib" => 'required="required" name="title" maxlength="100"'],
             ['name' => 'Description','naming' => 'description' , "type" => "text", "attrib" => 'required="required" name="description" maxlength="1000"'],
-            ['name' => 'Image (Select image only if you want to update)','naming' => 'image' , "type" => "file", "attrib" => 'required="required" name="img" '],
+            ['name' => 'Image (Select image only if you want to update)','naming' => 'image' , "type" => "file", "attrib" => 'name="img" '],
+            ['name'=>'Show on slider', 'naming' => 'is_slider',"type"=>"select", "data"=>['no'=>"NO",'yes'=>"YES"], "attrib"=>'name="is_slider" ']
 
         ];
 
@@ -146,6 +149,7 @@ class NewsController extends Controller
             $var = Newsfeed::findOrFail($id);
             $var->title = $request->title;
             $var->description = $request->description;
+            $var->is_slider = $request->is_slider;
 
             if ($request->hasFile('img')) {
                 $var->image = $fileNameToStore;

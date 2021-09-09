@@ -23,7 +23,7 @@ class FranchiseController extends Controller
 
         $url = "franchise";
 
-        $values = Franchise::paginate(10);
+        $values = Franchise::all();
         $data = [
             ['name' => 'Title', "type" => "text", "attrib" => 'required="required" name="title" maxlength="100"'],
             ['name' => 'Address', "type" => "text", "attrib" => 'required="required" name="address" maxlength="200"'],

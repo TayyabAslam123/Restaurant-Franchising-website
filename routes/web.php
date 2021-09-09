@@ -85,6 +85,7 @@ Route::get('/news', function () {
         Route::resource('downloads', 'DownloadController')->middleware('auth');
         Route::resource('careers', 'CareersController')->middleware('auth');
         Route::resource('franchise', 'FranchiseController')->middleware('auth');
+        Route::resource('applicants', 'ApplicantsController')->middleware('auth');
         //
         Route::resource('contact', 'ContactController');
         Route::resource('order', 'OrderController');
@@ -93,7 +94,7 @@ Route::get('/news', function () {
     });
 
     Auth::routes([
-    'register' => false, // Registration Routes...
+   // 'register' => false, // Registration Routes...
     'reset' => false, // Password Reset Routes...
     'verify' => false, // Email Verification Routes...
     ]);

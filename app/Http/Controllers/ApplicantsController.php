@@ -3,31 +3,32 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Order;
+use App\Applicant;
 use Session;
 use Exception;
 
-class OrderController extends Controller
+class ApplicantsController extends Controller
 {
     public function __construct()
     {
         $this->middleware('auth')->except(['store']);
     }
-    private $redirect_url = 'admin/order';
+    private $redirect_url = 'admin/applicants';
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $title = 'Order Now Entries';
-        $headings = ["name" => "Name","email" => "Email","phone" => "Phone", "city" => "City",
+        
+        $title = 'Applicants';
+        $headings = ["name" => "Name","email" => "Email","phone" => "Phone", "resume" => "Resume",
         "created_at" => "Created At","updated_at" => "Updated At"];
 
-        $url = "order";
+        $url = "applicants";
 
-        $values = Order::all();
+        $values = Applicant::where('carrer_id',$request->job_id)->get();
         $add = $edit  = true;
 
 
@@ -52,12 +53,23 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
+        if ($request->hasFile('resume')) {
+            $filenameWithExt = $request->file('resume')->getClientOriginalName();
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            $extension = $request->file('resume')->getClientOriginalExtension();
+            $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+            $path = $request->file('resume')->storeAs('public/applicants', $fileNameToStore);
+        } else {
+            $fileNameToStore = 'nofile.jpg';
+        }
+       
 
-        $var = new Order();
+        $var = new Applicant();
         $var->name = $request->name;
         $var->email = $request->email;
         $var->phone = $request->phone;
-        $var->city = $request->city;
+        $var->resume = $fileNameToStore;
+        $var->carrer_id = $request->career_id;
         $var->save();
         return response()->json(['code' => 200,'msg' => 'data saved successfully'], 200);
     }
@@ -105,7 +117,7 @@ class OrderController extends Controller
     public function destroy($id)
     {
         try {
-            Order::findOrFail($id)->delete();
+            Applicant::findOrFail($id)->delete();
             Session::flash('message', 'DELETED SUCCESSFULLY');
             Session::flash('alert-class', 'alert-success');
             return redirect($this->redirect_url);

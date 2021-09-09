@@ -27,7 +27,7 @@ class ContactController extends Controller
 
         $url = "contact";
 
-        $values = Contact::paginate(10);
+        $values = Contact::all();
         $add = $edit  = true;
 
 

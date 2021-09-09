@@ -36,7 +36,7 @@
         <h2 class="card-title" style="text-align: center;">{{$var->title}}</h2>
         <!-- <img src="img/team/team-1.jpg"> -->
         <p class="card-text">{{$var->description}}</p>
-        <a href="mailto:info@fri-chicks.com" class="btn btn-primary">Apply Now</a>
+        <button class="btn btn-primary" onclick="mymodal({{$var}})">Apply Now</button>
       </div>
     </div>
   </div>
@@ -60,4 +60,90 @@
          </div>
       </section>
       <!-- Call To Action Section End -->
+            <!-- Model -->
+            <div class="modal fade" id="career" tabindex="-1" role="dialog" aria-labelledby="careermodal" aria-hidden="true">
+               <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <h3 class="modal-title text-center" id="careermodal" style="text-align: center;">Apply Now</h3>
+                     </div>
+                     <div class="modal-body faq">
+                        <div class="container">
+                           <form action="#" id="careerform">
+                           <input type="hidden" name="_token" id="token" value="{{ csrf_token() }}">
+                              <div class="row">
+                                 <div class="col-md-3">
+                                    <label for="name">Name</label>
+                                 </div>
+                                 <div class="col-md-9">
+                                    <input type="text" id="name" name="name" placeholder="Your name.." maxlength="100" required>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-md-3">
+                                    <label for="email">Email</label>
+                                 </div>
+                                 <div class="col-md-9">
+                                    <input type="email" id="email" name="email" maxlength="100" placeholder="name@gmail.com"required>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-md-3">
+                                    <label for="phone" name="phone" max >Phone No</label>
+                                 </div>
+                                 <div class="col-md-9">
+                                    <input type="tel" id="phone" name="phone" placeholder="0321 0123456" maxlength="100"  required>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-md-3">
+                                    <label for="city">Resume</label>
+                                 </div>
+                                 <div class="col-md-9">
+                                  <input type="file" name="resume" required>
+                                 </div>
+                              </div>
+                              <input type="text" name="career_id" id="career_id">
+                              <br>
+                              <button type="submit" class="btn btn-warning btn-block">APPLY</button>
+                           </form>
+                        </div>
+                     </div>
+                     <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      
+                     </div>
+                  </div>
+               </div>
+            </div>
 			@endsection
+
+         @section('scripts')
+         <script>
+         function mymodal(data){
+            $('#career_id').val(data.id);
+            $('#career').modal('show');
+
+         }     
+         </script>
+             <script>
+               $('#careerform').submit(function(e) {
+               e.preventDefault();
+                 var suc_func = function(msg) {
+                  $("#career").modal('hide');
+            
+                    Swal.fire(
+                    'GREAT !',
+                    'Applied Successfully',
+                    'success'
+                   );
+                   
+                  ;
+                 };
+            
+                  //fetch2("{{url('admin/applicants')}}",$(this).serialize(),"POST", "JSON",suc_func, false, false, false);
+                  fetch_file_d("{{url('admin/applicants')}}", this, "POST", suc_func, false, false, false, false);
+               });
+              </script>
+
+         @endsection
