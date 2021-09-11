@@ -16,7 +16,7 @@
   @if(isset($flag) && $flag=="feedback")
   <div class="col-sm-3">
     <a href="#addme">
-      <a href="{{url('/admin/feedback-form')}}" class="btn btn-warning">BUILD FORM</a>
+      <a href="{{url('/admin/feedback-form')}}" class="btn btn-warning btn-lg">BUILD FORM</a>
     </a>
   </div>
   @endif
