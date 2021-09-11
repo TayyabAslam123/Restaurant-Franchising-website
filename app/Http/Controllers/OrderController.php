@@ -27,7 +27,8 @@ class OrderController extends Controller
 
         $url = "order";
 
-        $values = Order::orderby('created_at','DESC')->get();;
+        $values = Order::orderby('created_at','DESC')->get();
+        dd($values);
         $add = $edit  = true;
 
 
