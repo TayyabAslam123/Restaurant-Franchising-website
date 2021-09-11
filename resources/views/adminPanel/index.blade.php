@@ -46,12 +46,13 @@
 
         @if($flag=="suggestion") 
        <?php $temp=$values->toArray(); ?>
-         
+              
+              @if(!empty($temp))
               <?php $details = json_decode($temp[0]['details_json'], true);  ?>
                 @foreach ($details as $key=>$val)
                  <th scope="col">{{$key}}</th>
                 @endforeach
-          
+              @endif
         @else
         <th scope="col">Feedback Entries</th>
         @endif 
