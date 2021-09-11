@@ -143,6 +143,7 @@
    <script>
      $(document).ready( function () {
     $('#dt').DataTable({
+       "order": [],
         dom: 'Bfrtip',
         buttons: [
             'copyHtml5',
