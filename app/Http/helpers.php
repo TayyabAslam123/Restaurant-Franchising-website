@@ -109,6 +109,6 @@ function extra()
 
 function formdata()
 {
-    $data = App\form::where('id',1)->first();
+    $data = App\Form::where('id',1)->first();
     return $data->form_data;
 }
