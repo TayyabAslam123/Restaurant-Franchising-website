@@ -7,7 +7,7 @@ function adminMenu()
             "CAREERS" => "admin/careers",
             "DOWNLOADS" => "admin/downloads",
             "NEWS" => "admin/news",
-            "___________" => "",
+         
             "Contact Entries " => "admin/contact",
             "Order Now Entries" => "admin/order",
             "Suggestions Entries" => "admin/faq?type=suggestion",
@@ -107,3 +107,8 @@ function extra()
     return $data;
 }
 
+function formdata()
+{
+    $data = App\form::where('id',1)->first();
+    return $data->form_data;
+}

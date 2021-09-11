@@ -24,7 +24,7 @@ class DownloadController extends Controller
 
         $url = "downloads";
 
-        $values = Download::all();
+        $values = Download::orderby('id','DESC')->get();;
         $data = [
             ['name' => 'Title', "type" => "text", "attrib" => 'required="required" name="title" maxlength="100"'],
             ['name' => 'Description', "type" => "text", "attrib" => 'required="required" name="description" maxlength="1000"'],

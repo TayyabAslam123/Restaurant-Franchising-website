@@ -27,7 +27,7 @@ class ContactController extends Controller
 
         $url = "contact";
 
-        $values = Contact::all();
+        $values = Contact::orderby('id','DESC')->get();
         $add = $edit  = true;
 
 

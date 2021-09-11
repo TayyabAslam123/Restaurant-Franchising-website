@@ -26,7 +26,7 @@ class GetFrenchiseController extends Controller
 
         $url = "get-frenchise";
 
-        $values = GetFrenchise::all();
+        $values = GetFrenchise::orderby('id','DESC')->get();;
 
         $add = $edit = $jsonparam = true;
 

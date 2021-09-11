@@ -21,17 +21,18 @@ class FaqsController extends Controller
      */
     public function index(Request $request)
     {
+        $flag=$request->type;
         $title = strtoupper($request->type).""." ENTRIES";
         $headings = ["type" => "Type", "created_at" => "Created At","updated_at" => "Updated At"];
 
         $url = "faq";
 
-        $values = Faq::where('type',$request->type)->get();
+        $values = Faq::where('type',$request->type)->orderby('id','DESC')->get();
 
         $add = $edit = $jsonparam = true;
 
 
-        return view('adminPanel.index', compact('title', 'headings', 'values', 'url', 'add', 'edit', 'jsonparam'));
+        return view('adminPanel.index', compact('title', 'headings', 'values', 'url', 'add', 'edit', 'jsonparam','flag'));
     }
 
     /**

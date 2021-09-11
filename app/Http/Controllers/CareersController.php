@@ -23,7 +23,7 @@ class CareersController extends Controller
 
         $url = "careers";
 
-        $values = Career::all();
+        $values = Career::orderby('id','DESC')->get();
         $data = [
             ['name' => 'Title', "type" => "text", "attrib" => 'required="required" name="title" maxlength="100"'],
             ['name' => 'Description', "type" => "text", "attrib" => 'required="required" name="description" maxlength="1000"'] ];

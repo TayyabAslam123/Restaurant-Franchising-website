@@ -28,7 +28,7 @@ class ApplicantsController extends Controller
 
         $url = "applicants";
 
-        $values = Applicant::where('carrer_id',$request->job_id)->get();
+        $values = Applicant::where('carrer_id',$request->job_id)->orderby('id','DESC')->get();
         $add = $edit  = true;
 
 

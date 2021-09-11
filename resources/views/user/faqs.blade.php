@@ -136,71 +136,25 @@
                               <input type="tel" id="phone" name="phone" placeholder="0321 0123456"required>
                            </div>
                         </div>
+<hr>
+                        <?php $hh=formdata(); ?>
+                        <?php $myform = json_decode($hh, true);  ?>
+                        @foreach ($myform as $key=>$val)
                         <div class="row">
                            <div class="col-md-4">
-                              Are you Satisfied With Our Service
+                             {{$val}}
                            </div>
                            <div class="col-md-4">
-                              <input type="radio" id="yes" name="service" value="satisfied">
+                              <input type="radio" id="yes" name="{{$key}}" value="satisfied">
                               <label for="yes">Yes</label>
                            </div>
                            <div class="col-md-4">
-                              <input type="radio" id="no" name="service" value="not satisfied">
+                              <input type="radio" id="no" name="{{$key}}" value="not satisfied">
                               <label for="no">No</label>
                            </div>
-                        </div>
-                        <div class="row">
-                           <div class="col-md-4">
-                              Are You Satisfied With Our Taste
-                           </div>
-                           <div class="col-md-4">
-                              <input type="radio" id="yes1" name="taste" value="satisfied">
-                              <label for="yes1">Yes</label>
-                           </div>
-                           <div class="col-md-4">
-                              <input type="radio" id="no1" name="taste" value="not satisfied">
-                              <label for="no1">No</label>
-                           </div>
-                        </div>
-                        <div class="row">
-                           <div class="col-md-4">
-                              Are You Satisfied With Our Presentation
-                           </div>
-                           <div class="col-md-4">
-                              <input type="radio" id="yes2" name="presentation" value="satisfied">
-                              <label for="yes2">Yes</label>
-                           </div>
-                           <div class="col-md-4">
-                              <input type="radio" id="no2" name="presentation" value="not satisfied">
-                              <label for="no2">No</label>
-                           </div>
-                        </div>
-                        <div class="row">
-                           <div class="col-md-4">
-                              Are You Satisfied With Our Quality
-                           </div>
-                           <div class="col-md-4">
-                              <input type="radio" id="yes3" name="quality" value="satisfied">
-                              <label for="yes3">Yes</label>
-                           </div>
-                           <div class="col-md-4">
-                              <input type="radio" id="no3" name="quality" value="not satisfied">
-                              <label for="no3">No</label>
-                           </div>
-                        </div>
-                        <div class="row">
-                           <div class="col-md-4">
-                              Are You Satisfied With Our Management
-                           </div>
-                           <div class="col-md-4">
-                              <input type="radio" id="yes4" name="managment" value="satisfied">
-                              <label for="yes4">Yes</label>
-                           </div>
-                           <div class="col-md-4">
-                              <input type="radio" id="no4" name="managment" value="not satisfied">
-                              <label for="no4">No</label>
-                           </div>
-                        </div>
+                        </div>  
+                        @endforeach  
+         
                         <div class="row">
                            <input class="bg-warning text-danger font-weight-bold" type="submit" value="Submit">
                         </div>

@@ -94,7 +94,7 @@
         <div class="row no-gutters align-items-center">
           <div class="col mr-2">
             <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-              <h6><b>Total Contact Us Entries</b> </h6>
+              <h5><b>Total Contact Us Entries</b> </h5>
             </div>
             <div class="h5 mb-0 font-weight-bold text-gray-800">
               <h2><b>{{App\Contact::count()}}</b></h2>
@@ -110,7 +110,7 @@
         <div class="row no-gutters align-items-center">
           <div class="col mr-2">
             <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-              <h6><b>Total Orders Entries</b> </h6>
+              <h5><b>Total Orders Entries</b> </h5>
             </div>
             <div class="h5 mb-0 font-weight-bold text-gray-800">
               <h2><b>{{App\Order::count()}}</b></h2>
@@ -125,7 +125,7 @@
         <div class="row no-gutters align-items-center">
           <div class="col mr-2">
             <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-              <h6><b>Total Faqs Entries</b> </h6>
+              <h6><b>Total Feedback/Suggestion Entries</b> </h6>
             </div>
             <div class="h5 mb-0 font-weight-bold text-gray-800">
               <h2><b>{{App\Faq::count()}}</b></h2>
@@ -140,7 +140,7 @@
         <div class="row no-gutters align-items-center">
           <div class="col mr-2">
             <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-              <h6><b>Total Get Franchise Entries</b> </h6>
+              <h5><b>Total Get Franchise Entries</b> </h5>
             </div>
             <div class="h5 mb-0 font-weight-bold text-gray-800">
               <h2><b>{{$extra}}</b></h2>

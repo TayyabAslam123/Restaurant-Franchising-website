@@ -86,15 +86,21 @@ Route::get('/news', function () {
         Route::resource('careers', 'CareersController')->middleware('auth');
         Route::resource('franchise', 'FranchiseController')->middleware('auth');
         Route::resource('applicants', 'ApplicantsController')->middleware('auth');
+
+        Route::get('/feedback-form','FormController@showform')->middleware('auth');
+        Route::post('/form','FormController@addform')->middleware('auth');
         //
         Route::resource('contact', 'ContactController');
         Route::resource('order', 'OrderController');
         Route::resource('faq', 'FaqsController');
         Route::resource('get-frenchise', 'GetFrenchiseController');
+
+
+    
     });
 
     Auth::routes([
-   // 'register' => false, // Registration Routes...
+   'register' => false, // Registration Routes...
     'reset' => false, // Password Reset Routes...
     'verify' => false, // Email Verification Routes...
     ]);

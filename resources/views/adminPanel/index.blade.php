@@ -12,7 +12,16 @@
     </a>
   </div>
   @endif
+
+  @if(isset($flag) && $flag=="feedback")
+  <div class="col-sm-3">
+    <a href="#addme">
+      <a href="{{url('/admin/feedback-form')}}" class="btn btn-warning">BUILD FORM</a>
+    </a>
+  </div>
+  @endif
 </div>
+<hr>
 
 <!--SUCCESS/FAILURE MESSAGES-->
 @if(Session::has('message'))
@@ -33,14 +42,22 @@
         @endforeach
         <!--ACTIONS-->
 
-        @if(isset($jsonparam))
-        @foreach ($values as $hh)
-        <?php $details = json_decode($hh->details_json, true);  ?>
-        @foreach ($details as $key=>$val)
-        <th scope="col">{{$key}}</th>
-        @endforeach
-        @endforeach
+        @if(isset($jsonparam) && isset($flag))
+
+        @if($flag=="suggestion") 
+       <?php $temp=$values->toArray(); ?>
+         
+              <?php $details = json_decode($temp[0]['details_json'], true);  ?>
+                @foreach ($details as $key=>$val)
+                 <th scope="col">{{$key}}</th>
+                @endforeach
+          
+        @else
+        <th scope="col">Feedback Entries</th>
+        @endif 
+
         @endif
+
 
         <th scope="col">Actions</th>
       </tr>
@@ -69,12 +86,26 @@
         @endforeach
 
         @if(isset($jsonparam))
-        @foreach ($values as $hh)
-        <?php $details = json_decode($hh->details_json, true);  ?>
+
+        @if($flag=="suggestion") 
+         
+            <?php $details = json_decode($value->details_json, true);  ?>
+           @foreach ($details as $key=>$val)
+           <td>{{$val}}</th>
+           @endforeach
+     
+        @else
+       
+        <?php $details = json_decode($value->details_json, true);  ?>
+        <td>  
         @foreach ($details as $key=>$val)
-        <td>{{$val}}</th>
-        @endforeach
-        @endforeach
+          <b>(</b> {{$key}}={{$val}} <b>)</b>
+          @endforeach
+        </td>  
+      
+        @endif
+
+
         @endif
         <!--actions-->
         <td>
