@@ -30,9 +30,9 @@
     <button class="btn btn-primary" id="add_field_button">Add More Question</button>
 	<div class="url_field">
     <div class="row">
-     <input type="text" class="form-control col-sm-3" placeholder="Label" name="label[]" >
+     <input type="text" class="form-control col-sm-3" placeholder="Label" name="label[]" required>
      <br>
-     <input type="text" class="form-control col-sm-6" placeholder="Question" name="question[]" >
+     <input type="text" class="form-control col-sm-6" placeholder="Question" name="question[]" required>
       </div>
 	</div>  
       <br>
@@ -60,7 +60,7 @@
 		e.preventDefault();
 		if(x < max_fields){ //max input box allowed
 			x++; //text box increment
-			$(wrapper).append('<div class="row"> <input type="text" class="form-control col-sm-3" placeholder="Label" name="label[]" ><input type="text" class="form-control col-sm-6" placeholder="Question" name="question[]" ><a href="#" class="remove_field btn btn-danger">X</a></div>'); //add input box
+			$(wrapper).append('<div class="row"> <input type="text" class="form-control col-sm-3" placeholder="Label" name="label[]" required><input type="text" class="form-control col-sm-6" placeholder="Question" name="question[]" required><a href="#" class="remove_field btn btn-danger">X</a></div>'); //add input box
 		}
 	});
 	

@@ -95,7 +95,8 @@ function getnews()
 
 function shownews()
 {
-    $data = App\Newsfeed::orderBy('id', 'DESC')->take(3)->get();
+    $data = App\Newsfeed::where('is_slider','yes')->get();
+    
     return $data;
 }
 
