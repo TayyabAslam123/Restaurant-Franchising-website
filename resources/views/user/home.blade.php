@@ -68,7 +68,7 @@
                   <div class="about__text">
                      <div class="section-title">
                         <span>who are we</span>
-                        <h2>Established in Pakistan 2002,</h2>
+                        <h2 style="text-align:left;!important">Established in Pakistan 2002,</h2>
                      </div>
                      <div class="about__para__text">
                         <p>(FC) Fri-Chicks is a rapidly growing fast-food chain in the region. (FC) Fri-Chicks is specialized in serving the tastiest crumbed fried chicken using a secret recipe which includes a unique blend of the choicest herbs by spices. It is therefore of little wonder, (FC) Fri-Chicks is synonym to words such as "Real Recipe, Real Taste, Real Fried Chicken." (FC) Fri-Chicks begain its gourney with a yet determined dream to create a brand that brings happiness, satisfaction, and smiles to our valued customers.

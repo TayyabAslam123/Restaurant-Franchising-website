@@ -46,8 +46,8 @@
                         </div>
 
                         <div class="form-group">
-                           <input type="email" class="form-control wizard-required" id="email" name="email" maxlength="100" required>
-                           <label for="email" class="wizard-form-text-label">Email Address*</label>
+                           <input type="email" class="form-control" id="email" name="email" maxlength="100" >
+                           <label for="email" class="wizard-form-text-label">Email</label>
                            <div class="wizard-form-error"></div>
                         </div>
 
@@ -58,8 +58,8 @@
                            <div class="wizard-form-error"></div>
                         </div>
                         <div class="form-group">
-                           <input type="tel" class="form-control wizard-required" id="wnumber" name="whatsapp" maxlength="100" required>
-                           <label for="wnumber" class="wizard-form-text-label">Whatsapp Number*</label>
+                           <input type="tel" class="form-control " id="wnumber" name="whatsapp" maxlength="100" >
+                           <label for="wnumber" class="wizard-form-text-label">Whatsapp Number</label>
                            <div class="wizard-form-error"></div>
                         </div>
                         <div class="form-group">

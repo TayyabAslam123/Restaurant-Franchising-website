@@ -29,26 +29,43 @@
                </div>
             </div>
             <div class="row">
-                <div class:"col-md-12">
-              <div class="slider">
-        <div class="logos">
-          <i class="fab fa-js fa-4x"></i>
-           <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-01.png" alt=""></a> </i>
-            <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-02.png" alt=""></a> </i>
-             <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-04.png" alt=""></a> </i>
-              <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-03.png" alt=""></a> </i>
-              <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-05.png" alt=""></a> </i>
-            <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-06.png" alt=""></a> </i>
-             <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-07.png" alt=""></a> </i>
-              <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-08.png" alt=""></a> </i>
-              <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-09.png" alt=""></a> </i>
-            <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-10.png" alt=""></a> </i>
-             <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-11.png" alt=""></a> </i>
-              <i class="fa-4x"> <a href="#"><img src="img/logo/BRAND LOOGO-12.png" alt=""></a> </i>
-        </div>
-      
-      </div>
-         </div>
+                <div class="col-md-4 pt-4">
+                     <a href="#"><img src="img/logo/BRAND LOOGO-01.png" alt=""></a> 
+                </div>
+                <div class="col-md-4 pt-4">
+                     <a href="#"><img src="img/logo/BRAND LOOGO-02.png" alt=""></a> 
+                </div>
+                <div class="col-md-4 pt-4">
+                     <a href="#"><img src="img/logo/BRAND LOOGO-04.png" alt=""></a> 
+                </div>
+                <div class="col-md-4 pt-4">
+                     <a href="#"><img src="img/logo/BRAND LOOGO-03.png" alt=""></a> 
+                </div>
+                <div class="col-md-4 pt-4">
+                     <a href="#"><img src="img/logo/BRAND LOOGO-05.png" alt=""></a> 
+                </div>
+                <div class="col-md-4 pt-4">
+                     <a href="#"><img src="img/logo/BRAND LOOGO-06.png" alt=""></a> 
+                </div>
+                <div class="col-md-4 pt-4">
+                     <a href="#"><img src="img/logo/BRAND LOOGO-07.png" alt=""></a> 
+                </div>
+                <div class="col-md-4 pt-4">
+                     <a href="#"><img src="img/logo/BRAND LOOGO-08.png" alt=""></a> 
+                </div>
+                <div class="col-md-4 pt-4">
+                     <a href="#"><img src="img/logo/BRAND LOOGO-09.png" alt=""></a> 
+                </div>
+                <div class="col-md-4 pt-4">
+                     <a href="#"><img src="img/logo/BRAND LOOGO-10.png" alt=""></a> 
+                </div>
+                <div class="col-md-4 pt-4">
+                     <a href="#"><img src="img/logo/BRAND LOOGO-11.png" alt=""></a> 
+                </div>
+                <div class="col-md-4 pt-4">
+                     <a href="#"><img src="img/logo/BRAND LOOGO-12.png" alt=""></a> 
+                </div>
+               
             </div>
          </div>
       </section>

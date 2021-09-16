@@ -165,7 +165,7 @@
                      <div class="footer__logo">
                         <a href="#"><img src="{{asset('img/logo.png')}}" alt=""></a>
                      </div>
-                     <p>ESTABLISHED IN PAKISTAN 2002,
+                     <p style="text-align:left;!important">ESTABLISHED IN PAKISTAN 2002,
 PAKISTAN'S FASTEST GROWING FASTFOOD BRAND</p>
 
 
@@ -193,7 +193,7 @@ PAKISTAN'S FASTEST GROWING FASTFOOD BRAND</p>
                         <li><a href="{{url('/careers')}}">Careers</a></li>
                         <li><a href="{{url('/downloads')}}">Downloads</a></li>
                         <li><a href="{{url('/faqs')}}">Faqs</a></li>
-                        <li><a href="{{url('/admin/dashboard')}}">Login</a></li>
+                        <!--<li><a href="{{url('/admin/dashboard')}}">Login</a></li>-->
                      </ul>
                   </div>
                </div>
