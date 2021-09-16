@@ -86,7 +86,7 @@
      </td>
         @endforeach
 
-        @if(isset($jsonparam))
+        @if(isset($jsonparam) && isset($flag))
 
         @if($flag=="suggestion") 
          
